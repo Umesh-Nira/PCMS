@@ -1,0 +1,597 @@
+
+[INF] 2020-05-09 13:06:20.353 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-09 13:07:36.906 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-09 13:08:32.606 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 00:40:04.652 Failed to get Registered User details
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Api.Controllers.HomeController.<CheckLoginCredential>d__4.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api\Controllers\HomeController.cs:line 49
+[INF] 2020-05-10 00:42:22.784 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-10 00:44:33.627 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 10:25:13.618 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-10 10:26:36.790 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-10 10:26:36.835 Failed to Send mail
+System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1010.pdf'. ---> System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1010.pdf'. ---> System.IO.FileNotFoundException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1010.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   at System.Net.FileWebRequest.GetResponseCallback(Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadData(Uri address)
+   at System.Net.WebClient.DownloadData(String address)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 83
+[INF] 2020-05-10 10:27:56.122 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-10 10:30:38.871 Failed to Send mail
+System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1010.pdf'. ---> System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1010.pdf'. ---> System.IO.FileNotFoundException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1010.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   at System.Net.FileWebRequest.GetResponseCallback(Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadData(Uri address)
+   at System.Net.WebClient.DownloadData(String address)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 83
+[ERR] 2020-05-10 10:32:01.413 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-10 10:33:09.538 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-10 10:35:42.182 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[INF] 2020-05-10 10:39:30.574 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[INF] 2020-05-10 10:41:47.222 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-10 10:53:28.487 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-10 11:32:57.869 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-10 11:34:57.920 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-10 11:36:28.495 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 11:37:16.965 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 11:51:41.330 Failed to get Registered User details
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Api.Controllers.HomeController.<CheckLoginCredential>d__4.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api\Controllers\HomeController.cs:line 49
+[INF] 2020-05-10 13:45:31.716 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-10 13:47:39.680 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 20:50:44.244 Failed to GetEmailIdForAdmin.
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at System.Data.SqlClient.SqlCommand.EndExecuteReaderAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Dapper.SqlMapper.<ExecuteScalarImplAsync>d__66`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.CareTakerRepository.<GetEmailIdForAdmin>d__34.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\CareTakerRepository.cs:line 933
+[INF] 2020-05-10 20:53:06.082 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-10 20:53:07.032 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-10 20:53:08.726 Failed to Send mail
+System.ArgumentNullException: Value cannot be null.
+Parameter name: addresses
+   at System.Net.Mail.MailAddressCollection.Add(String addresses)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 118
+[ERR] 2020-05-10 20:55:15.065 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 21:00:06.304 API receive start 10-05-2020 21:00:06RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 - 0 - 0
+[ERR] 2020-05-10 21:00:06.323 DB start 10-05-2020 21:00:06SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 - 0 - 0
+[ERR] 2020-05-10 21:00:06.435 DB end 10-05-2020 21:00:06SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 - 0 - 0
+[ERR] 2020-05-10 21:00:06.438 API receive end 10-05-2020 21:00:06RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 - 0 -  - 0
+[ERR] 2020-05-10 21:00:08.860 API receive start 10-05-2020 21:00:08RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 07:00 - 8 - 1
+[ERR] 2020-05-10 21:00:08.860 DB start 10-05-2020 21:00:08SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 07:00 - 8 - 1
+[ERR] 2020-05-10 21:00:08.860 DB end 10-05-2020 21:00:08SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 07:00 - 8 - 1
+[ERR] 2020-05-10 21:00:08.860 API receive end 10-05-2020 21:00:08RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 07:00 - 8 -  - 1
+[INF] 2020-05-10 21:00:33.138 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-10 21:02:40.963 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-10 21:06:17.593 API receive start 10-05-2020 21:06:17RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-14 - 0 - 0
+[ERR] 2020-05-10 21:06:17.597 DB start 10-05-2020 21:06:17SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-14 - 0 - 0
+[ERR] 2020-05-10 21:06:17.708 DB end 10-05-2020 21:06:17SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-14 - 0 - 0
+[ERR] 2020-05-10 21:06:17.709 API receive end 10-05-2020 21:06:17RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-14 - 0 -  - 0
+[ERR] 2020-05-10 21:06:21.664 API receive start 10-05-2020 21:06:21RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-14 - 0 - 0
+[ERR] 2020-05-10 21:06:21.665 DB start 10-05-2020 21:06:21SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-14 - 0 - 0
+[ERR] 2020-05-10 21:06:21.726 DB end 10-05-2020 21:06:21SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-14 - 0 - 0
+[ERR] 2020-05-10 21:06:21.726 API receive end 10-05-2020 21:06:21RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-14 - 0 -  - 0
+[ERR] 2020-05-10 21:31:01.167 Failed to get Registered User details
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Api.Controllers.HomeController.<CheckLoginCredential>d__4.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api\Controllers\HomeController.cs:line 49
+[INF] 2020-05-10 21:41:53.792 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-10 21:44:00.888 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[INF] 2020-05-10 21:48:48.696 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-10 21:50:56.262 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-11 10:03:21.183 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 10:15:20.065 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-11 10:16:51.410 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 10:19:03.162 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-11 10:27:19.510 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 11:51:19.728 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 14:27:46.725 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-11 14:31:17.695 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 14:33:24.834 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-11 14:37:37.925 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 15:18:19.117 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 16:16:18.048 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-11 16:17:31.511 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 16:17:31.547 Failed to Send mail
+System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf'. ---> System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf'. ---> System.IO.FileNotFoundException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   at System.Net.FileWebRequest.GetResponseCallback(Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadData(Uri address)
+   at System.Net.WebClient.DownloadData(String address)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 83
+[INF] 2020-05-11 16:26:47.218 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 16:26:47.287 Failed to Send mail
+System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf'. ---> System.Net.WebException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf'. ---> System.IO.FileNotFoundException: Could not find file 'E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   --- End of inner exception stack trace ---
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   at System.Net.FileWebRequest.GetResponseCallback(Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadData(Uri address)
+   at System.Net.WebClient.DownloadData(String address)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 83
+[INF] 2020-05-11 16:36:05.576 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[INF] 2020-05-11 16:50:26.094 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 16:52:35.824 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-11 17:06:26.769 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 17:07:49.277 DB error occured while retrieving payment details using advanced search
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.InvoiceRepository.<GetClientScheduledDetails>d__10.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\InvoiceRepository.cs:line 252
+ClientConnectionId:edf9670d-26d0-4e87-b65f-d42ed76fca29
+Error Number:-2,State:0,Class:11
+[INF] 2020-05-11 17:09:11.861 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 17:11:29.008 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[ERR] 2020-05-11 17:16:23.512 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-11 17:19:24.943 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 17:22:29.967 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[INF] 2020-05-11 17:49:01.526 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 17:55:40.693 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 123
+[INF] 2020-05-11 17:56:32.311 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[INF] 2020-05-11 18:23:36.134 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-11 18:35:37.292 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-05-11 18:38:16.894 DB error occured while retrieving services
+System.InvalidOperationException: Internal connection fatal error. Error state: 15, Token : 21
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryCloseInternal(Boolean closeReader)
+   at System.Data.SqlClient.SqlDataReader.Close()
+   at System.Data.Common.DbDataReader.Dispose(Boolean disposing)
+   at System.Data.Common.DbDataReader.Dispose()
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.ServiceRepository.<RetrieveServices>d__6.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\ServiceRepository.cs:line 105
+[ERR] 2020-05-11 22:24:12.120 API receive start 11-05-2020 22:24:12RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 - 0 - 3 - 0
+[ERR] 2020-05-11 22:24:12.199 DB start 11-05-2020 22:24:12SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 - 0 - 3 - 0
+[ERR] 2020-05-11 22:24:12.366 DB end 11-05-2020 22:24:12SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 - 0 - 3 - 0
+[ERR] 2020-05-11 22:24:12.367 API receive end 11-05-2020 22:24:12RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 - 0 - 3 - 0
+[ERR] 2020-05-11 22:24:17.898 API receive start 11-05-2020 22:24:17RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 07:00 - 8 - 3 - 1
+[ERR] 2020-05-11 22:24:17.901 DB start 11-05-2020 22:24:17SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 07:00 - 8 - 3 - 1
+[ERR] 2020-05-11 22:24:18.075 DB end 11-05-2020 22:24:18SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-13 07:00 - 8 - 3 - 1
+[ERR] 2020-05-11 22:24:18.076 API receive end 11-05-2020 22:24:18RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-13 07:00 - 8 - 3 - 1
+[INF] 2020-05-11 22:24:20.277 scheduling@tranquilcare.ca PWQ6mma42KtBdaCyVxsUP/YBPNf+FcvapGpudhmffeNyZx30kZkFEnHKJH2edamqTFfS+nqxbbtuGMxIi/3fqyYW8EoCG9Bq7e5/Bf5UTlouHCcQ5JkjS1PF5EcjA5at
+[ERR] 2020-05-11 22:26:11.198 API receive start 11-05-2020 22:26:11RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:11.200 DB start 11-05-2020 22:26:11SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:11.439 DB end 11-05-2020 22:26:11SpGetAvailableCareTakersByCareTakerTypeAndDate -1 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:11.440 API receive end 11-05-2020 22:26:11RetrieveAvailableCareTakerListByCategoryAndDate -1 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:13.592 API receive start 11-05-2020 22:26:13RetrieveAvailableCareTakerListByCategoryAndDate -2 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:13.592 DB start 11-05-2020 22:26:13SpGetAvailableCareTakersByCareTakerTypeAndDate -2 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:13.601 DB end 11-05-2020 22:26:13SpGetAvailableCareTakersByCareTakerTypeAndDate -2 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:13.601 API receive end 11-05-2020 22:26:13RetrieveAvailableCareTakerListByCategoryAndDate -2 - 2020-05-14 - 0 - 3 - 0
+[ERR] 2020-05-11 22:26:17.944 API receive start 11-05-2020 22:26:17RetrieveAvailableCareTakerListByCategoryAndDate -2 - 2020-05-14 15:00 - 8 - 3 - 2
+[ERR] 2020-05-11 22:26:17.945 DB start 11-05-2020 22:26:17SpGetAvailableCareTakersByCareTakerTypeAndDate -2 - 2020-05-14 15:00 - 8 - 3 - 2
+[ERR] 2020-05-11 22:26:17.956 DB end 11-05-2020 22:26:17SpGetAvailableCareTakersByCareTakerTypeAndDate -2 - 2020-05-14 15:00 - 8 - 3 - 2
+[ERR] 2020-05-11 22:26:17.956 API receive end 11-05-2020 22:26:17RetrieveAvailableCareTakerListByCategoryAndDate -2 - 2020-05-14 15:00 - 8 - 3 - 2
+[INF] 2020-05-11 22:26:24.122 scheduling@tranquilcare.ca PWQ6mma42KtBdaCyVxsUP/YBPNf+FcvapGpudhmffeNyZx30kZkFEnHKJH2edamqTFfS+nqxbbtuGMxIi/3fqyYW8EoCG9Bq7e5/Bf5UTlouHCcQ5JkjS1PF5EcjA5at
+[ERR] 2020-05-11 22:28:31.821 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 205
+[ERR] 2020-05-11 22:28:36.205 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 205
+[INF] 2020-05-18 11:44:04.178 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-18 11:46:15.746 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[INF] 2020-05-18 11:49:06.326 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-18 11:51:12.654 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[INF] 2020-05-18 12:08:48.514 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-18 12:19:07.673 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-18 12:21:14.054 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[INF] 2020-05-18 12:22:46.940 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[INF] 2020-05-18 12:23:11.055 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-18 12:24:53.598 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[ERR] 2020-05-18 12:25:17.148 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[INF] 2020-05-18 12:36:41.049 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-18 12:38:47.383 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[INF] 2020-05-18 12:44:32.950 scheduling@tranquilcare.ca R4S4b6I17qexxDrPLOLyfcgTdKq2cUkEDuW/DDv23Km2tuiAiV99ht4aChs1ZcgcYDXV4/IyyPI3+dhPI6bAjz4IcHGxoqyroMu2Rpvm+DrsXOJWO5dGGGoV4aZCE1mg
+[ERR] 2020-05-18 12:46:39.507 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[ERR] 2020-05-28 11:28:21.618 Failed to get Registered User details
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Api.Controllers.HomeController.<CheckLoginCredential>d__4.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api\Controllers\HomeController.cs:line 49
+[INF] 2020-05-28 11:39:19.501 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-28 11:39:19.576 Failed to Send mail
+System.IO.FileNotFoundException: Could not find file 'D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf'.
+File name: 'D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   at System.Net.Mail.Attachment..ctor(String fileName, String mediaType)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 65
+[INF] 2020-05-28 11:53:46.553 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[INF] 2020-05-28 11:53:46.951 starts with http local path=D:/Working/PCMS/Nirast.Pcms.Web/Nirast.Pcms.Web/PCMS/Invoice/PublicUser/Invoice_Frank Monardo_1011.pdf UriAddress=http://localhost:2506/PCMS/Invoice/PublicUser/Invoice_Frank Monardo_1011.pdf
+[ERR] 2020-05-28 11:55:53.479 Failed to Send mail
+System.Net.Mail.SmtpException: The operation has timed out.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 125
+[ERR] 2020-05-28 15:17:42.707 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[INF] 2020-05-28 15:20:07.039 accounts@tranquilcare.ca K0pzWz5cJt5xE1jibWGfEHO9RbRlE7fh9w2GcgaGTHXfxIavg2DZlDDlYpaDDYShNsgdjoETer3GwYz6gMMyim56MSGBr0C62JuqQLWeMyArz5FlYk+q6/XD30odNNIi
+[ERR] 2020-05-28 15:20:07.224 Failed to Send mail
+System.IO.FileNotFoundException: Could not find file 'D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf'.
+File name: 'D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Net.Mail.AttachmentBase.SetContentFromFile(String fileName, String mediaType)
+   at System.Net.Mail.Attachment..ctor(String fileName, String mediaType)
+   at Nirast.Pcms.Ap.Application.Infrastructure.NotificationService.<SendEMail>d__2.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\Infrastructure\NotificationService.cs:line 65
+[ERR] 2020-05-28 15:24:23.333 Failed to retrieve Booking History List details
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.PatientRepository.<GetBookingHistoryListForInvoiceGeneration>d__12.MoveNext() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\PatientRepository.cs:line 229
+[ERR] 2020-06-08 13:57:51.186 DB error occured while retrieving payment details using advanced search
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.InvoiceRepository.<GetClientScheduledDetails>d__10.MoveNext() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\InvoiceRepository.cs:line 252
+ClientConnectionId:2f00f0ee-82b9-4d63-bc3b-06b84da130cd
+Error Number:-2,State:0,Class:11
+[ERR] 2020-06-08 18:14:27.212 DB error occured while retrieving payment details using advanced search
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.InvoiceRepository.<GetClientScheduledDetails>d__10.MoveNext() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\InvoiceRepository.cs:line 252
+ClientConnectionId:506d94ae-a66a-4bcc-96fb-ebc5e293d2be
+Error Number:-2,State:0,Class:11
+[ERR] 2020-06-08 21:16:42.637 DB error occured while retrieving payment details using advanced search
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Dapper.SqlMapper.<QueryAsync>d__33`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Nirast.Pcms.Api.Data.Repositories.InvoiceRepository.<GetAdminBookingList>d__17.MoveNext() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\Repositories\InvoiceRepository.cs:line 448
+ClientConnectionId:09512a5a-3066-4b27-bc8f-5d935538f82a
+Error Number:-2,State:0,Class:11

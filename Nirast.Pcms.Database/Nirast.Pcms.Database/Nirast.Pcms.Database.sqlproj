@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Nirast.Pcms.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{eeec8cc8-34f5-43c3-82af-fd20f1bb9465}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>NIRAST.PCMS.Database</RootNamespace>
+    <AssemblyName>NIRAST.PCMS.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetDatabase>Nirast.Pcms.Database</TargetDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\User Defined Types\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="dbo\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Functions\fn_CommaSplitter.sql" />
+    <Build Include="dbo\Functions\fnCommaSplitter.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditCountryDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditHolidayDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditStateDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditTimeShiftDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditWorkShiftDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpClientSearch.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteCategory.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteCity.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteCountryDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteDesignation.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteQualification.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteServiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCityByStateId.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetClientDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetOfficeStaffDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetStateByCountryId.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertBookingDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertQuestionnaireDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateCaretakerDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateCategory.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateCity.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClient.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClientShiftDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateDesignation.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateQualification.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateServiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateUserDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spSaveCaretakerMultipleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectAllCategories.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectAllCities.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectAllUserDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCaretakerDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spSelectCareTakerProfileId.sql" />
+    <Build Include="dbo\Stored Procedures\spSelectCaretakersForSearch.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCountryDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectDesignation.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectHolidayDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectQualification.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectServiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectStateDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectTimeShiftDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectWorkShiftDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateUserProfilePic.sql" />
+    <Build Include="dbo\Stored Procedures\spVerifyUserByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertCareReceipentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpCheckCredentials.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetUserInvoiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUserPaymentTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditScheduleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectScheduleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteSchedule.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCareTakersDdl.sql" />
+    <Build Include="dbo\Stored Procedures\spDeleteClientTimeShiftDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteStateDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteWorkshift.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateQuestions.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectQuestionare.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteQuestions.sql" />
+    <Build Include="dbo\Stored Procedures\SpChangeUserStatus.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteHoliday.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectHolidayPay.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateHolidayPay.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetUserInvoicePayments.sql" />
+    <Build Include="dbo\Stored Procedures\SpRejectCaretakerApplication.sql" />
+    <Build Include="dbo\Tables\Caretaker_Client_Rates.sql" />
+    <Build Include="dbo\Tables\Caretaker_Details.sql" />
+    <Build Include="dbo\Tables\Caretaker_Documents.sql" />
+    <Build Include="dbo\Tables\Caretaker_Experience.sql" />
+    <Build Include="dbo\Tables\Caretaker_PublicUser_Service.sql" />
+    <Build Include="dbo\Tables\Caretaker_Qualification.sql" />
+    <Build Include="dbo\Tables\Client_AddressDetails.sql" />
+    <Build Include="dbo\Tables\Client_Caretaker_Mapping.sql" />
+    <Build Include="dbo\Tables\Client_CaretakerType_Rate.sql" />
+    <Build Include="dbo\Tables\Client_Master.sql" />
+    <Build Include="dbo\Tables\Client_OneToOne_Details.sql" />
+    <Build Include="dbo\Tables\Client_Scheduling.sql" />
+    <Build Include="dbo\Tables\Client_ShiftDetails.sql" />
+    <Build Include="dbo\Tables\OfficeStaff_Details.sql" />
+    <Build Include="dbo\Tables\PublicUser_Booking_Questionnaire.sql" />
+    <Build Include="dbo\Tables\PublicUser_CareRecipientDetails.sql" />
+    <Build Include="dbo\Tables\PublicUser_Caretaker_Booking.sql" />
+    <Build Include="dbo\Tables\PublicUser_PaymentInvoice.sql" />
+    <Build Include="dbo\Tables\PublicUser_PaymentTransaction.sql" />
+    <Build Include="dbo\Tables\Settings_CaretakerServices.sql" />
+    <Build Include="dbo\Tables\Settings_CaretakerType.sql" />
+    <Build Include="dbo\Tables\Settings_City.sql" />
+    <Build Include="dbo\Tables\Settings_Country.sql" />
+    <Build Include="dbo\Tables\Settings_Designations.sql" />
+    <Build Include="dbo\Tables\Settings_HolidayPay.sql" />
+    <Build Include="dbo\Tables\Settings_Holidays.sql" />
+    <Build Include="dbo\Tables\Settings_Qualifications.sql" />
+    <Build Include="dbo\Tables\Settings_Questionnaire.sql" />
+    <Build Include="dbo\Tables\Settings_State.sql" />
+    <Build Include="dbo\Tables\Settings_TimeShift.sql" />
+    <Build Include="dbo\Tables\Settings_WorkShift.sql" />
+    <Build Include="dbo\Tables\User_AddressDetails.sql" />
+    <Build Include="dbo\Tables\User_LoginDetails.sql" />
+    <Build Include="dbo\Tables\UserDetails_Master.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCareTakersByCareTakerType.sql" />
+    <Build Include="dbo\Tables\Caretaker_Qualifications_Others.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerDocumentDataType.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerExperienceDataType.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerQualificationDataType.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerQualificationOthersDataType.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerServiceDataType.sql" />
+    <Build Include="dbo\Tables\Settings_UserTypes.sql" />
+    <Build Include="dbo\Stored Procedures\SpCheckEmailExists.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateOfficeStaff.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCaretakersByCaretakerStatus.sql" />
+    <Build Include="dbo\Tables\Settings_Role.sql" />
+    <Build Include="dbo\Tables\Settings_Module.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateRoles.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetRoles.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteRoles.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCaretakerServices.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertOfficeStaffRegistration.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAllOfficeStaffDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetDisplayRate.sql" />
+    <Build Include="dbo\Stored Procedures\spSaveClientMultipleDetails.sql" />
+    <Build Include="dbo\User Defined Types\ClientCaretakersDataType.sql" />
+    <Build Include="dbo\User Defined Types\ClientCaretakerTypeDataType.sql" />
+    <Build Include="dbo\User Defined Types\ClientShiftDataType.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetClientDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClientCaretakers.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteClientMappedCaretakers.sql" />
+    <Build Include="dbo\Stored Procedures\SpModifyClientStatusById.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteClientScheduleOneToOneTable.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddEditClientScheduleOneToOneTable.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetLoggedInUserDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetEmailIdForUserId.sql" />
+    <Build Include="dbo\Tables\Role_Privileges.sql" />
+    <Build Include="dbo\Stored Procedures\SpSaveRolePrivilege.sql" />
+    <Build Include="dbo\User Defined Types\SaveRolePrivilegesDataType.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectPrivileges.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectBookingHistory.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectBookingHistoryDetail.sql" />
+    <Build Include="dbo\Stored Procedures\SpClientIvoiceSearch.sql" />
+    <Build Include="dbo\Stored Procedures\SpCaretakerIvoiceSearch.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetBookingDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetNotification.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetNotificationById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetSchedulingDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetUpcomingNotification.sql" />
+    <Build Include="dbo\Stored Procedures\SpApproveCaretaker.sql" />
+    <Build Include="dbo\Tables\PublicUser_Booking_Dates.sql" />
+    <Build Include="dbo\Tables\Client_Scheduling_Dates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetEmailIdForAdmin.sql" />
+    <Build Include="dbo\Stored Procedures\SpConfirmAppointments.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAppointmentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetUserNotification.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetUserNotificationById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetUserBookingDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetPaymentHistory.sql" />
+    <Build Include="dbo\Stored Procedures\spSaveClientSchedulingDates.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteClientSchedulingDates.sql" />
+    <Build Include="dbo\Stored Procedures\SpPaymentReportSearch.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetViewPrivilegeAccess.sql" />
+    <Build Include="dbo\Stored Procedures\SpSearchCaretakerBookingHistory.sql" />
+    <Build Include="dbo\Stored Procedures\spSavePublicUserBookingDates.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeletePublicUserBookingDates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAdminNotification.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAdminBookingList.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAdminSchedulingList.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetBookingDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetSchedulingDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGenerateInvoice.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetSchdeuleDetaildById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetEmailIdOfClientByClientId.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCurrPassword.sql" />
+    <Build Include="dbo\Stored Procedures\SpChangeUserPassword.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetPaymentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCareTakersByCareTakerTypeAndDateTime.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCareTakersByCareTakerTypeAndClientId.sql" />
+    <Build Include="dbo\Stored Procedures\SpChangeBookigStatus.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectUserLoginDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectTimeShiftDetailsByClientid.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectDefaultCountry.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCareTakersByServiceType.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAvailableCareTakersByCareTakerTypeAndDate.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCaretakerAvialablity.sql" />
+    <Build Include="dbo\Tables\Caretaker_Rejected_Schedulings.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertScheduleRejectedCaretakers.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAllScheduleRejectedCaretake.sql" />
+    <Build Include="dbo\Stored Procedures\SpPaymentDetailsSearch.sql" />
+    <Build Include="dbo\Stored Procedures\spSelectCaretakerScheduleList.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetPayHoursSummary.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetPaymentReport.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateClientInvoiceNumber.sql" />
+    <Build Include="dbo\Stored Procedures\SpOverrideHoliday.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetAdminProfile.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateAdminDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCaretakerBookings.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCities.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateUserEmail.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetClientInvoiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClientInvoice.sql" />
+    <Build Include="dbo\Tables\Settings_CompanyProfile.sql" />
+    <Build Include="dbo\Stored Procedures\spSelectCompanySettings.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateCompanySettings.sql" />
+    <Build Include="dbo\Stored Procedures\SpClientIvoiceSearchSplitHoliday.sql" />
+    <Build Include="dbo\Tables\Client_Invoice_Details.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClientInvoiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetPhoneCodeByCountryId.sql" />
+    <Build Include="dbo\Stored Procedures\GetUserInvoicePayments.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectIntervalHours.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateIntervalHours.sql" />
+    <Build Include="dbo\Tables\Settings_IntervalHours.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectClientInvoiceDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpClientIvoiceSearchWithDateSplit.sql" />
+    <Build Include="dbo\Stored Procedures\SpSelectCaretakerType.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetInvoiceHistoryById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetResidentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateResidentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteResident.sql" />
+    <Build Include="dbo\Tables\Settings_Resident.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCaretakerBookingDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetInvoiceHistoryById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetMappedCaretakerRates.sql" />
+    <Build Include="dbo\User Defined Types\MappedCaretakerRates.sql" />
+    <Build Include="dbo\Tables\Settings_EmailConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateConfigDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spGetConfigDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SetDefaultConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteConfiguration.sql" />
+    <Build Include="dbo\Stored Procedures\spGetDefaultConfiguration.sql" />
+    <Build Include="dbo\Tables\Caretaker_Payroll_Payrise.sql" />
+    <Build Include="dbo\Tables\Caretaker_Payroll_Rates.sql" />
+    <Build Include="dbo\Tables\Client_Invoice_Payrise.sql" />
+    <Build Include="dbo\Tables\Client_Invoice_Rates.sql" />
+    <Build Include="dbo\Tables\Caretaker_Booking_Payrise.sql" />
+    <Build Include="dbo\Tables\Caretaker_Booking_Rates.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientFromClientId.sql" />
+    <Build Include="dbo\Stored Procedures\SpAddScheduleLogDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpClientIvoiceSearchWithOutDateSplit.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteBookingPayrise.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteEmailTypeConfig.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteInvoicePayrise.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeletePayrollPayrise.sql" />
+    <Build Include="dbo\Stored Procedures\SpDeleteTestimonial.sql" />
+    <Build Include="dbo\Stored Procedures\spGetBookingPayriseDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCaretakerBookingPayRiseRates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetCaretakerBookingPayRiseRatesByDate.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetClientInvoicePayRiseRates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetClientInvoicePayRiseRatesonDateChange.sql" />
+    <Build Include="dbo\Stored Procedures\spGetEmailIdConfigByType.sql" />
+    <Build Include="dbo\Stored Procedures\spGetEmailTypeConfig.sql" />
+    <Build Include="dbo\Stored Procedures\spGetInvoicePayriseDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetLastClientInvoiceRates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetMappedCaretakerPayRiseRates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetMappedCaretakersLatestPayRiseRates.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetMappedCaretakersPayRiseRatesByDate.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetMappedClientCaretakerPayRiseRates.sql" />
+    <Build Include="dbo\Stored Procedures\spGetPayrollPayriseDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetResidentDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetScheduleLogDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetSchedulingLogDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertPayriseDates.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateCaretakersPayRise.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClientCaretakersPayRise.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdateClientInvoicePayRise.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateEmailTypeConfig.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdatePayPalSettings.sql" />
+    <Build Include="dbo\Stored Procedures\SpInsertUpdatePublicUserInvoice.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUpdateTestimonials.sql" />
+    <Build Include="dbo\Stored Procedures\SpSearchBookingPayrise.sql" />
+    <Build Include="dbo\Stored Procedures\SpSearchInvoicePayrise.sql" />
+    <Build Include="dbo\Stored Procedures\SpSearchPayrollPayrise.sql" />
+    <Build Include="dbo\Stored Procedures\spSelectPayPalAccount.sql" />
+    <Build Include="dbo\Stored Procedures\spSelectTestimonials.sql" />
+    <Build Include="dbo\Tables\AuditLog_Scheduling.sql" />
+    <Build Include="dbo\Tables\Settings_EmailTypeConfiguration.sql" />
+    <Build Include="dbo\Tables\Settings_PayPalAccount.sql" />
+    <Build Include="dbo\Tables\Settings_Testimonials.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerCategoryPayRiseRates.sql" />
+    <Build Include="dbo\User Defined Types\CaretakerPayRiseRates.sql" />
+    <Build Include="dbo\User Defined Types\ClientInvoicePayRiseRates.sql" />
+    <Build Include="dbo\User Defined Types\MappedCaretakerPayRiseRates.sql" />
+    <Build Include="dbo\User Defined Types\MappedClientPayRiseRates.sql" />
+    <Build Include="dbo\User Defined Types\PayrollPayRiseRates.sql" />
+    <Build Include="dbo\Views\vw_SchedulingLastDate.sql" />
+    <Build Include="dbo\Views\vw_SchedulingFirstDate.sql" />
+    <Build Include="dbo\Views\vw_HolidayHours.sql" />
+    <Build Include="dbo\Functions\getPayrollRate.sql" />
+    <Build Include="dbo\Functions\getIsTaxApplicable.sql" />
+    <Build Include="dbo\Functions\getClientInvoiceRate.sql" />
+    <Build Include="dbo\Functions\getCaretakerPayingRate.sql" />
+    <Build Include="dbo\Functions\getCaretakerDisplayRate.sql" />
+    <Build Include="dbo\Stored Procedures\SpGetInvoiceReport.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateUserDetails.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateClientInvoice.sql" />
+    <Build Include="dbo\Stored Procedures\SpUpdateCaretakerDocuments.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllUserDetails.sql" />
+    <Build Include="dbo\Stored Procedures\spGetAllCaretakerDocuments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,135 @@
+    ======  ======
+    Time:8/9/2019 10:48:31 AM
+    Title: Initiate log
+    Message: 
+    Time:8/9/2019 10:48:31 AM
+    Title: Initiate InternalManager
+    Message: Trying to Validate License
+    Time:8/9/2019 10:48:31 AM
+    Title: Requesting EVT
+    Message: EVTP
+    Time:8/9/2019 10:48:31 AM
+    Title: Requesting Validation
+    Message: ILMValidate
+    Time:8/9/2019 10:48:31 AM
+    Title: LICENSER
+    Message: FNF
+    Time:8/9/2019 10:48:31 AM
+    Title: Could not find a part of the path 'C:\ProgramData\Telerik\Hash.lic'.
+    Message:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Telerik.Licensing.Licenser.ReadHashPass()
+    Time:8/9/2019 10:48:31 AM
+    Title: Could not find a part of the path 'C:\ProgramData\Telerik\Hash.lic'.
+    Message:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at Telerik.Licensing.Licenser.ReadHashPass()
+    devenv.exe Information: 0 : 8/9/2019 5:18:50 AM:  - TokenCache: Deserialized 2 items to token cache.
+    Web method running: [https://app.vssps.visualstudio.com/_apis/connectionData?connectOptions=None&lastChangeId=7316&lastChangeId64=7316] (GET)connectionData[connectionData]
+    Web method response: [https://app.vssps.visualstudio.com/_apis/connectionData?connectOptions=None&lastChangeId=7316&lastChangeId64=7316] (GET)connectionData[connectionData] 1411 ms
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/connectionData?connectOptions=None&lastChangeId=96&lastChangeId64=96] (GET)connectionData[connectionData]
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/connectionData?connectOptions=None&lastChangeId=96&lastChangeId64=96] (GET)connectionData[connectionData] 1263 ms
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me?details=true&withattributes=false&coreattributes=Minimal%2CEmail%2CAvatar%2CDisplayName%2CAll] (GET)me[Profile]
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me?details=true&withattributes=false&coreattributes=Minimal%2CEmail%2CAvatar%2CDisplayName%2CAll] (GET)me[Profile] 1336 ms
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/Profile/Locations?profilePageType=Update] (GET)Locations[Profile]
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/Profile/Locations?profilePageType=Update] (GET)Locations[Profile] 39 ms
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/Profile/Settings/ProfileRefreshInterval] (GET)ProfileRefreshInterval[Profile]
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/Profile/Settings/ProfileRefreshInterval] (GET)ProfileRefreshInterval[Profile] 38 ms
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me/Attributes?partition=VisualStudio.14_PreferredProfile&modifiedafterrevision=264563562] (GET)Attributes[Profile]
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me/Attributes?partition=VisualStudio.14_PreferredProfile&modifiedafterrevision=264563562] (GET)Attributes[Profile] 48 ms
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me/Avatar?size=Small] (GET)Avatar[Profile]
+    Web method running: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me/Avatar?size=Large] (GET)Avatar[Profile]
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me/Avatar?size=Small] (GET)Avatar[Profile] 49 ms
+    Web method response: [https://api.vstsusers.visualstudio.com/_apis/Profile/Profiles/me/Avatar?size=Large] (GET)Avatar[Profile] 144 ms
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM:  - AuthenticationContext: ADAL .NET with assembly version '2.16.0.0', file version '2.16.20422.1202' and informational version '7329346b1c69910ce7abd66c3f8a918c307827a1' is running...
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - AcquireTokenHandlerBase: === Token Acquisition started:
+	Authority: https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/
+	Resource: https://management.core.windows.net/
+	ClientId: 872cd9fa-d31f-45e0-9eab-6e460a02d1f1
+	CacheType: Microsoft.VisualStudio.Services.Client.AccountManagement.AccountManagerAdalCache (2 items)
+	Authentication Target: User
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - TokenCache: Looking up cache for a token...
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - TokenCache: An item matching the requested resource was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - TokenCache: An expired or near expiry token was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - TokenCache: A matching item (access token or refresh token or both) was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:10 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - <RefreshAccessTokenAsync>d__11: Refreshing access token...
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - TokenCache: Storing token in the cache...
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - TokenCache: An item was stored in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 98c9e309-2e23-4b7e-bf26-4bc1c5be1065 - AcquireTokenHandlerBase: === Token Acquisition finished successfully. An access token was retuned:
+	Access Token Hash: vD3iJuBvTSFqT4n348kzUxx0G+Ucb9rFsBwlqYuYAeY=
+	Refresh Token Hash: QGUTixBrj0+RyqI/RysLJNa2MlHTxTr4MTRfOJRAdag=
+	Expiration Time: 8/9/2019 6:19:12 AM +00:00
+	User Hash: lbvedMW48sCb84lk+hUxW+N+U3S2TYANZa6LSsxT2Y4=
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM:  - TokenCache: Serializing token cache with 2 items.
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 1edbe643-a361-4036-8cd5-cd9990477ba0 - AcquireTokenHandlerBase: === Token Acquisition started:
+	Authority: https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/
+	Resource: https://management.core.windows.net/
+	ClientId: 872cd9fa-d31f-45e0-9eab-6e460a02d1f1
+	CacheType: Microsoft.VisualStudio.Services.Client.AccountManagement.AccountManagerAdalCache (2 items)
+	Authentication Target: User
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 1edbe643-a361-4036-8cd5-cd9990477ba0 - TokenCache: Looking up cache for a token...
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 1edbe643-a361-4036-8cd5-cd9990477ba0 - TokenCache: An item matching the requested resource was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 1edbe643-a361-4036-8cd5-cd9990477ba0 - TokenCache: 59.9980998916667 minutes left until token in cache expires
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 1edbe643-a361-4036-8cd5-cd9990477ba0 - TokenCache: A matching item (access token or refresh token or both) was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 1edbe643-a361-4036-8cd5-cd9990477ba0 - AcquireTokenHandlerBase: === Token Acquisition finished successfully. An access token was retuned:
+	Access Token Hash: vD3iJuBvTSFqT4n348kzUxx0G+Ucb9rFsBwlqYuYAeY=
+	Refresh Token Hash: QGUTixBrj0+RyqI/RysLJNa2MlHTxTr4MTRfOJRAdag=
+	Expiration Time: 8/9/2019 6:19:12 AM +00:00
+	User Hash: lbvedMW48sCb84lk+hUxW+N+U3S2TYANZa6LSsxT2Y4=
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 4d198331-6096-4830-8c69-466b3a16f0ae - AcquireTokenHandlerBase: === Token Acquisition started:
+	Authority: https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/
+	Resource: https://management.core.windows.net/
+	ClientId: 872cd9fa-d31f-45e0-9eab-6e460a02d1f1
+	CacheType: Microsoft.VisualStudio.Services.Client.AccountManagement.AccountManagerAdalCache (2 items)
+	Authentication Target: User
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 4d198331-6096-4830-8c69-466b3a16f0ae - TokenCache: Looking up cache for a token...
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 4d198331-6096-4830-8c69-466b3a16f0ae - TokenCache: An item matching the requested resource was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 4d198331-6096-4830-8c69-466b3a16f0ae - TokenCache: 59.9980665566667 minutes left until token in cache expires
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 4d198331-6096-4830-8c69-466b3a16f0ae - TokenCache: A matching item (access token or refresh token or both) was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 4d198331-6096-4830-8c69-466b3a16f0ae - AcquireTokenHandlerBase: === Token Acquisition finished successfully. An access token was retuned:
+	Access Token Hash: vD3iJuBvTSFqT4n348kzUxx0G+Ucb9rFsBwlqYuYAeY=
+	Refresh Token Hash: QGUTixBrj0+RyqI/RysLJNa2MlHTxTr4MTRfOJRAdag=
+	Expiration Time: 8/9/2019 6:19:12 AM +00:00
+	User Hash: lbvedMW48sCb84lk+hUxW+N+U3S2TYANZa6LSsxT2Y4=
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: a6d0ad73-321e-4c84-836f-07163dfda561 - AcquireTokenHandlerBase: === Token Acquisition started:
+	Authority: https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/
+	Resource: https://management.core.windows.net/
+	ClientId: 872cd9fa-d31f-45e0-9eab-6e460a02d1f1
+	CacheType: Microsoft.VisualStudio.Services.Client.AccountManagement.AccountManagerAdalCache (2 items)
+	Authentication Target: User
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: a6d0ad73-321e-4c84-836f-07163dfda561 - TokenCache: Looking up cache for a token...
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: a6d0ad73-321e-4c84-836f-07163dfda561 - TokenCache: An item matching the requested resource was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: a6d0ad73-321e-4c84-836f-07163dfda561 - TokenCache: 59.99783321 minutes left until token in cache expires
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: a6d0ad73-321e-4c84-836f-07163dfda561 - TokenCache: A matching item (access token or refresh token or both) was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: a6d0ad73-321e-4c84-836f-07163dfda561 - AcquireTokenHandlerBase: === Token Acquisition finished successfully. An access token was retuned:
+	Access Token Hash: vD3iJuBvTSFqT4n348kzUxx0G+Ucb9rFsBwlqYuYAeY=
+	Refresh Token Hash: QGUTixBrj0+RyqI/RysLJNa2MlHTxTr4MTRfOJRAdag=
+	Expiration Time: 8/9/2019 6:19:12 AM +00:00
+	User Hash: lbvedMW48sCb84lk+hUxW+N+U3S2TYANZa6LSsxT2Y4=
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 04826ac4-0a22-481a-a82d-2a7eccaf5409 - AcquireTokenHandlerBase: === Token Acquisition started:
+	Authority: https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a/
+	Resource: https://management.core.windows.net/
+	ClientId: 872cd9fa-d31f-45e0-9eab-6e460a02d1f1
+	CacheType: Microsoft.VisualStudio.Services.Client.AccountManagement.AccountManagerAdalCache (2 items)
+	Authentication Target: User
+	
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 04826ac4-0a22-481a-a82d-2a7eccaf5409 - TokenCache: Looking up cache for a token...
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 04826ac4-0a22-481a-a82d-2a7eccaf5409 - TokenCache: An item matching the requested resource was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 04826ac4-0a22-481a-a82d-2a7eccaf5409 - TokenCache: 59.9978165416667 minutes left until token in cache expires
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 04826ac4-0a22-481a-a82d-2a7eccaf5409 - TokenCache: A matching item (access token or refresh token or both) was found in the cache
+    devenv.exe Information: 0 : 8/9/2019 5:19:12 AM: 04826ac4-0a22-481a-a82d-2a7eccaf5409 - AcquireTokenHandlerBase: === Token Acquisition finished successfully. An access token was retuned:
+	Access Token Hash: vD3iJuBvTSFqT4n348kzUxx0G+Ucb9rFsBwlqYuYAeY=
+	Refresh Token Hash: QGUTixBrj0+RyqI/RysLJNa2MlHTxTr4MTRfOJRAdag=
+	Expiration Time: 8/9/2019 6:19:12 AM +00:00
+	User Hash: lbvedMW48sCb84lk+hUxW+N+U3S2TYANZa6LSsxT2Y4=
+	

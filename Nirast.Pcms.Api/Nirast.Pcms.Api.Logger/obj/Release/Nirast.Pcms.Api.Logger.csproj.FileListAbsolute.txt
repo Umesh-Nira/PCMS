@@ -1,0 +1,83 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csprojAssemblyReference.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csprojAssemblyReference.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CopyComplete
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.pdb
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.pdb
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.pdb
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.pdb
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.xml
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.xml
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.xml
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csprojAssemblyReference.cache
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CoreCompileInputs.cache
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CopyComplete
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.dll
+E:\BKUP\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CopyComplete
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Logger.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Newtonsoft.Json.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Nirast.Pcms.Api.Sdk.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\bin\Release\Serilog.Sinks.File.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csprojAssemblyReference.cache
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CoreCompileInputs.cache
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.csproj.CopyComplete
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Logger\obj\Release\Nirast.Pcms.Api.Logger.pdb

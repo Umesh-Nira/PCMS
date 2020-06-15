@@ -1,0 +1,64 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csprojAssemblyReference.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll.config
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csprojAssemblyReference.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CopyComplete
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll.config
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CopyComplete
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll.config
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Ap.Application.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Data.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\bin\Debug\Dapper.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csprojAssemblyReference.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CoreCompileInputs.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Api.Application.csproj.CopyComplete
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Application\obj\Debug\Nirast.Pcms.Ap.Application.pdb

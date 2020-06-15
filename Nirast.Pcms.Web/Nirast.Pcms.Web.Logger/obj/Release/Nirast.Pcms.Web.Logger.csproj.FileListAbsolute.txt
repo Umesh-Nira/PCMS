@@ -1,0 +1,56 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Ionic.Zip.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csprojAssemblyReference.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Ionic.Zip.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csprojAssemblyReference.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CopyComplete
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Ionic.Zip.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CopyComplete
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Nirast.Pcms.Web.Logger.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Ionic.Zip.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Settings.AppSettings.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\bin\Release\Serilog.Sinks.File.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csprojAssemblyReference.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CoreCompileInputs.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.csproj.CopyComplete
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Logger\obj\Release\Nirast.Pcms.Web.Logger.pdb

@@ -1,0 +1,329 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ApplicationInsights.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-CA.resx
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.resx
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.Designer.cs
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Reports\CaretakerAvailablity.rdlc
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-US\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE80.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\stdole.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.MSXML.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\itextsharp.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.Web.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Newtonsoft.Json.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\PayPal.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.Sinks.File.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Helpers.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Mvc.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Optimization.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Razor.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.WebPages.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.WebPages.Razor.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Antlr3.Runtime.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EntityFramework.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EntityFramework.SqlServer.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csprojAssemblyReference.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.resources
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-CA.resources
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-US.resources
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.GenerateResource.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-US\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.bin.Resource.en-CA.resources
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.bin.Resource.en-US.resources
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\RdlCompile.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\RdlCompile.compiled
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ApplicationInsights.config
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Reports\CaretakerAvailablity.rdlc
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-CA.resx
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.resx
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.Designer.cs
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll.config
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-US\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE80.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\stdole.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.MSXML.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csprojAssemblyReference.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.resources
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.obj.Release.Package.PackageTmp.bin.Resource.en-CA.resources
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.obj.Release.Package.PackageTmp.bin.Resource.en-US.resources
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-CA.resources
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-US.resources
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.GenerateResource.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\RdlCompile.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\RdlCompile.compiled
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-US\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CopyComplete
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.resources
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-CA.resources
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-US.resources
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.GenerateResource.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\RdlCompile.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\RdlCompile.compiled
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ApplicationInsights.config
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Reports\CaretakerAvailablity.rdlc
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-CA.resx
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.resx
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.Designer.cs
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll.config
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-US\Nirast.Pcms.Web.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.Settings.AppSettings.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE80.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\stdole.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.MSXML.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\itextsharp.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.DependencyCollector.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.Web.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AI.WindowsServer.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.ApplicationInsights.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Newtonsoft.Json.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\PayPal.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.Sinks.File.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Helpers.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Mvc.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Optimization.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.Razor.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.WebPages.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\System.Web.WebPages.Razor.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EntityFramework.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EntityFramework.SqlServer.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Google.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\cs\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pl\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\tr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-US\Nirast.Pcms.Web.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CopyComplete
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\ApplicationInsights.config
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Reports\CaretakerAvailablity.rdlc
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-CA.resx
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.resx
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Resource.en-US.Designer.cs
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll.config
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-CA\Nirast.Pcms.Web.resources.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\en-US\Nirast.Pcms.Web.resources.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Serilog.Settings.AppSettings.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\EnvDTE80.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\stdole.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.OLE.Interop.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Microsoft.MSXML.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\bin\Nirast.Pcms.Web.Logger.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csprojAssemblyReference.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.resources
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-CA.resources
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.Resource.en-US.resources
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.GenerateResource.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CoreCompileInputs.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-CA\Nirast.Pcms.Web.resources.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\en-US\Nirast.Pcms.Web.resources.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.csproj.CopyComplete
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\obj\Release\Nirast.Pcms.Web.pdb

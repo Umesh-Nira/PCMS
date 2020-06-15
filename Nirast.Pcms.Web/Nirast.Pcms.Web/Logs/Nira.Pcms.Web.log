@@ -1,0 +1,1557 @@
+[ERR] 2020-04-02 11:35:50.080 Error occurred in Admin Controller-Interview
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value, IFormatProvider provider)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.<Page_Load>b__15_4(ScheduledData a) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+   at System.Linq.Enumerable.<>c__DisplayClass6_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+[ERR] 2020-04-02 11:42:42.814 Error occurred in Client Controller-GetEventsByClientId
+Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.DateTime'. Path '[0].Startdate', line 1, position 610. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Nirast.Pcms.Web.Controllers.ClientController.GetEventsByClientId(Int32 clientId, Int32 month, Int32 year) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1631
+[ERR] 2020-04-02 11:43:04.405 Error occurred in Admin Controller-Interview
+Newtonsoft.Json.JsonReaderException: Could not convert string to DateTime: 16-04-2020 15:00:00. Path '[0].Startdate', line 1, position 607.
+   at Newtonsoft.Json.JsonReader.ReadAsDateTimeInternal()
+   at Newtonsoft.Json.JsonTextReader.ReadAsDateTime()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 105
+[ERR] 2020-04-02 11:53:29.262 Error occurred in Admin Controller-Interview
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.<Page_Load>b__15_4(ScheduledData a) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+   at System.Linq.Enumerable.<>c__DisplayClass6_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+[ERR] 2020-04-02 11:55:05.189 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 369
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 152
+[ERR] 2020-04-02 11:56:44.538 Error occurred in Admin Controller-Interview
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.<Page_Load>b__15_4(ScheduledData a) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+   at System.Linq.Enumerable.<>c__DisplayClass6_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+[ERR] 2020-04-02 11:57:54.311 Error occurred in Admin Controller-Interview
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.<Page_Load>b__15_4(ScheduledData a) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+   at System.Linq.Enumerable.<>c__DisplayClass6_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+[ERR] 2020-04-02 11:59:14.295 Error occurred in Admin Controller-Interview
+System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.<Page_Load>b__15_4(ScheduledData a) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+   at System.Linq.Enumerable.<>c__DisplayClass6_0`1.<CombinePredicates>b__0(TSource x)
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 141
+[ERR] 2020-04-02 12:54:25.657 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 371
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 154
+[INF] 2020-04-02 12:55:39.972 InvoiceNo: June j
+[INF] 2020-04-02 12:55:42.691 filePath: D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1005.pdf
+[ERR] 2020-04-02 13:23:18.188 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 73
+[INF] 2020-04-02 16:20:52.571 InvoiceNo: June j
+[INF] 2020-04-02 16:20:55.978 filePath: D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[ERR] 2020-04-08 12:50:27.417 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 371
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 154
+[ERR] 2020-04-08 14:50:43.637 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Nirast.Pcms.Web.Models.UserBookingInvoiceReport]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 100
+[ERR] 2020-04-08 14:53:26.229 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Nirast.Pcms.Web.Models.UserBookingInvoiceReport]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 100
+[ERR] 2020-04-08 14:56:55.309 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Nirast.Pcms.Web.Models.UserBookingInvoiceReport]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 100
+[ERR] 2020-04-08 14:57:15.056 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Nirast.Pcms.Web.Models.UserBookingInvoiceReport]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'Message', line 1, position 11.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 100
+[ERR] 2020-04-08 14:59:55.568 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 102
+[ERR] 2020-04-08 14:59:55.563 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 102
+[ERR] 2020-04-08 15:00:19.851 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 102
+[ERR] 2020-04-08 15:12:32.962 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 961
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 668
+[ERR] 2020-04-08 15:23:23.799 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 102
+[ERR] 2020-04-08 15:31:26.926 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 186
+[ERR] 2020-04-08 15:32:08.743 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 371
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 154
+[ERR] 2020-04-08 15:34:58.715 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e)
+[ERR] 2020-04-08 15:49:32.169 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 159
+[ERR] 2020-04-08 15:58:20.070 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 159
+[ERR] 2020-04-08 16:23:55.628 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 160
+[ERR] 2020-04-08 17:01:32.350 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 161
+[ERR] 2020-04-08 17:07:59.256 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 961
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 668
+[ERR] 2020-04-08 17:11:34.972 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 162
+[ERR] 2020-04-08 17:13:17.455 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:13:25.023 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:13:36.320 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:13:49.530 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:17:20.758 Error occurred in searching invoice history
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3572
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-08 17:17:24.898 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:17:31.317 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:17:49.429 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:18:00.527 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-08 17:18:20.351 Error occurred in searching invoice history
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.AdminController.SearchPublicUserInvoiceHistory(BookingHistorySearch invoiceHistorySearch) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3574
+[ERR] 2020-04-09 10:48:34.087 Error occurred in Admin Controller-Interview
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at System.Convert.ToBoolean(String value)
+   at Nirast.Pcms.Web.Reports.UpdateClientInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateClientInvoice.aspx.cs:line 68
+[ERR] 2020-04-09 11:04:56.342 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 104
+[INF] 2020-04-09 11:06:32.556 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[INF] 2020-04-09 11:14:13.335 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[ERR] 2020-04-09 11:22:08.213 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateClientInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateClientInvoice.aspx.cs:line 122
+[ERR] 2020-04-09 11:33:24.431 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 104
+[ERR] 2020-04-09 11:33:58.526 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateClientInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateClientInvoice.aspx.cs:line 122
+[INF] 2020-04-09 11:34:41.904 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[ERR] 2020-04-09 11:55:14.608 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 105
+[INF] 2020-04-09 11:57:06.731 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[ERR] 2020-04-09 12:12:44.057 API Call start 4/9/2020 12:12:44 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-14&hours=0&Workshift=0
+[ERR] 2020-04-09 12:12:44.235 API Call end 4/9/2020 12:12:44 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-14&hours=0&Workshift=0
+[ERR] 2020-04-09 12:12:52.803 API Call start 4/9/2020 12:12:52 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-14 20:00&hours=12&Workshift=5
+[ERR] 2020-04-09 12:12:52.844 API Call end 4/9/2020 12:12:52 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-14 20:00&hours=12&Workshift=5
+[INF] 2020-04-09 12:14:00.912 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[INF] 2020-04-09 12:18:12.845 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[ERR] 2020-04-09 12:23:44.186 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 105
+[INF] 2020-04-09 12:25:47.400 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[INF] 2020-04-09 12:26:11.015 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1006.pdf
+[ERR] 2020-04-09 12:28:41.298 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 12:28:59.606 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 12:29:51.471 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 12:30:17.914 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 12:30:31.903 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 12:34:50.738 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 12:35:52.960 Internal Server Error - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtmlundefined
+[ERR] 2020-04-09 13:03:00.370 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 137
+[ERR] 2020-04-09 13:03:05.071 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 499
+[ERR] 2020-04-09 13:30:58.148 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 137
+[ERR] 2020-04-09 13:31:02.433 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 499
+[ERR] 2020-04-09 14:10:18.206 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 161
+[ERR] 2020-04-09 14:18:20.912 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[ERR] 2020-04-09 14:35:54.728 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[ERR] 2020-04-09 14:52:19.946 API Call start 4/9/2020 2:52:19 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-06&hours=0&Workshift=0
+[ERR] 2020-04-09 14:52:20.196 API Call end 4/9/2020 2:52:20 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-06&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:17.234 API Call start 4/9/2020 2:53:17 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-15&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:17.403 API Call end 4/9/2020 2:53:17 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-15&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:20.033 API Call start 4/9/2020 2:53:20 PM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-15&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:20.193 API Call end 4/9/2020 2:53:20 PM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-15&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:28.837 API Call start 4/9/2020 2:53:28 PM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-15 15:00&hours=8&Workshift=2
+[ERR] 2020-04-09 14:53:28.866 API Call end 4/9/2020 2:53:28 PM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-15 15:00&hours=8&Workshift=2
+[ERR] 2020-04-09 14:53:47.822 API Call start 4/9/2020 2:53:47 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-10&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:47.836 API Call end 4/9/2020 2:53:47 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-10&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:51.731 API Call start 4/9/2020 2:53:51 PM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-10&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:51.759 API Call end 4/9/2020 2:53:51 PM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-10&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:58.748 API Call start 4/9/2020 2:53:58 PM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-04-10&hours=0&Workshift=0
+[ERR] 2020-04-09 14:53:58.777 API Call end 4/9/2020 2:53:58 PM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-04-10&hours=0&Workshift=0
+[ERR] 2020-04-09 14:54:02.436 API Call start 4/9/2020 2:54:02 PM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-04-10 07:00&hours=8&Workshift=1
+[ERR] 2020-04-09 14:54:02.462 API Call end 4/9/2020 2:54:02 PM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-04-10 07:00&hours=8&Workshift=1
+[INF] 2020-04-09 14:54:46.197 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1006.pdf
+[INF] 2020-04-09 14:55:59.983 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1007.pdf
+[ERR] 2020-04-09 15:58:38.856 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[ERR] 2020-04-09 16:00:35.397 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[ERR] 2020-04-09 16:00:37.209 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[ERR] 2020-04-09 16:00:38.929 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[ERR] 2020-04-09 16:00:41.548 Internal Server Error - Error occurred while showing booking details for BookingId: 4038. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtmlundefined
+[INF] 2020-04-09 16:14:24.883 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1007.pdf
+[INF] 2020-04-09 16:23:04.210 filePath: D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1008.pdf
+[INF] 2020-04-13 13:03:22.710 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1009.pdf
+[ERR] 2020-04-15 11:19:43.758 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 371
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 154
+[ERR] 2020-04-15 11:45:30.750 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 162
+[ERR] 2020-04-15 11:46:09.089 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at System.Convert.ToBoolean(String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 42
+[ERR] 2020-04-15 11:46:43.678 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at System.Convert.ToBoolean(String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 42
+[ERR] 2020-04-15 11:47:17.894 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at System.Convert.ToBoolean(String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 42
+[ERR] 2020-04-15 11:47:56.782 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at System.Convert.ToBoolean(String value)
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 42
+[ERR] 2020-04-15 11:50:12.546 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 93
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-15 11:50:12.546 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 93
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[INF] 2020-04-15 12:49:49.977 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1009.pdf
+[ERR] 2020-04-15 14:26:30.995 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 162
+[INF] 2020-04-15 14:27:38.437 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1010.pdf
+[ERR] 2020-04-16 11:49:50.126 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 162
+[ERR] 2020-04-17 10:42:50.190 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 105
+[INF] 2020-04-17 10:45:58.113 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1011.pdf
+[ERR] 2020-04-17 10:49:53.845 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-04-17 10:51:57.194 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-04-17 10:53:39.172 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-04-17 10:53:54.426 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-04-17 11:08:26.666 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1004.pdf
+[INF] 2020-04-17 11:15:50.950 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-04-17 11:17:25.785 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1012.pdf
+[ERR] 2020-04-17 11:27:28.850 Error occurred in Home Controller-Index
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 140
+[ERR] 2020-04-17 11:31:48.452 Error occurred in Home Controller-CheckCredential
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.HomeController.CheckCredential(String loginName, String loginPassword) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 77
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-17 11:34:28.454 API Call start 4/17/2020 11:34:28 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-28&hours=0&Workshift=0
+[ERR] 2020-04-17 11:34:28.546 API Call end 4/17/2020 11:34:28 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-28&hours=0&Workshift=0
+[ERR] 2020-04-17 11:34:35.951 API Call start 4/17/2020 11:34:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-04-28&hours=0&Workshift=0
+[ERR] 2020-04-17 11:34:35.966 API Call end 4/17/2020 11:34:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-04-28&hours=0&Workshift=0
+[ERR] 2020-04-17 11:35:41.100 API Call start 4/17/2020 11:35:41 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-27&hours=0&Workshift=0
+[ERR] 2020-04-17 11:35:41.169 API Call end 4/17/2020 11:35:41 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-04-27&hours=0&Workshift=0
+[ERR] 2020-04-17 11:35:43.760 API Call start 4/17/2020 11:35:43 AM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-27&hours=0&Workshift=0
+[ERR] 2020-04-17 11:35:43.781 API Call end 4/17/2020 11:35:43 AM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-27&hours=0&Workshift=0
+[ERR] 2020-04-17 11:35:46.826 API Call start 4/17/2020 11:35:46 AM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-27 07:00&hours=8&Workshift=1
+[ERR] 2020-04-17 11:35:46.851 API Call end 4/17/2020 11:35:46 AM - CareTaker/GetAvailableCareTakerListforPublicUser/3?startDatetime=2020-04-27 07:00&hours=8&Workshift=1
+[INF] 2020-04-17 11:36:22.633 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Nivya l_1013.pdf
+[ERR] 2020-04-17 11:41:43.517 Internal Server Error - Error occurred while Searching payment history. Function: $("#paymentSearchbtn").click(). Page: CustomScript.js
+[ERR] 2020-04-17 12:04:32.557 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[ERR] 2020-04-17 14:03:20.972 Error occurred in Home Controller-CheckCredential
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.HomeController.CheckCredential(String loginName, String loginPassword) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 77
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[INF] 2020-04-17 15:40:23.361 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Nivya l_1014.pdf
+[ERR] 2020-04-17 16:45:39.003 Error occurred in PublicUser Controller-SendUserEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SendUserInvoiceEmail(String username, String email, Int32 fileId) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 423
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-17 16:47:39.211 Error occurred in PublicUser Controller-SendUserEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SendUserInvoiceEmail(String username, String email, Int32 fileId) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 423
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-17 17:18:09.410 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 162
+[INF] 2020-04-17 17:19:19.817 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Mibin S_27.pdf
+[ERR] 2020-04-17 17:35:47.102 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 164
+[INF] 2020-04-17 17:41:25.508 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Mibin S_29.pdf
+[INF] 2020-04-17 17:47:02.525 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Mibin S_29.pdf
+[ERR] 2020-04-17 19:48:13.868 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-04-17 19:49:35.344 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Mibin S_29.pdf
+[ERR] 2020-04-20 13:03:48.728 Error occurred in Home Controller-Index
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 140
+[ERR] 2020-04-20 13:03:48.716 Error occurred in Home Controller-Index
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 140
+[ERR] 2020-04-20 13:04:03.538 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 499
+[ERR] 2020-04-20 13:56:03.810 API Call start 4/20/2020 1:56:03 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-16&hours=0&clientId=10&Workshift=0
+[ERR] 2020-04-20 13:56:04.277 API Call end 4/20/2020 1:56:04 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-16&hours=0&clientId=10&Workshift=0
+[ERR] 2020-04-20 13:56:06.927 API Call start 4/20/2020 1:56:06 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-16 07:00&hours=8&clientId=10&Workshift=1
+[ERR] 2020-04-20 13:56:06.942 API Call end 4/20/2020 1:56:06 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-16 07:00&hours=8&clientId=10&Workshift=1
+[ERR] 2020-04-20 15:55:43.007 Internal Server Error - Error occurred while loading states for CountryId: null. Function: GetStates(StateId = 0, CityId = 0). Page: CustomScript.jsundefined
+[ERR] 2020-04-20 15:56:53.944 Internal Server Error - Error occurred while loading states for CountryId: null. Function: GetStates(StateId = 0, CityId = 0). Page: CustomScript.jsundefined
+[ERR] 2020-04-20 15:59:14.778 Internal Server Error - Error occurred while loading states for CountryId: null. Function: GetStates(StateId = 0, CityId = 0). Page: CustomScript.jsundefined
+[ERR] 2020-04-20 16:15:39.944 Redirect to Login from CompanySettings-Admin Controller
+[ERR] 2020-04-20 16:25:26.298 Redirect to Login from CompanySettings-Admin Controller
+[ERR] 2020-04-20 16:27:22.996 Redirect to Login from CompanySettings-Admin Controller
+[ERR] 2020-04-20 17:45:03.695 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 109
+[ERR] 2020-04-20 18:11:39.535 Error occurred in Admin Controller-ClientInvoiceReport.cs
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.ClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\ClientInvoiceReport.aspx.cs:line 110
+[ERR] 2020-04-20 18:13:36.455 Error occurred in Admin Controller-Interview
+Microsoft.Reporting.WebForms.LocalProcessingException: An error occurred during local report processing. ---> Microsoft.ReportingServices.Diagnostics.Utilities.UnknownReportParameterException: An attempt was made to set a report parameter 'InvoiceAddress' that is not defined in this report.
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.ThrowUnknownParameterException(String name, Boolean isSharedDataSetParameter)
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.Combine(ParameterInfoCollection oldParameters, ParameterInfoCollection newParameters, Boolean checkReadOnly, Boolean ignoreNewQueryParams, Boolean isParameterDefinitionUpdate, Boolean isSharedDataSetParameter, CultureInfo culture)
+   at Microsoft.Reporting.LocalService.SetReportParameters(NameValueCollection userSpecifiedValues)
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 539
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 158
+[ERR] 2020-04-20 18:19:54.501 Error occurred in Admin Controller-Interview
+Microsoft.Reporting.WebForms.LocalProcessingException: An error occurred during local report processing. ---> Microsoft.ReportingServices.Diagnostics.Utilities.UnknownReportParameterException: An attempt was made to set a report parameter 'InvoiceAddress' that is not defined in this report.
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.ThrowUnknownParameterException(String name, Boolean isSharedDataSetParameter)
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.Combine(ParameterInfoCollection oldParameters, ParameterInfoCollection newParameters, Boolean checkReadOnly, Boolean ignoreNewQueryParams, Boolean isParameterDefinitionUpdate, Boolean isSharedDataSetParameter, CultureInfo culture)
+   at Microsoft.Reporting.LocalService.SetReportParameters(NameValueCollection userSpecifiedValues)
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 335
+[ERR] 2020-04-20 18:20:01.238 Error occurred in Admin Controller-Interview
+Microsoft.Reporting.WebForms.LocalProcessingException: An error occurred during local report processing. ---> Microsoft.ReportingServices.Diagnostics.Utilities.UnknownReportParameterException: An attempt was made to set a report parameter 'InvoiceAddress' that is not defined in this report.
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.ThrowUnknownParameterException(String name, Boolean isSharedDataSetParameter)
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.Combine(ParameterInfoCollection oldParameters, ParameterInfoCollection newParameters, Boolean checkReadOnly, Boolean ignoreNewQueryParams, Boolean isParameterDefinitionUpdate, Boolean isSharedDataSetParameter, CultureInfo culture)
+   at Microsoft.Reporting.LocalService.SetReportParameters(NameValueCollection userSpecifiedValues)
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 335
+[ERR] 2020-04-20 18:24:04.423 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: item
+   at Microsoft.Reporting.WebForms.ReportDataSourceCollection.InsertItem(Int32 index, ReportDataSource item)
+   at System.Collections.ObjectModel.Collection`1.Add(T item)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e)
+[ERR] 2020-04-20 18:29:10.505 Error occurred in Admin Controller-Interview
+Microsoft.Reporting.WebForms.LocalProcessingException: An error occurred during local report processing. ---> Microsoft.ReportingServices.Diagnostics.Utilities.UnknownReportParameterException: An attempt was made to set a report parameter 'InvoiceAddress' that is not defined in this report.
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.ThrowUnknownParameterException(String name, Boolean isSharedDataSetParameter)
+   at Microsoft.ReportingServices.ReportProcessing.ParameterInfoCollection.Combine(ParameterInfoCollection oldParameters, ParameterInfoCollection newParameters, Boolean checkReadOnly, Boolean ignoreNewQueryParams, Boolean isParameterDefinitionUpdate, Boolean isSharedDataSetParameter, CultureInfo culture)
+   at Microsoft.Reporting.LocalService.SetReportParameters(NameValueCollection userSpecifiedValues)
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Microsoft.Reporting.WebForms.LocalReport.SetParameters(IEnumerable`1 parameters)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e)
+[ERR] 2020-04-20 18:29:56.984 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice()
+[ERR] 2020-04-20 18:54:33.048 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateClientInvoice.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateClientInvoice.aspx.cs:line 111
+[ERR] 2020-04-20 19:36:03.405 Error occurred in Admin Controller-ClientInvoiceReport.cs
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.ClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\ClientInvoiceReport.aspx.cs:line 200
+[ERR] 2020-04-20 19:36:43.028 Error occurred in Admin Controller-ClientInvoiceReport.cs
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.ClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\ClientInvoiceReport.aspx.cs:line 200
+[ERR] 2020-04-21 09:29:06.371 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice()
+[ERR] 2020-04-21 09:29:33.106 Error occurred in Admin Controller-Interview
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e)
+[ERR] 2020-04-21 09:33:31.967 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e)
+[ERR] 2020-04-21 09:34:28.854 Error occurred in Admin Controller-Interview
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-04-21 09:34:33.090 Error occurred in Admin Controller-Interview
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-04-21 09:34:33.970 Error occurred in Admin Controller-Interview
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-04-21 09:34:35.289 Error occurred in Admin Controller-Interview
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-04-21 09:34:55.920 Error occurred in Admin Controller-Interview
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.InvoiceGeneration(Service service) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 386
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 166
+[ERR] 2020-04-21 09:35:01.992 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 978
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 685
+[ERR] 2020-04-21 09:35:34.430 Error occurred in Admin Controller-Interview
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-04-21 09:39:02.924 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 109
+[ERR] 2020-04-21 09:43:20.755 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 109
+[ERR] 2020-04-21 09:43:43.420 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 978
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 685
+[ERR] 2020-04-21 09:47:50.664 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateClientInvoice.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateClientInvoice.aspx.cs:line 112
+[ERR] 2020-04-21 13:25:42.284 Error occurred in Client Controller-SaveClientDetails
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.ClientController.SaveClientDetails(ClientModel objClient) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 563
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-21 16:59:30.820 Error occurred in PublicUser Controller-SaveCareRecipientDetails
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPI(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 49
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SaveCareRecipientDetails(CaretakerBooking caretakerBooking) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 282
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-21 17:24:16.637 Error occurred in Client Controller-GetEventsByClientId
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.PublicUserController.GetEventsByPublicUserId(Int32 bookingId, Int32 month, Int32 year) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 2038
+[ERR] 2020-04-21 17:25:21.121 error - Error occurred while loading Holidays. Function: "/Client/GetHolidays". Page: ScheduledCalenderView.cshtmlundefined
+[ERR] 2020-04-21 17:25:21.122 error - Error occurred while Searching a Caregiver. Function: $("#btnKeywordSearch").click(). Page: SearchPageScript.jsundefined
+[ERR] 2020-04-21 17:25:21.121 error - Error occurred while loading Time Shifts. Function: "/Client/LoadTimeShift". Page: ScheduledCalenderView.cshtmlundefined
+[ERR] 2020-04-21 17:25:21.121 error - Error occurred while loading Clients. Function: "/Client/LoadClient". Page: ScheduledCalenderView.cshtmlundefined
+[ERR] 2020-04-21 17:25:21.121 error - Error occurred while loading Caregiver Type. Function: CaretaketType(). Page: ScheduledCalenderView.cshtmlundefined
+[ERR] 2020-04-21 17:27:00.369 OK - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtmlundefined
+[ERR] 2020-04-21 17:27:16.852 OK - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtmlundefined
+[ERR] 2020-04-21 17:32:17.269 Error occurred in Client Controller-GetEventsByClientId
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.PublicUserController.GetEventsByPublicUserId(Int32 bookingId, Int32 month, Int32 year) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 2036
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-04-21 17:33:18.964 Error occurred in Client Controller-LoadTimeShift
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadTimeShift() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1835
+[ERR] 2020-04-21 17:34:59.346 Error occurred in Client Controller-LoadCategory
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadCategory() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1820
+[ERR] 2020-04-21 17:41:51.476 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 98
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[INF] 2020-04-21 18:02:56.099 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Sou M_0.pdf
+[ERR] 2020-04-23 14:27:37.868 Error occurred in Home Controller-Index
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 140
+[ERR] 2020-04-23 14:41:00.054 Error occurred in Home Controller-Index
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 138
+[ERR] 2020-04-23 14:46:18.937 Error occurred in Client Controller-GetEventsByClientId
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.ClientController.GetEventsByClientId(Int32 clientId, Int32 month, Int32 year) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1632
+[ERR] 2020-04-23 14:47:33.523 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 135
+[ERR] 2020-04-23 15:07:35.230 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 135
+[ERR] 2020-04-23 15:07:39.350 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 497
+[ERR] 2020-04-23 15:08:23.673 API Call start 4/23/2020 3:08:23 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-17&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:08:23.985 API Call end 4/23/2020 3:08:23 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-17&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:08:47.646 API Call start 4/23/2020 3:08:47 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:08:47.734 API Call end 4/23/2020 3:08:47 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:08:58.918 API Call start 4/23/2020 3:08:58 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17 04:30 AM&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:08:58.937 API Call end 4/23/2020 3:08:58 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17 04:30 AM&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:09:01.192 API Call start 4/23/2020 3:09:01 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17 04:30 AM&hours=21&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:09:01.212 API Call end 4/23/2020 3:09:01 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17 04:30 AM&hours=21&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:09:07.173 API Call start 4/23/2020 3:09:07 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17 04:30 AM&hours=9&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:09:07.186 API Call end 4/23/2020 3:09:07 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-04-17 04:30 AM&hours=9&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:13:54.671 API Call start 4/23/2020 3:13:54 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-03&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:13:54.814 API Call end 4/23/2020 3:13:54 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-03&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:14:09.716 API Call start 4/23/2020 3:14:09 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-21&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:14:09.792 API Call end 4/23/2020 3:14:09 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-21&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:16:47.971 API Call start 4/23/2020 3:16:47 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-14&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:16:48.070 API Call end 4/23/2020 3:16:48 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-14&hours=0&clientId=1&Workshift=0
+[ERR] 2020-04-23 15:18:58.487 API Call start 4/23/2020 3:18:58 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-08&hours=0&clientId=1018&Workshift=0
+[ERR] 2020-04-23 15:18:58.565 API Call end 4/23/2020 3:18:58 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-04-08&hours=0&clientId=1018&Workshift=0
+[ERR] 2020-05-04 20:19:59.314 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 135
+[ERR] 2020-05-04 20:20:06.958 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 497
+[ERR] 2020-05-05 16:32:04.120 Redirect to Login from InvoiceHistory-Admin Controller
+[ERR] 2020-05-05 16:57:41.866 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 135
+[ERR] 2020-05-05 16:57:46.313 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 497
+[ERR] 2020-05-06 10:22:54.876 Error occurred in PublicUser Controller-SaveCareRecipientDetails
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPI(String requestContent, String api) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 49
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SaveCareRecipientDetails(CaretakerBooking caretakerBooking) in D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 282
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[INF] 2020-05-08 10:59:45.204 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_John John_1002.pdf
+[INF] 2020-05-08 11:01:53.487 filePath: D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_John John_1002.pdf
+[INF] 2020-05-08 11:51:19.308 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_John John_1002.pdf
+[INF] 2020-05-08 11:57:41.467 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_John John_1002.pdf
+[ERR] 2020-05-08 16:08:35.314 Error occurred in PublicUser Controller-SendUserEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SendUserInvoiceEmail(String username, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 423
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-08 16:28:10.485 Error occurred in Admin Controller-SendClientEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SendClentEmail(String clientname, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5979
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-08 16:39:05.557 Error occurred in Admin Controller-SendClientEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SendClentEmail(String clientname, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5979
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-08 16:49:34.751 Error occurred in Admin Controller-SendClientEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SendClentEmail(String clientname, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5979
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-08 16:49:50.833 Error occurred in Admin Controller-SendClientEmail
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SendClentEmail(String clientname, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5979
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+[ERR] 2020-05-08 16:49:57.004 Error occurred in Admin Controller-PaymentAdvancedSearch
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.AdminController.PaymentAdvancedSearch() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 554
+[ERR] 2020-05-08 19:00:55.458 Error occurred in Client Controller-LoadClient
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadClient() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1806
+[ERR] 2020-05-08 19:15:51.590 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 135
+[ERR] 2020-05-08 19:15:59.174 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 497
+[ERR] 2020-05-08 20:26:07.492 Error occurred in Client Controller-GetEventsByClientId
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.ClientController.GetEventsByClientId(Int32 clientId, Int32 month, Int32 year) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1630
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-08 20:36:55.426 Error occurred in Client Controller-LoadClient
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadClient() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1803
+[ERR] 2020-05-08 20:37:13.553 Error occurred in Client Controller-GetHolidays
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.ClientController.GetHolidays() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1696
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+[ERR] 2020-05-08 20:37:21.968 Error occurred in Client Controller-LoadCategory
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadCategory() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1822
+[ERR] 2020-05-08 20:37:26.021 Error occurred in Client Controller-LoadClient
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadClient() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1803
+[ERR] 2020-05-08 20:37:30.547 Error occurred in Admin Controller-GetCaretakerType
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.AdminController.GetCaretakerType() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5739
+[ERR] 2020-05-08 20:37:35.114 Error occurred in Admin Controller-GetServiceById
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.AdminController.GetServiceById(Int32 serviceId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 3321
+[ERR] 2020-05-09 09:36:31.270 Error occurred in Home Controller-Index
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 138
+[ERR] 2020-05-09 09:39:05.228 API Call start 5/9/2020 9:39:05 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:39:05.427 API Call end 5/9/2020 9:39:05 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:39:25.376 API Call start 5/9/2020 9:39:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 09:39:25.419 API Call end 5/9/2020 9:39:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 09:39:27.738 API Call start 5/9/2020 9:39:27 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 21:00&hours=12&Workshift=7
+[ERR] 2020-05-09 09:39:27.756 API Call end 5/9/2020 9:39:27 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 21:00&hours=12&Workshift=7
+[ERR] 2020-05-09 09:39:29.620 API Call start 5/9/2020 9:39:29 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 09:39:29.662 API Call end 5/9/2020 9:39:29 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 09:39:31.650 API Call start 5/9/2020 9:39:31 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 09:39:31.674 API Call end 5/9/2020 9:39:31 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 09:39:39.599 API Call start 5/9/2020 9:39:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:39:39.725 API Call end 5/9/2020 9:39:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:39:49.741 API Call start 5/9/2020 9:39:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:39:49.773 API Call end 5/9/2020 9:39:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:41:51.548 Error occurred in Client Controller-LoadTimeShift
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadTimeShift() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1837
+[ERR] 2020-05-09 09:43:31.684 Error occurred in Client Controller-LoadCategory
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.LoadCategory() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1822
+[ERR] 2020-05-09 09:45:11.765 Error occurred in Client Controller-GetHolidays
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.ClientController.GetHolidays() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 1696
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-09 09:45:39.806 API Call start 5/9/2020 9:45:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:45:39.953 API Call end 5/9/2020 9:45:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:46:20.958 API Call start 5/9/2020 9:46:20 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-09 09:46:21.099 API Call end 5/9/2020 9:46:21 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-09 09:51:36.865 API Call start 5/9/2020 9:51:36 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:51:37.020 API Call end 5/9/2020 9:51:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:53:02.559 API Call start 5/9/2020 9:53:02 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-09 09:53:02.694 API Call end 5/9/2020 9:53:02 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-09 09:53:09.734 API Call start 5/9/2020 9:53:09 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 06:30 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 09:53:09.759 API Call end 5/9/2020 9:53:09 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 06:30 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 09:53:17.349 API Call start 5/9/2020 9:53:17 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 06:30 AM&hours=18&Workshift=0
+[ERR] 2020-05-09 09:53:17.398 API Call end 5/9/2020 9:53:17 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 06:30 AM&hours=18&Workshift=0
+[ERR] 2020-05-09 09:53:22.786 API Call start 5/9/2020 9:53:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=17&Workshift=0
+[ERR] 2020-05-09 09:53:22.833 API Call end 5/9/2020 9:53:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=17&Workshift=0
+[ERR] 2020-05-09 09:53:28.515 API Call start 5/9/2020 9:53:28 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=8&Workshift=0
+[ERR] 2020-05-09 09:53:28.565 API Call end 5/9/2020 9:53:28 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=8&Workshift=0
+[ERR] 2020-05-09 09:53:38.167 API Call start 5/9/2020 9:53:38 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=8&Workshift=0
+[ERR] 2020-05-09 09:53:38.190 API Call end 5/9/2020 9:53:38 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=8&Workshift=0
+[ERR] 2020-05-09 09:57:06.269 API Call start 5/9/2020 9:57:06 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:57:06.448 API Call end 5/9/2020 9:57:06 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 09:59:20.666 API Call start 5/9/2020 9:59:20 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 09:59:20.796 API Call end 5/9/2020 9:59:20 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:00:44.611 API Call start 5/9/2020 10:00:44 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:00:44.705 API Call end 5/9/2020 10:00:44 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:00:49.704 API Call start 5/9/2020 10:00:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:00:49.721 API Call end 5/9/2020 10:00:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:03:41.153 API Call start 5/9/2020 10:03:41 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:03:41.280 API Call end 5/9/2020 10:03:41 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:03:44.037 API Call start 5/9/2020 10:03:44 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 12:30 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:03:44.175 API Call end 5/9/2020 10:03:44 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 12:30 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:03:45.199 API Call start 5/9/2020 10:03:45 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:03:45.343 API Call end 5/9/2020 10:03:45 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:03:53.453 API Call start 5/9/2020 10:03:53 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:03:53.603 API Call end 5/9/2020 10:03:53 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:03:58.868 API Call start 5/9/2020 10:03:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:03:58.893 API Call end 5/9/2020 10:03:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:04:05.356 API Call start 5/9/2020 10:04:05 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:04:05.382 API Call end 5/9/2020 10:04:05 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 12:30 AM&hours=1&Workshift=0
+[ERR] 2020-05-09 10:04:19.649 API Call start 5/9/2020 10:04:19 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=22&Workshift=0
+[ERR] 2020-05-09 10:04:19.676 API Call end 5/9/2020 10:04:19 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=22&Workshift=0
+[ERR] 2020-05-09 10:04:25.148 API Call start 5/9/2020 10:04:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=20&Workshift=0
+[ERR] 2020-05-09 10:04:25.185 API Call end 5/9/2020 10:04:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=20&Workshift=0
+[ERR] 2020-05-09 10:04:38.407 Error occurred in Client Controller-SaveEvent
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SaveBookingDetails(PublicUserCaretakerBooking data) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 1886
+[ERR] 2020-05-09 10:04:50.496 API Call start 5/9/2020 10:04:50 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=20&Workshift=0
+[ERR] 2020-05-09 10:04:50.623 API Call end 5/9/2020 10:04:50 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=20&Workshift=0
+[ERR] 2020-05-09 10:05:10.236 API Call start 5/9/2020 10:05:10 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:05:10.383 API Call end 5/9/2020 10:05:10 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:05:18.472 API Call start 5/9/2020 10:05:18 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:05:18.516 API Call end 5/9/2020 10:05:18 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:05:22.816 API Call start 5/9/2020 10:05:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 10:05:22.842 API Call end 5/9/2020 10:05:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 10:06:29.289 Error occurred in Client Controller-SaveEvent
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SaveBookingDetails(PublicUserCaretakerBooking data) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 1886
+[ERR] 2020-05-09 10:07:08.424 API Call start 5/9/2020 10:07:08 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:07:08.558 API Call end 5/9/2020 10:07:08 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:11:30.350 API Call start 5/9/2020 10:11:30 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:11:30.499 API Call end 5/9/2020 10:11:30 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:15:46.505 API Call start 5/9/2020 10:15:46 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:15:46.680 API Call end 5/9/2020 10:15:46 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 10:30:57.601 API Call start 5/9/2020 10:30:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:30:57.682 API Call end 5/9/2020 10:30:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:31:02.026 API Call start 5/9/2020 10:31:02 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-21&hours=0&Workshift=0
+[ERR] 2020-05-09 10:31:02.041 API Call end 5/9/2020 10:31:02 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-21&hours=0&Workshift=0
+[ERR] 2020-05-09 10:31:22.415 API Call start 5/9/2020 10:31:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:31:22.484 API Call end 5/9/2020 10:31:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:31:52.241 API Call start 5/9/2020 10:31:52 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:31:52.260 API Call end 5/9/2020 10:31:52 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:36:35.224 API Call start 5/9/2020 10:36:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:36:35.331 API Call end 5/9/2020 10:36:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:36:47.925 API Call start 5/9/2020 10:36:47 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=8&Workshift=0
+[ERR] 2020-05-09 10:36:47.995 API Call end 5/9/2020 10:36:47 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14 07:00 AM&hours=8&Workshift=0
+[ERR] 2020-05-09 10:36:58.191 API Call start 5/9/2020 10:36:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:36:58.210 API Call end 5/9/2020 10:36:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:38:49.831 API Call start 5/9/2020 10:38:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:38:49.920 API Call end 5/9/2020 10:38:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:38:57.014 API Call start 5/9/2020 10:38:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:38:57.105 API Call end 5/9/2020 10:38:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:39:03.271 API Call start 5/9/2020 10:39:03 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:39:03.342 API Call end 5/9/2020 10:39:03 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 10:39:06.130 API Call start 5/9/2020 10:39:06 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=20&Workshift=0
+[ERR] 2020-05-09 10:39:06.144 API Call end 5/9/2020 10:39:06 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=20&Workshift=0
+[ERR] 2020-05-09 10:39:16.638 API Call start 5/9/2020 10:39:16 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 10:39:16.652 API Call end 5/9/2020 10:39:16 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 10:39:53.403 API Call start 5/9/2020 10:39:53 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:39:53.420 API Call end 5/9/2020 10:39:53 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:39:58.161 API Call start 5/9/2020 10:39:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:39:58.234 API Call end 5/9/2020 10:39:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:40:08.371 API Call start 5/9/2020 10:40:08 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:40:08.446 API Call end 5/9/2020 10:40:08 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 10:40:12.384 API Call start 5/9/2020 10:40:12 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 10:40:12.398 API Call end 5/9/2020 10:40:12 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 10:41:24.911 API Call start 5/9/2020 10:41:24 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 10:41:24.985 API Call end 5/9/2020 10:41:24 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 10:42:26.802 API Call start 5/9/2020 10:42:26 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:42:26.883 API Call end 5/9/2020 10:42:26 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:56:18.445 API Call start 5/9/2020 10:56:18 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:56:18.577 API Call end 5/9/2020 10:56:18 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 10:59:55.884 API Call start 5/9/2020 10:59:55 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 10:59:55.980 API Call end 5/9/2020 10:59:55 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:00:00.628 API Call start 5/9/2020 11:00:00 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:00:00.646 API Call end 5/9/2020 11:00:00 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:00:03.910 API Call start 5/9/2020 11:00:03 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:00:03.934 API Call end 5/9/2020 11:00:03 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:00:19.151 API Call start 5/9/2020 11:00:19 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:00:19.170 API Call end 5/9/2020 11:00:19 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:00:25.810 API Call start 5/9/2020 11:00:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:00:25.827 API Call end 5/9/2020 11:00:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:00:29.365 API Call start 5/9/2020 11:00:29 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:00:29.378 API Call end 5/9/2020 11:00:29 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:01:25.759 API Call start 5/9/2020 11:01:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:01:25.841 API Call end 5/9/2020 11:01:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:04:11.052 API Call start 5/9/2020 11:04:11 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:04:11.134 API Call end 5/9/2020 11:04:11 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 03:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:04:14.241 API Call start 5/9/2020 11:04:14 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:04:14.326 API Call end 5/9/2020 11:04:14 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:04:17.229 API Call start 5/9/2020 11:04:17 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:04:17.321 API Call end 5/9/2020 11:04:17 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:04:41.421 API Call start 5/9/2020 11:04:41 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:04:41.440 API Call end 5/9/2020 11:04:41 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:04:45.355 API Call start 5/9/2020 11:04:45 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:04:45.382 API Call end 5/9/2020 11:04:45 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:11:15.962 API Call start 5/9/2020 11:11:15 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:11:16.051 API Call end 5/9/2020 11:11:16 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:11:19.201 API Call start 5/9/2020 11:11:19 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:11:19.216 API Call end 5/9/2020 11:11:19 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:12:01.832 API Call start 5/9/2020 11:12:01 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:01.906 API Call end 5/9/2020 11:12:01 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:13.107 API Call start 5/9/2020 11:12:13 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 10:00 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:13.185 API Call end 5/9/2020 11:12:13 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 10:00 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:22.368 API Call start 5/9/2020 11:12:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 10:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:22.387 API Call end 5/9/2020 11:12:22 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 10:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:28.820 API Call start 5/9/2020 11:12:28 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:00 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:28.835 API Call end 5/9/2020 11:12:28 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:00 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:33.491 API Call start 5/9/2020 11:12:33 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:00 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:12:33.503 API Call end 5/9/2020 11:12:33 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:00 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:12:48.664 API Call start 5/9/2020 11:12:48 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:48.681 API Call end 5/9/2020 11:12:48 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:51.033 API Call start 5/9/2020 11:12:51 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:51.056 API Call end 5/9/2020 11:12:51 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:57.428 API Call start 5/9/2020 11:12:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:12:57.443 API Call end 5/9/2020 11:12:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:30 PM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:13:17.069 API Call start 5/9/2020 11:13:17 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:13:17.158 API Call end 5/9/2020 11:13:17 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:13:24.385 API Call start 5/9/2020 11:13:24 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=9&Workshift=0
+[ERR] 2020-05-09 11:13:24.401 API Call end 5/9/2020 11:13:24 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=9&Workshift=0
+[ERR] 2020-05-09 11:13:34.869 API Call start 5/9/2020 11:13:34 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:00 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:13:34.888 API Call end 5/9/2020 11:13:34 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:00 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:13:37.471 API Call start 5/9/2020 11:13:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:13:37.486 API Call end 5/9/2020 11:13:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:21:50.700 API Call start 5/9/2020 11:21:50 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:21:50.816 API Call end 5/9/2020 11:21:50 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 04:30 PM&hours=8&Workshift=0
+[ERR] 2020-05-09 11:29:10.414 API Call start 5/9/2020 11:29:10 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:10.509 API Call end 5/9/2020 11:29:10 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:18.669 API Call start 5/9/2020 11:29:18 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:18.688 API Call end 5/9/2020 11:29:18 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:21.837 API Call start 5/9/2020 11:29:21 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:21.858 API Call end 5/9/2020 11:29:21 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:23.647 API Call start 5/9/2020 11:29:23 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:23.660 API Call end 5/9/2020 11:29:23 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:31.744 API Call start 5/9/2020 11:29:31 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:31.761 API Call end 5/9/2020 11:29:31 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:34.539 API Call start 5/9/2020 11:29:34 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:34.555 API Call end 5/9/2020 11:29:34 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:29:37.494 API Call start 5/9/2020 11:29:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:37.612 API Call end 5/9/2020 11:29:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:49.223 API Call start 5/9/2020 11:29:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:49.304 API Call end 5/9/2020 11:29:49 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:52.820 API Call start 5/9/2020 11:29:52 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:29:52.833 API Call end 5/9/2020 11:29:52 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:29:58.300 API Call start 5/9/2020 11:29:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:29:58.316 API Call end 5/9/2020 11:29:58 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:30:04.226 API Call start 5/9/2020 11:30:04 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:30:04.245 API Call end 5/9/2020 11:30:04 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:33:32.523 API Call start 5/9/2020 11:33:32 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:33:32.596 API Call end 5/9/2020 11:33:32 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 15:00&hours=8&Workshift=2
+[ERR] 2020-05-09 11:33:35.395 API Call start 5/9/2020 11:33:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:33:35.430 API Call end 5/9/2020 11:33:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:36:38.165 API Call start 5/9/2020 11:36:38 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:36:38.239 API Call end 5/9/2020 11:36:38 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:38:24.992 API Call start 5/9/2020 11:38:24 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:38:25.103 API Call end 5/9/2020 11:38:25 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-09 11:38:27.453 API Call start 5/9/2020 11:38:27 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:38:27.524 API Call end 5/9/2020 11:38:27 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:38:36.414 API Call start 5/9/2020 11:38:36 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:38:36.433 API Call end 5/9/2020 11:38:36 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15&hours=0&Workshift=0
+[ERR] 2020-05-09 11:38:38.778 API Call start 5/9/2020 11:38:38 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:38:38.792 API Call end 5/9/2020 11:38:38 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:38:39.907 API Call start 5/9/2020 11:38:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:38:39.923 API Call end 5/9/2020 11:38:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:39:03.492 API Call start 5/9/2020 11:39:03 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:39:03.565 API Call end 5/9/2020 11:39:03 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:39:06.864 API Call start 5/9/2020 11:39:06 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:39:06.880 API Call end 5/9/2020 11:39:06 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:39:29.705 API Call start 5/9/2020 11:39:29 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:39:29.788 API Call end 5/9/2020 11:39:29 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 11:39:34.052 API Call start 5/9/2020 11:39:34 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:39:34.120 API Call end 5/9/2020 11:39:34 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=0&Workshift=0
+[ERR] 2020-05-09 11:39:37.417 API Call start 5/9/2020 11:39:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=7&Workshift=0
+[ERR] 2020-05-09 11:39:37.492 API Call end 5/9/2020 11:39:37 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=7&Workshift=0
+[ERR] 2020-05-09 11:39:57.087 API Call start 5/9/2020 11:39:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=7&Workshift=0
+[ERR] 2020-05-09 11:39:57.108 API Call end 5/9/2020 11:39:57 AM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-15 10:00 AM&hours=7&Workshift=0
+[ERR] 2020-05-09 11:48:35.381 API Call start 5/9/2020 11:48:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-21&hours=0&Workshift=0
+[ERR] 2020-05-09 11:48:35.964 API Call end 5/9/2020 11:48:35 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-21&hours=0&Workshift=0
+[ERR] 2020-05-09 11:48:39.245 API Call start 5/9/2020 11:48:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-21 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 11:48:39.315 API Call end 5/9/2020 11:48:39 AM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-21 23:00&hours=8&Workshift=3
+[ERR] 2020-05-09 12:01:22.978 API Call start 5/9/2020 12:01:22 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-27&hours=0&Workshift=0
+[ERR] 2020-05-09 12:01:23.097 API Call end 5/9/2020 12:01:23 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-27&hours=0&Workshift=0
+[ERR] 2020-05-09 12:01:26.025 API Call start 5/9/2020 12:01:26 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-27 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 12:01:26.105 API Call end 5/9/2020 12:01:26 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-27 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 12:01:31.706 API Call start 5/9/2020 12:01:31 PM - CareTaker/GetAvailableCareTakerListforPublicUser/6?startDatetime=2020-05-27 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 12:01:31.770 API Call end 5/9/2020 12:01:31 PM - CareTaker/GetAvailableCareTakerListforPublicUser/6?startDatetime=2020-05-27 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 12:01:34.170 API Call start 5/9/2020 12:01:34 PM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-27 07:00&hours=8&Workshift=1
+[ERR] 2020-05-09 12:01:34.249 API Call end 5/9/2020 12:01:34 PM - CareTaker/GetAvailableCareTakerListforPublicUser/5?startDatetime=2020-05-27 07:00&hours=8&Workshift=1
+[ERR] 2020-05-10 10:25:17.435 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-05-10 10:26:16.703 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-10 10:26:36.693 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-10 10:27:05.713 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-10 10:27:11.326 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-10 10:30:50.092 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-10 10:30:53.211 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[ERR] 2020-05-10 10:32:03.201 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-05-10 10:32:57.016 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-05-10 10:33:04.743 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[ERR] 2020-05-10 10:40:03.272 Error occurred in PublicUser Controller-SendUserEmail
+System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SendUserInvoiceEmail(String username, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 423
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+
+[ERR] 2020-05-10 11:36:36.864 Error occurred in Admin Controller-SendClientEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SendClentEmail(String clientname, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5979
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[INF] 2020-05-10 13:37:41.525 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-10 13:37:49.406 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[ERR] 2020-05-10 21:00:06.273 API Call start 5/10/2020 9:00:06 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-10 21:00:06.443 API Call end 5/10/2020 9:00:06 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13&hours=0&Workshift=0
+[ERR] 2020-05-10 21:00:08.860 API Call start 5/10/2020 9:00:08 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-10 21:00:08.876 API Call end 5/10/2020 9:00:08 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-13 07:00&hours=8&Workshift=1
+[ERR] 2020-05-10 21:06:17.580 API Call start 5/10/2020 9:06:17 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-10 21:06:17.721 API Call end 5/10/2020 9:06:17 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-10 21:06:21.659 API Call start 5/10/2020 9:06:21 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-10 21:06:21.729 API Call end 5/10/2020 9:06:21 PM - CareTaker/GetAvailableCareTakerListforPublicUser/1?startDatetime=2020-05-14&hours=0&Workshift=0
+[ERR] 2020-05-10 21:48:36.355 Error occurred in Admin Controller-SendClientEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.AdminController.SendClentEmail(String clientname, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 5979
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-11 10:03:26.923 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-05-11 10:04:42.730 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-11 10:04:52.440 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[ERR] 2020-05-11 10:15:22.732 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-05-11 10:16:23.672 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-05-11 10:16:29.243 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-05-11 10:24:23.736 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-05-11 10:24:33.124 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[ERR] 2020-05-11 10:25:07.708 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 164
+[INF] 2020-05-11 10:26:19.281 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1004.pdf
+[ERR] 2020-05-11 10:27:37.640 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-05-11 10:28:25.955 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1003.pdf
+[INF] 2020-05-11 10:28:32.612 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1003.pdf
+[ERR] 2020-05-11 11:51:23.407 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 96
+[INF] 2020-05-11 11:52:39.963 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1010.pdf
+[INF] 2020-05-11 11:55:17.365 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1010.pdf
+[INF] 2020-05-11 12:17:04.895 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1004.pdf
+[INF] 2020-05-11 12:18:09.540 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1004.pdf
+[INF] 2020-05-11 12:20:36.867 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1008.pdf
+[INF] 2020-05-11 12:21:38.840 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1008.pdf
+[INF] 2020-05-11 12:25:45.789 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1008.pdf
+[INF] 2020-05-11 12:27:29.473 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1008.pdf
+[ERR] 2020-05-11 14:27:55.516 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 97
+[INF] 2020-05-11 14:29:01.151 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[INF] 2020-05-11 14:29:20.806 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1002.pdf
+[ERR] 2020-05-11 14:37:41.459 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 97
+[ERR] 2020-05-11 15:18:21.985 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 98
+[INF] 2020-05-11 15:20:12.438 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1004.pdf
+[ERR] 2020-05-11 15:25:56.397 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 164
+[INF] 2020-05-11 15:28:07.962 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[ERR] 2020-05-11 16:16:24.404 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 99
+[INF] 2020-05-11 16:16:58.823 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[ERR] 2020-05-11 16:34:29.879 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 166
+[INF] 2020-05-11 16:35:23.821 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf
+[INF] 2020-05-11 16:48:57.907 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[ERR] 2020-05-11 17:06:33.878 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 99
+[ERR] 2020-05-11 17:07:53.354 Error occurred in Admin Controller-Interview
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateClientInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateClientInvoice.aspx.cs:line 112
+[INF] 2020-05-11 17:08:27.823 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[ERR] 2020-05-11 17:16:25.128 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 99
+[INF] 2020-05-11 17:16:27.694 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 17:16:28.943 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 17:16:29.915 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 17:48:32.229 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 17:55:47.018 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 18:22:06.054 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Soumya Simon_1008.pdf
+[ERR] 2020-05-11 18:35:58.308 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 101
+[INF] 2020-05-11 18:39:38.461 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_John John_1002.pdf
+[INF] 2020-05-11 21:40:53.075 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 21:41:59.282 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 22:18:28.148 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-11 22:19:14.562 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[ERR] 2020-05-11 22:24:12.079 API Call start 5/11/2020 10:24:12 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-05-13&hours=0&clientId=3&Workshift=0
+[ERR] 2020-05-11 22:24:12.371 API Call end 5/11/2020 10:24:12 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-05-13&hours=0&clientId=3&Workshift=0
+[ERR] 2020-05-11 22:24:17.874 API Call start 5/11/2020 10:24:17 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-05-13 07:00&hours=8&clientId=3&Workshift=1
+[ERR] 2020-05-11 22:24:18.083 API Call end 5/11/2020 10:24:18 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-05-13 07:00&hours=8&clientId=3&Workshift=1
+[ERR] 2020-05-11 22:26:11.174 API Call start 5/11/2020 10:26:11 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-05-14&hours=0&clientId=3&Workshift=0
+[ERR] 2020-05-11 22:26:11.442 API Call end 5/11/2020 10:26:11 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-05-14&hours=0&clientId=3&Workshift=0
+[ERR] 2020-05-11 22:26:13.582 API Call start 5/11/2020 10:26:13 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-05-14&hours=0&clientId=3&Workshift=0
+[ERR] 2020-05-11 22:26:13.605 API Call end 5/11/2020 10:26:13 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-05-14&hours=0&clientId=3&Workshift=0
+[ERR] 2020-05-11 22:26:17.936 API Call start 5/11/2020 10:26:17 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-05-14 15:00&hours=8&clientId=3&Workshift=2
+[ERR] 2020-05-11 22:26:17.962 API Call end 5/11/2020 10:26:17 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/2?startDatetime=2020-05-14 15:00&hours=8&clientId=3&Workshift=2
+[INF] 2020-05-11 22:31:58.834 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf
+[ERR] 2020-05-18 12:08:17.067 Error occurred in CareTaker Controller-Notification
+System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.AdminController.NewBooking() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\AdminController.cs:line 6676
+[ERR] 2020-05-27 12:26:14.119 Error occurred in Home Controller-Index
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.Index() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 135
+[ERR] 2020-05-27 12:26:23.376 Error occurred in Home Controller-TestimonialViewPartial
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:8592
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.HomeController.TestimonialViewPartial() in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\HomeController.cs:line 497
+[INF] 2020-05-27 12:30:25.387 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1015.pdf
+[INF] 2020-05-27 12:31:48.588 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-27 12:31:59.277 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_Frank Monardo_1011.pdf
+[INF] 2020-05-27 12:32:33.775 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1005.pdf
+[INF] 2020-05-27 12:33:14.192 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf
+[INF] 2020-05-27 12:33:25.261 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf
+[INF] 2020-05-27 12:34:50.880 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf
+[INF] 2020-05-27 12:35:40.690 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1016.pdf
+[INF] 2020-05-27 13:08:09.396 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf
+[ERR] 2020-05-27 14:03:22.539 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.SavePublicUserInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SavePublicUserInvoiceReport.aspx.cs:line 166
+[INF] 2020-05-27 14:04:50.419 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1018.pdf
+[ERR] 2020-05-28 11:55:25.681 Error occurred in PublicUser Controller-SendUserEmail
+System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Nirast.Pcms.Web.Helpers.Service.PostAPIWithData(String requestContent, String api) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 68
+   at Nirast.Pcms.Web.Controllers.PublicUserController.SendUserInvoiceEmail(String username, String email, Int32 fileId) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\PublicUserController.cs:line 423
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+[ERR] 2020-05-28 15:17:44.400 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 101
+[INF] 2020-05-28 15:20:28.030 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf
+[ERR] 2020-05-28 15:24:24.172 Error occurred in ShowPublicUserInvoiceReport-Page_Load
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.UpdateUserInvoice.Page_Load(Object sender, EventArgs e) in E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\UpdateUserInvoice.aspx.cs:line 101
+[INF] 2020-05-28 15:25:16.849 filePath: E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\PCMS\Invoice\PublicUser\Invoice_June j_1017.pdf
+[ERR] 2020-05-28 15:48:20.954 Redirect to Login from InvoiceHistory-Admin Controller
+[ERR] 2020-06-08 13:04:29.040 Error occurred in Client Controller-ClientSearch
+System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at Nirast.Pcms.Web.Helpers.Service.GetAPI(String api) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Helpers\Service.cs:line 86
+   at Nirast.Pcms.Web.Controllers.ClientController.ClientInvoiceSettings() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Controllers\ClientController.cs:line 2132
+[ERR] 2020-06-08 13:58:08.230 Error occurred in Admin Controller-ClientInvoiceReport.cs
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.ClientInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\ClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-06-08 14:28:09.378 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 978
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 685
+[ERR] 2020-06-08 14:28:32.070 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 978
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 685
+[ERR] 2020-06-08 14:28:41.850 Error occurred in aspx client Invoice Report!
+System.IO.IOException: The document has no pages.
+   at iTextSharp.text.pdf.PdfPages.WritePageTree()
+   at iTextSharp.text.pdf.PdfWriter.Close()
+   at iTextSharp.text.pdf.PdfDocument.Close()
+   at iTextSharp.text.Document.Close()
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.MergePDFs(String outPutFilePath, List`1 filesPath) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 978
+   at Nirast.Pcms.Web.Reports.SaveClientInvoiceReport.GenerateInvoice() in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\SaveClientInvoiceReport.aspx.cs:line 685
+[ERR] 2020-06-08 18:14:32.946 Error occurred in Admin Controller-ClientInvoiceReport.cs
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Nirast.Pcms.Web.Reports.ClientInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\ClientInvoiceReport.aspx.cs:line 111

@@ -1,0 +1,29 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Nirast.Pcms.Api.Tests.dll.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Nirast.Pcms.Api.Tests.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Nirast.Pcms.Api.Tests.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Nirast.Pcms.Api.Tests.dll.config
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Nirast.Pcms.Api.Tests.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Nirast.Pcms.Api.Tests.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.csproj.CopyComplete
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Tests\obj\Debug\Nirast.Pcms.Api.Tests.pdb

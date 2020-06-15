@@ -1,0 +1,247 @@
+﻿@model  Nirast.Pcms.Web.Models.OfficeStaffRegistration
+@{
+    ViewBag.Title = "OfficeStaff";
+    Layout = "~/Views/Shared/_AdminDashboardLayout.cshtml";
+}
+<head>
+    <script src="~/css/AdminDashboard/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="~/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    @Styles.Render("~/css/CustomStyles.css")
+</head>
+@*@Html.AntiForgeryToken()*@
+<div class="container">
+
+    <div class="row">
+        <div class="profile_Style">
+            @if (ViewBag.Error != null)
+            {
+                <div><p class="alert custom-alert-danger col-md-6 col-md-offset-3 statusmessage">@ViewBag.Error</p></div>
+            }
+            else
+            {
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="panel panel-default">
+                        @if (TempData["OfficeStaff"] != null)
+                        {
+                            <p class="alert alert-success statusmessage">@TempData["OfficeStaff"]</p>
+                        }
+                        @if (TempData["OfficeStaffFailure"] != null)
+                        {
+                            <p class="alert alert-danger statusmessage">@TempData["OfficeStaffFailure"]</p>
+                        }
+                        <div class="panel-heading">
+                            <h4 style="font-weight:bold">Office Staff Registration</h4>
+                        </div>
+                        <div class="panel-body">
+
+                            @using (Html.BeginForm("CreateOfficeStaffRegistration", "Admin", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                            {
+                                <div class="col-lg-12 col-md-12 col-sm-12 no-padding ">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">First Name</label><span class="mandatoryField">*</span>
+                                                            @Html.TextBoxFor(model => model.FirstName, "", new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "First Name" })
+                                                            @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "no-padding required" })
+                                                        </div>
+                                                  
+                                                    <div class="col-md-6">
+                                                       
+                                                            <label class="label-style">Last Name</label><span class="mandatoryField">*</span>
+                                                            @Html.TextBoxFor(model => model.LastName, "", new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Last Name" })
+                                                            @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "no-padding required" })
+                                                     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                       
+                                                            <label class="label-style" for="Qualification">Qualification</label>
+                                                            @Html.DropDownListFor(model => model.QualificationId, ViewData["ListQualification"] as SelectList,  new { @class = "form-control labelStyle" })
+                                                            
+                                                      
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                     
+                                                            <label class=" label-style" for="Designation">Designation</label>
+                                                            @Html.DropDownListFor(model => model.DesignationId, ViewData["listDesignation"] as SelectList, new { @class = "form-control labelStyle" })
+                                                            
+                                                     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style" for="Gender">Role</label><span class="mandatoryField">*</span>
+                                                            @Html.DropDownListFor(model => model.RoleId, ViewData["RolesList"] as SelectList, "--Select--", new { @class = "form-control labelStyle" })
+                                                            @Html.ValidationMessageFor(model => model.RoleId, "", new { @class = "no-padding required" })
+                                                     
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                     
+                                                            <label class=" label-style">Country</label><span class="mandatoryField">*</span>
+                                                         
+                                                                @Html.DropDownListFor(model => model.CountryId, ViewData["CountryList"] as SelectList, "--Select--", new { @class = "form-control labelStyle", @onchange = "LoadStates()" })
+                                                           
+                                                            @Html.ValidationMessageFor(model => model.CountryId, "", new { @class = "no-padding required" })
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">@Resource.State</label><span class="mandatoryField">*</span>
+                                                          
+                                                                @Html.DropDownListFor(model => model.StateId, new SelectList(Enumerable.Empty<SelectListItem>(), "Value", "Text"), "--Select--", new { @class = "form-control labelStyle", @onchange = "LoadCities(this.value)" })
+                                                                @Html.ValidationMessageFor(model => model.StateId, "", new { @class = "no-padding required" })
+                                                      
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">City</label><span class="mandatoryField">*</span>
+                                                          
+                                                                @Html.DropDownListFor(model => model.CityId, new SelectList(Enumerable.Empty<SelectListItem>(), "Value", "Text"), "--Select--", new { @class = "form-control labelStyle" })
+
+                                                            
+                                                            @Html.ValidationMessageFor(model => model.CityId, "", new { @class = "no-padding required" })
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                       
+                                                            <label class="label-style">Location</label>
+                                                            @Html.TextBoxFor(model => model.Location, new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Location" })
+                                                            @Html.ValidationMessageFor(model => model.Location, "", new { @class = "no-padding required" })
+                                                       
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">@Resource.StreetName</label><span class="mandatoryField">*</span>
+                                                            @Html.TextBoxFor(model => model.HouseName, new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = Resource.StreetName })
+                                                            @Html.ValidationMessageFor(model => model.HouseName, "", new { @class = "no-padding required" })
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">@Resource.ZIPCode</label>
+                                                            @Html.TextBoxFor(model => model.ZipCode, new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = Resource.ZIPCode })
+                                                            @Html.ValidationMessageFor(model => model.ZipCode, "", new { @class = "no-padding required" })
+                                                       
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">Phone #1</label>
+                                                            @Html.TextBoxFor(model => model.PrimaryPhoneNo, "", new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Phone #1" })
+                                                            @Html.ValidationMessageFor(model => model.PrimaryPhoneNo, "", new { @class = "no-padding required" })
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">Phone #2</label>
+                                                            @Html.TextBoxFor(model => model.SecondaryPhoneNo, "", new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Phone #2" })
+                                                            @Html.ValidationMessageFor(model => model.SecondaryPhoneNo, "", new { @class = "no-padding required" })
+                                                      
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">Email ID</label><span class="mandatoryField">*</span>
+                                                            @Html.TextBoxFor(model => model.EmailAddress, "", new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Email ID", @onblur = "checkLoginName()" })
+                                                            <span class="col-md-12 no-padding labelStyle info" title="" style="color:black;">Verification mail will be sent to the above Email ID</span><br />
+                                                            @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "no-padding required" })
+                                                            <span id="result" />
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                     
+                                                            <label class=" label-style" for="pwd">Password</label><span class="mandatoryField">*</span>
+                                                            @Html.PasswordFor(model => model.Password, new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Password" })
+                                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "no-padding required" })
+                                                      
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      
+                                                            <label class="label-style">
+                                                                Confirm Password
+                                                            </label><span class="mandatoryField">*</span>
+                                                            @Html.PasswordFor(model => model.ConfirmPassword, new { @autocomplete = "off", @class = "form-control labelStyle", @placeholder = "Confirm Password" })
+                                                            @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "no-padding required" })
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="clearfix"></div>
+                                            <div class="box-footer">
+                                              
+                                                    <div class="registerStyle">
+                                                        @if (ViewBag.AllowEdit)
+                                                        {
+                                                            <button class="btn btn-primary" value="" id="registerOfficeStaff">REGISTER</button>
+                                                        }
+                                                        else
+                                                        {
+                                                            <div class="wrapper">
+                                                                <button class="btn btn-primary" value="" disabled>REGISTER</button>
+                                                            </div>
+                                                        }
+                                                        &nbsp;&nbsp;
+                                                        <label class="btn btn-primary" value="Cancel" onclick="reload()">Cancel</label>&nbsp;&nbsp;
+                                                    </div>
+                                               
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+    <!-- //login -->
+
+</div>
+<style type="text/css">
+    .form-control {
+        border-radius: 4px;
+    }
+
+    .registerStyle {
+        text-align: center;
+        padding-top: 10px;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        LoadStates();
+    });
+</script>

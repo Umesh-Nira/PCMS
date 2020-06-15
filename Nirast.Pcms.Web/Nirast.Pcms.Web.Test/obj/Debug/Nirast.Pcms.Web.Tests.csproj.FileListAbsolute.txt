@@ -1,0 +1,251 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\ApplicationInsights.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-CA.resx
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.resx
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.Designer.cs
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Reports\CaretakerAvailablity.rdlc
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Ionic.Zip.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Owin.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll.config
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-US\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csprojAssemblyReference.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\ApplicationInsights.config
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Reports\CaretakerAvailablity.rdlc
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-CA.resx
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.resx
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.Designer.cs
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll.config
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Ionic.Zip.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Owin.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.Settings.AppSettings.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll.config
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-US\Nirast.Pcms.Web.resources.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csprojAssemblyReference.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CopyComplete
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\ApplicationInsights.config
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Reports\CaretakerAvailablity.rdlc
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-CA.resx
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.resx
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.Designer.cs
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll.config
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Ionic.Zip.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Owin.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.Settings.AppSettings.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll.config
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.pdb
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.xml
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-CA\Nirast.Pcms.Web.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-US\Nirast.Pcms.Web.resources.dll
+D:\Working\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CopyComplete
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\ApplicationInsights.config
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Reports\CaretakerAvailablity.rdlc
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-CA.resx
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.resx
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Resource.en-US.Designer.cs
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll.config
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Tests.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Ionic.Zip.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Owin.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.Settings.AppSettings.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.dll.config
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Newtonsoft.Json.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Helpers.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Mvc.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Razor.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.WebPages.Razor.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\System.Web.Optimization.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Nirast.Pcms.Web.Logger.pdb
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\itextsharp.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\PayPal.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\EntityFramework.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\Serilog.xml
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-CA\Nirast.Pcms.Web.resources.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\bin\Debug\en-US\Nirast.Pcms.Web.resources.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csprojAssemblyReference.cache
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CoreCompileInputs.cache
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.csproj.CopyComplete
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.dll
+E:\BKUP - Copy\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web.Test\obj\Debug\Nirast.Pcms.Web.Tests.pdb

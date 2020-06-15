@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[Settings_State](
+	[StateId] [int] IDENTITY(1,1) NOT NULL,
+	[StateCode] [nvarchar](10) NOT NULL,
+	[StateName] [nvarchar](30) NOT NULL,
+	[TaxPercent] [float] NULL,
+	[CountryId] [int] NOT NULL,
+ CONSTRAINT [PK_Settings_State] PRIMARY KEY CLUSTERED 
+(
+	[StateId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [State_Unique] UNIQUE NONCLUSTERED 
+(
+	[CountryId] ASC,
+	[StateName] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [stateCode_unique] UNIQUE NONCLUSTERED 
+(
+	[CountryId] ASC,
+	[StateCode] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[Settings_State]  WITH CHECK ADD  CONSTRAINT [FK_Settings_State_Settings_State] FOREIGN KEY([CountryId])
+REFERENCES [dbo].[Settings_Country] ([CountryId])
+GO
+
+ALTER TABLE [dbo].[Settings_State] CHECK CONSTRAINT [FK_Settings_State_Settings_State]
+

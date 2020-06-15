@@ -1,0 +1,80 @@
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Cors.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.xml
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csprojAssemblyReference.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CopyComplete
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.dll
+D:\Nithin Projects\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Cors.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.xml
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csprojAssemblyReference.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CoreCompileInputs.cache
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CopyComplete
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.dll
+D:\Nithin Projects\BackUp\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Cors.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.xml
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csprojAssemblyReference.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CoreCompileInputs.cache
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CopyComplete
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.dll
+D:\Working\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Data.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Cors.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Dapper.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Net.Http.Formatting.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\bin\Debug\System.Web.Http.Cors.xml
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csprojAssemblyReference.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CoreCompileInputs.cache
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.csproj.CopyComplete
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.dll
+E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Data\obj\Debug\Nirast.Pcms.Api.Data.pdb

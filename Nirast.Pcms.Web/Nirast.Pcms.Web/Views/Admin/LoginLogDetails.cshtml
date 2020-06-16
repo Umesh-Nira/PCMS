@@ -85,7 +85,6 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        debugger;
         $('#userList').DataTable({
             "pagingType": "full_numbers",
             'order': [[1, 'desc']],
@@ -101,31 +100,8 @@
         LoadDetails($('#ddlUserTypeId').val());
     });
     function LoadDetails(id) {
-        debugger;
        
        
-        //$.ajax({
-        //    type: "POST",
-        //    url: '/Admin/LoginLogDetails/',
-        //    data: {
-        //        id: id
-        //    },
-           
-        //    success: function (data) {
-        //         //spinnerVisible = true;
-        //         //       hideProgress();
-        //         //       $("#userList").html('');
-        //         //       $("#userList").html(data);
-        //         window.location = "/Admin/LoginLogDetails/" + id;
-                 
-              
-             
-        //    },
-        //    error: function (data) {
-        //        logError(data.statusText + ' - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtml');
-        //        //alert('Some network error has occurred. Please try again after some time.');
-        //    }
-        //})
         window.location = "/Admin/LoginLogDetails/" + id;
        
     }

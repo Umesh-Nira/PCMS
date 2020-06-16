@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -45,7 +41,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// </summary>
         public string Status { get; set; }
         public int PublicUserId { get; set; }
-        
+
         public string CareRecipient { get; set; }
 
         public string HouseName { get; set; }

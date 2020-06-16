@@ -34,7 +34,7 @@ function LoadStates() {
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while getting Phone Code for CountryId:' + selectedCountry + ' in function LoadStates(). Page: CustomScript.js');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         },
@@ -136,7 +136,7 @@ $('#paymentSearchbtn').click(function () {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while Searching payment history. Function: $("#paymentSearchbtn").click(). Page: CustomScript.js', '');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
     // closeAdvancedSearch();
@@ -196,7 +196,7 @@ function LoadStatesforHoliday(selectedCountry, stateId) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + selectedCountry + '. Function: LoadStatesforHoliday(selectedCountry, stateId). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -252,7 +252,7 @@ function GetStates(StateId = 0, CityId = 0) {
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while loading phone code for CountryId: ' + countryId + '. Function: GetStates(StateId = 0, CityId = 0). Page: CustomScript.js');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
             //$('#lblPhoneCodePrimary').text($.parseJSON(data)[0] === undefined ? '+1' : $.parseJSON(data)[0].PhoneCode);
@@ -262,7 +262,7 @@ function GetStates(StateId = 0, CityId = 0) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + countryId + '. Function: GetStates(StateId = 0, CityId = 0). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -309,17 +309,13 @@ function GetStates2(StateId = 0, CityId = 0) {
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while loading phone code for CountryId: ' + countryId + '. Function: GetStates2(StateId = 0). Page: CustomScript.js');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
-            //$('#lblPhoneCodePrimary').text($.parseJSON(data)[0] === undefined ? '+1' : $.parseJSON(data)[0].PhoneCode);
-            //$('#lblPhoneCodeSecondary').text($.parseJSON(data)[0] === undefined ? '+1' : $.parseJSON(data)[0].PhoneCode);
-            //if ($("#lblPhoneCodePrimary").length) {
-            //    $('#lblPhoneCodePrimary').text($.parseJSON(data)[0] == undefined ? '+1' : $.parseJSON(data)[0].PhoneCode);
-        },
+            },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + countryId + '. Function: GetStates2(StateId = 0).  Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -364,17 +360,15 @@ function GetStates1(StateId = 0, CityId) {
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while loading phone code for CountryId: ' + countryId + '. Function: GetStates1(StateId = 0). Page: CustomScript.js.');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
-            //if (CityId !== 0) {
-            //    GetCities1(CityId);
-            //}
+           
           
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + countryId + '. Function: GetStates1(StateId = 0). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -413,7 +407,7 @@ function LoadStatesByCountry(selectedCountry, stateId) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + selectedCountry + '. Function: LoadStatesforHoliday(selectedCountry, stateId). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -436,7 +430,7 @@ function LoadCityByStates(stateId, cityId) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + selectedCountry + '. Function: LoadStatesforHoliday(selectedCountry, stateId). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -450,7 +444,6 @@ function editInvoiceDetails(ClientId, ClientName, InvoicePrefix, InvoiceNumber) 
 }
 
 function editUserInvoiceDetails(InvoicePrefix, InvoiceNumber) {
-    debugger;
     $('#InvoicePrefix').val(InvoicePrefix);
     $('#InvoiceNumber').val(InvoiceNumber);
 }
@@ -478,7 +471,7 @@ function GetCities(CityId = 0) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading Cities for StateId: ' + StateId + '. Function: GetCities(CityId = 0). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -504,7 +497,7 @@ function GetCities2(CityId = 0) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading Cities for StateId: ' + StateId + '. Function: GetCities2(). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
     $('#StateId2').val(StateId);
@@ -538,7 +531,7 @@ function GetCities1(CityId = 0) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading Cities for StateId: ' + StateId + '. Function: GetCities1(). Page: CustomScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
     $('#StateId1').val(StateId);
@@ -616,8 +609,7 @@ function GetCardType(number) {
 }
 
 function checkLoginName() {
-    debugger;
-    $("#result").html("");
+   $("#result").html("");
     email_regex = /^[a-zA-Z][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
     var name = $('#EmailAddress').val();
     if (email_regex.test(name)) {
@@ -642,7 +634,6 @@ function checkLoginName() {
 }
 
 function checkClientLoginName() {
-    debugger;
     $("#result").html("");
     email_regex = /^[a-zA-Z][a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
     var name = $('#EmailId').val();

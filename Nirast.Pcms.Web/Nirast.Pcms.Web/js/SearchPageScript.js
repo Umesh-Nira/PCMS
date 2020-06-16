@@ -29,7 +29,6 @@
 }
 
 function checkRequiredId(id) {  
-    debugger;
     var fromDate = $('#FromDate').val();
     var fromTime = $('#FromTime').val();
     var toDate = $('#ToDate').val();
@@ -95,7 +94,7 @@ function GetServiceDescription(service) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while Searching a Caregiver. Function: $("#btnKeywordSearch").click(). Page: SearchPageScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -181,7 +180,6 @@ $(document).ready(function () {
     //$('#FromDate').focus();
 
     $('#searchBtn').click(function () {
-        debugger;
         $('#displayError').hide();
         var validated = checkRequiredBookingDetails();
         //var serviceId = GetParameterValues('serviceId');
@@ -234,7 +232,7 @@ $(document).ready(function () {
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Searching a Caregiver. Function: $("#btnKeywordSearch").click(). Page: SearchPageScript.js');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
         $('#advancedSearchMenu').hide();
@@ -258,8 +256,7 @@ $(document).ready(function () {
     $("#ProfileId").val(localStorage.getItem("bookingProfile"));
     if (serviceId != undefined) {
         showProgress();
-        debugger;
-        if (localStorage.getItem("bookingFromDate") != undefined && localStorage.getItem("bookingFromDate") != ''
+       if (localStorage.getItem("bookingFromDate") != undefined && localStorage.getItem("bookingFromDate") != ''
             && localStorage.getItem("bookingFromTime") != undefined && localStorage.getItem("bookingFromTime") != ''
             && localStorage.getItem("bookingToDate") != undefined && localStorage.getItem("bookingToDate") != ''
             && localStorage.getItem("bookingToTime") != undefined && localStorage.getItem("bookingToTime") != '') {
@@ -368,13 +365,12 @@ var SelectedCountryId = function (selectObject) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + value +' . Function: var SelectedCountryId = function (selectObject). Page: SearchPageScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
 
 function SortData(sortBy, sortField) {
-    debugger;
     if (sortField == 'Rate') {
         $('#sortByExp').val(0);
     } else {
@@ -416,7 +412,7 @@ var SelectedStateId = function (selectObject) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + value +' . Function: var SelectedCountryId = function (selectObject). Page: SearchPageScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 }
@@ -614,7 +610,7 @@ function LoadCities(selectedState) {
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading Cities for StateId: ' + selectedState +' . Function: LoadCities(selectedState). Page: SearchPageScript.js');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
     $("#CityId").prop('selectedIndex', 0);

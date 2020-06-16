@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Nirast.Pcms.Api.Sdk.Entities;
+﻿using Nirast.Pcms.Api.Sdk.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Repositories
@@ -15,8 +15,8 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
         Task<int> AddHolidayPay(Holidays holiday);
         Task<int> AddIntervalHours(ClientTimeShifts shifts);
 
-        Task <float> RetrieveHolidayPayDetails();
-        Task <float> RetrieveGetIntervalHours();
+        Task<float> RetrieveHolidayPayDetails();
+        Task<float> RetrieveGetIntervalHours();
 
     }
 }

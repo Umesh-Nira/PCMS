@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nirast.Pcms.Api.Sdk.Entities
+﻿namespace Nirast.Pcms.Api.Sdk.Entities
 {
     public class EmailConfiguration
     {
@@ -21,7 +15,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         public int ConfigId { get; set; }
         public string Emailtype { get; set; }
         public int EmailtypeId { get; set; }
-        public string FromEmail { get; set; }     
+        public string FromEmail { get; set; }
         public string Password { get; set; }
     }
 }

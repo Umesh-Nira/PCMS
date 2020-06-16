@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
-{       
+{
     public class PaymentReportDetails
     {
-	//	cast((((t1.TotalHours-isnull(t2.HoildayHours,0))*isnull(t1.ServiceRate,0)) + (isnull(t2.HoildayHours,0)*isnull(t1.ServiceRate,0))*isnull(t2.HolidayPayValue,0)) as decimal (10,2)) as ,
-	//	cast((((t1.TotalHours-isnull(t2.HoildayHours,0))*isnull(t1.DisplayRate,0)) + (isnull(t2.HoildayHours,0)*isnull(t1.DisplayRate,0))*isnull(t2.HolidayPayValue,0)) as decimal (10,2)) as TotalDisplayAmount,
         public int Id { get; set; }
         public int PublicUserId { get; set; }
         public DateTime TransactionDate { get; set; }

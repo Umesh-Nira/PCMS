@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Nirast.Pcms.Api.Helpers;
-using Nirast.Pcms.Api.Models;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
@@ -111,7 +110,7 @@ namespace Nirast.Pcms.Api.Controllers
                 EmailType emailType = new EmailType();
                 data.EmailIdConfig = await _pcmsService.GetEmailIdConfigByType(data.EmailType);
                 data.EmailConfig = await _pcmsService.GetDefaultConfiguration();
-               
+
                 if (await _notifactionService.SendEMail(data))
                 {
                     var response = Request.CreateResponse(HttpStatusCode.OK);
@@ -120,7 +119,7 @@ namespace Nirast.Pcms.Api.Controllers
                 }
 
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.NotFound, "Sending Email Failed");
-                
+
             }
             catch (Exception ex)
             {
@@ -303,7 +302,7 @@ namespace Nirast.Pcms.Api.Controllers
                 }
                 int countryId = await _pcmsService.AddCountry(Country);
                 var response = new HttpResponseMessage();
-                if (countryId== 10001)
+                if (countryId == 10001)
                 {
                     response = Request.CreateResponse(HttpStatusCode.Conflict);
                     response.Content = new StringContent("Duplicate", System.Text.Encoding.UTF8, "application/json");
@@ -313,7 +312,7 @@ namespace Nirast.Pcms.Api.Controllers
                     response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 }
-                
+
                 return response;
             }
             catch (Exception ex)
@@ -397,7 +396,7 @@ namespace Nirast.Pcms.Api.Controllers
                     response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 }
-                
+
                 return response;
             }
             catch (Exception ex)
@@ -800,7 +799,7 @@ namespace Nirast.Pcms.Api.Controllers
                     response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 }
-               
+
                 return response;
             }
             catch (Exception ex)
@@ -929,7 +928,7 @@ namespace Nirast.Pcms.Api.Controllers
         public async Task<HttpResponseMessage> GetCaregiverServices()
         {
             Services services = new Services();
-            
+
             try
             {
 
@@ -979,7 +978,7 @@ namespace Nirast.Pcms.Api.Controllers
                     response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 }
-                
+
                 return response;
             }
             catch (Exception ex)
@@ -1008,7 +1007,6 @@ namespace Nirast.Pcms.Api.Controllers
         // DELETE: api/City/5
         [HttpPost]
         [Route("api/Admin/DeleteCategory/{CategoryId}")]
-        //[BasicAuthentication("Administrator", "Office Staff")]
         public async Task<HttpResponseMessage> DeleteCategory(int CategoryId)
         {
             try
@@ -1030,7 +1028,7 @@ namespace Nirast.Pcms.Api.Controllers
                     response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 }
-                
+
                 return response;
             }
             catch (Exception ex)
@@ -1980,7 +1978,7 @@ namespace Nirast.Pcms.Api.Controllers
                     response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 }
-                
+
                 return response;
             }
             catch (Exception ex)
@@ -2043,7 +2041,7 @@ namespace Nirast.Pcms.Api.Controllers
         [HttpPost]
         [Route("api/Admin/DeleteTestimonial/{testimonialId}")]
         //[BasicAuthentication("Administrator", "Office Staff")]
-        public async Task<HttpResponseMessage> DeleteTestimonial (int testimonialId)
+        public async Task<HttpResponseMessage> DeleteTestimonial(int testimonialId)
         {
             try
             {
@@ -2297,7 +2295,7 @@ namespace Nirast.Pcms.Api.Controllers
         //[BasicAuthentication("Administrator", "Office Staff")]
         public async Task<HttpResponseMessage> SaveRoles(Roles roles)
         {
-                var response = new HttpResponseMessage();
+            var response = new HttpResponseMessage();
             try
             {
 
@@ -2352,7 +2350,7 @@ namespace Nirast.Pcms.Api.Controllers
             try
             {
 
-                 var lstRoles = await _pcmsService.RetrieveRolesById(roleId);
+                var lstRoles = await _pcmsService.RetrieveRolesById(roleId);
                 string result = JsonConvert.SerializeObject(lstRoles);
                 if (result != null)
                 {
@@ -2374,11 +2372,11 @@ namespace Nirast.Pcms.Api.Controllers
         [Route("api/Admin/GetCaretakerType")]
         public async Task<HttpResponseMessage> GetCaretakerType()
         {
-            
+
             try
             {
 
-                 var ctType = await _pcmsService.GetCaretakerType();
+                var ctType = await _pcmsService.GetCaretakerType();
                 string result = JsonConvert.SerializeObject(ctType);
                 if (result != null)
                 {
@@ -2557,7 +2555,7 @@ namespace Nirast.Pcms.Api.Controllers
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
         }
-        
+
         [HttpGet]
         [Route("api/Admin/GetBookingInvoiceListforUserDashBoard/{publicUserId}")]
         //[BasicAuthentication("Administrator", "Office Staff")]
@@ -2630,7 +2628,7 @@ namespace Nirast.Pcms.Api.Controllers
         [HttpPost]
         [Route("api/Admin/GetCaretakerBookings")]
         //[BasicAuthentication("Administrator", "Office Staff")]
-        public async  Task<HttpResponseMessage> GetCaretakerBookings(CaretakerWiseSearchReport bookingHistorySearch)
+        public async Task<HttpResponseMessage> GetCaretakerBookings(CaretakerWiseSearchReport bookingHistorySearch)
         {
             try
             {
@@ -2726,7 +2724,7 @@ namespace Nirast.Pcms.Api.Controllers
         //[BasicAuthentication("Administrator", "Office Staff")]
         public async Task<HttpResponseMessage> GetPaymentDetails()
         {
-            List<PaymentHistory> paymentDetails= new List<PaymentHistory>();
+            List<PaymentHistory> paymentDetails = new List<PaymentHistory>();
             try
             {
                 var paymentHistory = await _invoiceService.GetPaymentDetails();
@@ -2999,7 +2997,7 @@ namespace Nirast.Pcms.Api.Controllers
         {
             try
             {
-               var notificationDetails = await _invoiceService.GetAdminNotification();
+                var notificationDetails = await _invoiceService.GetAdminNotification();
                 string result = JsonConvert.SerializeObject(notificationDetails);
                 if (result != null)
                 {
@@ -3191,7 +3189,7 @@ namespace Nirast.Pcms.Api.Controllers
         /// <param name="input"></param>
         //[ApiAuthorize("blogger_user")]
         [HttpPost]
-        [Route("api/Admin/SendInvoice")]     
+        [Route("api/Admin/SendInvoice")]
         public async Task<HttpResponseMessage> SendInvoice(InvoiceMail invoiceMail)
         {
             try
@@ -3220,7 +3218,7 @@ namespace Nirast.Pcms.Api.Controllers
         [Route("api/Admin/GenerateInvoice")]
         public async Task<HttpResponseMessage> GenerateInvoice(InvoiceMail invoiceMail)
         {
-           
+
             try
             {
                 int invoice = await _invoiceService.GenerateInvoice(invoiceMail);
@@ -3318,20 +3316,20 @@ namespace Nirast.Pcms.Api.Controllers
         {
             try
             {
-             
+
                 string result = "success";
                 if (result == null)
                 {
                     return ApiResponse.CreateErrorResponse(HttpStatusCode.NotFound, "Failed to change status of User.");
                 }
-                int id = await _pcmsService.ChangeBookigStatus(bookingStatus.userId, bookingStatus.status, bookingStatus.SiteUrl,bookingStatus.Reason);
+                int id = await _pcmsService.ChangeBookigStatus(bookingStatus.userId, bookingStatus.status, bookingStatus.SiteUrl, bookingStatus.Reason);
                 var response = Request.CreateResponse(HttpStatusCode.OK);
                 response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
                 return response;
             }
             catch (Exception ex)
             {
-                _logger.Error(ex, "Failed to change status of User. UserId: {0}",bookingStatus.userId);
+                _logger.Error(ex, "Failed to change status of User. UserId: {0}", bookingStatus.userId);
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
         }
@@ -3349,9 +3347,9 @@ namespace Nirast.Pcms.Api.Controllers
                 {
                     return ApiResponse.CreateErrorResponse(HttpStatusCode.NotFound, "Failed to change status of User.");
                 }
-                string downloadPath =  _adminService.DownloadDbBackup(path);
+                string downloadPath = _adminService.DownloadDbBackup(path);
                 var response = Request.CreateResponse(HttpStatusCode.OK);
-                if(downloadPath !=null)
+                if (downloadPath != null)
                 {
                     response.Content = new StringContent(downloadPath, System.Text.Encoding.UTF8, "application/json");
                 }
@@ -3359,7 +3357,7 @@ namespace Nirast.Pcms.Api.Controllers
                 {
                     response.Content = new StringContent("Unable to download", System.Text.Encoding.UTF8, "application/json");
                 }
-                
+
                 return response;
             }
             catch (Exception ex)
@@ -3381,7 +3379,7 @@ namespace Nirast.Pcms.Api.Controllers
             UsersDetails adminProfile = new UsersDetails();
             try
             {
-                var adminDetails =await _pcmsService.GetAdminProfile(id);
+                var adminDetails = await _pcmsService.GetAdminProfile(id);
                 if (adminDetails != null)
                 {
                     string result = JsonConvert.SerializeObject(adminDetails);
@@ -3431,7 +3429,7 @@ namespace Nirast.Pcms.Api.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-      
+
         [HttpPost]
         [Route("api/Admin/UpdateUserEmail")]
         public async Task<HttpResponseMessage> UpdateUserEmail(UsersDetails usersDetails)
@@ -3477,7 +3475,7 @@ namespace Nirast.Pcms.Api.Controllers
                 {
                     return ApiResponse.CreateErrorResponse(HttpStatusCode.NotFound, "Failed to change status of User.");
                 }
-             
+
                 string resultid = await _pcmsService.LoadPhoneCodeByCountryId(countryID);
                 var response = Request.CreateResponse(HttpStatusCode.OK);
                 response.Content = new StringContent(resultid, System.Text.Encoding.UTF8, "application/json");
@@ -3499,7 +3497,7 @@ namespace Nirast.Pcms.Api.Controllers
         /// 
         [HttpPost]
         [Route("api/Admin/SaveResidentDetails")]
-       
+
         public async Task<HttpResponseMessage> SaveResidentDetails(Resident residentDetails)
         {
             try
@@ -3508,14 +3506,14 @@ namespace Nirast.Pcms.Api.Controllers
                 var response = new HttpResponseMessage();
                 if (result == null)
                 {
-                    
+
                     //return ApiResponse.CreateErrorResponse(HttpStatusCode.NotFound, "Failed to save Resident Details");
                     response = Request.CreateResponse(HttpStatusCode.Conflict);
                     response.Content = new StringContent("Not Found", System.Text.Encoding.UTF8, "application/json");
                 }
 
                 int userId = await _pcmsService.SaveResidentDetails(residentDetails);
-               
+
                 if (userId == 10001)
                 {
                     response = Request.CreateResponse(HttpStatusCode.Conflict);
@@ -3525,7 +3523,7 @@ namespace Nirast.Pcms.Api.Controllers
                 {
                     response = Request.CreateResponse(HttpStatusCode.Conflict);
                     response.Content = new StringContent("Duplicate", System.Text.Encoding.UTF8, "application/json");
-                
+
                 }
                 else
                 {
@@ -3649,7 +3647,7 @@ namespace Nirast.Pcms.Api.Controllers
                 }
                 int questionId = await _pcmsService.AddEmailConfiguration(emailConfiguration);
                 var response = new HttpResponseMessage();
-             
+
 
                 return response;
             }
@@ -3716,11 +3714,11 @@ namespace Nirast.Pcms.Api.Controllers
             catch (Exception ex)
             {
                 _logger.Error(ex, "Failed to get config details");
-               
-                    var response = Request.CreateResponse(HttpStatusCode.InternalServerError);
-                    response.Content = new StringContent("Unable to save data. Please try again after sometime.", System.Text.Encoding.UTF8, "application/json");
-                    return response;
-                
+
+                var response = Request.CreateResponse(HttpStatusCode.InternalServerError);
+                response.Content = new StringContent("Unable to save data. Please try again after sometime.", System.Text.Encoding.UTF8, "application/json");
+                return response;
+
             }
         }
 
@@ -3825,7 +3823,7 @@ namespace Nirast.Pcms.Api.Controllers
                 _logger.Error(ex, "Failed to delete Config details. City Id: {0}", configId);
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
-        }       
+        }
 
         /// <summary>
         /// Delete email type config

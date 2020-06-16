@@ -109,8 +109,7 @@
                 changeYear: true,
             });
             $('#searchInvoicePayrise').click(function () {
-                debugger;
-                showProgress();
+               showProgress();
                 // debugger
                 var data = $('#invoicePayrise').serialize();
                 $.ajax({
@@ -125,7 +124,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while searching Client Invoice History. Function: showinvoicedeatils(). Page: InvoiceHistory.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 });
             });

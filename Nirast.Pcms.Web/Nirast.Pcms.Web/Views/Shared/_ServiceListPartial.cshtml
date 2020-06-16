@@ -97,11 +97,9 @@
 </div>
 <script>
     function getID(serviceId) {
-        debugger;
         $('#hiddenService').val(serviceId)
     }
     function deleteService() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeleteService",
@@ -113,7 +111,6 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deletingcountry. Function: deleteUser(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }

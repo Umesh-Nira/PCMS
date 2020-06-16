@@ -1,13 +1,13 @@
 ﻿using Dapper;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
+using Nirast.Pcms.Api.Sdk.Logger;
 using Nirast.Pcms.Api.Sdk.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using Nirast.Pcms.Api.Sdk.Logger;
 
 namespace Nirast.Pcms.Api.Data.Repositories
 {
@@ -34,7 +34,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
         /// </summary>
         /// <param name="timeShift">The time shift.</param>
         /// <returns></returns>
-        public  Task<int> AddTimeShift(ClientTimeShifts timeShift)
+        public Task<int> AddTimeShift(ClientTimeShifts timeShift)
         {
             try
             {
@@ -45,7 +45,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@WorkingHours", timeShift.WorkingHours);
                 param.Add("@PayingHours", timeShift.PayingHours);
                 param.Add("@StartTime", timeShift.StartTime);
-                var result= SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
+                var result = SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
                 return Task.FromResult(result);
             }
             catch (Exception ex)

@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Mvc;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Nirast.Pcms.Web.Helpers;
-using Nirast.Pcms.Web.Models;
-using System.Configuration;
 using Nirast.Pcms.Web.Logger;
-using static Nirast.Pcms.Web.Models.Enums;
+using Nirast.Pcms.Web.Models;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 using System.Net;
+using System.Web.Mvc;
 using System.Web.UI;
+using static Nirast.Pcms.Web.Models.Enums;
 
 namespace Nirast.Pcms.Web.Controllers
 {
@@ -37,7 +37,7 @@ namespace Nirast.Pcms.Web.Controllers
             if (RouteData.Values["id"] != null)
             {
                 string userId = RouteData.Values["id"].ToString();
-                int decUserId =  StringCipher.DecodeNumber(userId);
+                int decUserId = StringCipher.DecodeNumber(userId);
                 VerifyUserAccount verifyUser = new VerifyUserAccount
                 {
                     UserId = decUserId,
@@ -78,7 +78,7 @@ namespace Nirast.Pcms.Web.Controllers
                 var userDetails = JsonConvert.DeserializeObject<LoggedInUser>(result.Result);
                 if (userDetails != null)
                 {
-                    if ((userDetails.UserStatus != 1 )|| (userDetails.IsVerified == false))
+                    if ((userDetails.UserStatus != 1) || (userDetails.IsVerified == false))
                     {
                         return Json(userDetails);
                     }
@@ -97,14 +97,14 @@ namespace Nirast.Pcms.Web.Controllers
                         Session["UserLocation"] = userDetails.Location;
                         return Json(userDetails);
                     }
-                    }
+                }
                 else
                 {
-                        return Json(string.Empty);
-                    }
+                    return Json(string.Empty);
                 }
-            
-            catch(Exception ex)
+            }
+
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-CheckCredential");
                 return Json(string.Empty);
@@ -120,7 +120,7 @@ namespace Nirast.Pcms.Web.Controllers
                 Session.Clear();
                 return RedirectToAction("Index");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-Logout");
                 return null;
@@ -144,7 +144,7 @@ namespace Nirast.Pcms.Web.Controllers
                     return View();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-Index");
                 return View();
@@ -171,7 +171,7 @@ namespace Nirast.Pcms.Web.Controllers
                 ViewBag.Message = "Your application description page.";
                 return View();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-About");
                 return null;
@@ -182,10 +182,10 @@ namespace Nirast.Pcms.Web.Controllers
         {
             try
             {
-              
+
                 return View();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-Contact");
                 return null;
@@ -208,7 +208,7 @@ namespace Nirast.Pcms.Web.Controllers
                     TempData["ContactFailure"] = "Submission Failed.";
                 }
                 return RedirectToAction("Contact");
-                
+
             }
             catch (Exception ex)
             {
@@ -216,14 +216,14 @@ namespace Nirast.Pcms.Web.Controllers
                 return null;
             }
         }
-      
+
         public ActionResult Services()
         {
             try
             {
                 return View();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-Services");
                 return null;
@@ -235,13 +235,13 @@ namespace Nirast.Pcms.Web.Controllers
             try
             {
 
-                string serviceApi = "Admin/RetrieveServiceDetails/"+ serviceId;
+                string serviceApi = "Admin/RetrieveServiceDetails/" + serviceId;
                 var serviveResult = service.GetAPI(serviceApi);
                 listService = JsonConvert.DeserializeObject<List<ServicesViewModel>>(serviveResult);
                 string ServiceName = listService[0].Name;
                 ViewBag.Service = ServiceName;
                 ViewBag.ServiceId = serviceId;
-                ViewBag.ServicePicture= listService[0].ServicePicture;
+                ViewBag.ServicePicture = listService[0].ServicePicture;
                 //   byte ServicePicture= listService[serviceOrder - 1].ServicePicture;
                 // ViewBag.ServicePicture = ServicePicture;
             }
@@ -316,7 +316,7 @@ namespace Nirast.Pcms.Web.Controllers
                 var genderList = getGenders();
                 ViewBag.Gender = new SelectList(genderList, "GenderId", "Gender", 0);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-Search");
             }
@@ -360,7 +360,7 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 Services = serviceId
             };
-          
+
             try
             {
                 string api = "Home/SearchCareTaker";
@@ -375,10 +375,10 @@ namespace Nirast.Pcms.Web.Controllers
                         return PartialView(apiResults);
                     }
                 }
-               
+
                 return PartialView(apiResults);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-SearchByService");
                 return null;
@@ -422,7 +422,7 @@ namespace Nirast.Pcms.Web.Controllers
                         {
                             return PartialView(apiResults.OrderByDescending(x => x.DisplayRate));
                         }
-                        else 
+                        else
                         {
                             return PartialView(apiResults.OrderBy(x => x.DisplayRate));
                         }
@@ -438,7 +438,7 @@ namespace Nirast.Pcms.Web.Controllers
                     return PartialView(caretakerViewModel);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-SearchCareTaker");
                 return null;
@@ -463,7 +463,7 @@ namespace Nirast.Pcms.Web.Controllers
                     return PartialView(caretakerViewModel);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-KeywordCareTakerSearchDetail");
                 return null;
@@ -472,7 +472,7 @@ namespace Nirast.Pcms.Web.Controllers
 
         public ActionResult ServicesMenu()
         {
-            
+
             List<ServicesViewModel> listService = new List<ServicesViewModel>();
             try
             {
@@ -480,7 +480,7 @@ namespace Nirast.Pcms.Web.Controllers
                 var serviveResult = service.GetAPI(serviceApi);
                 listService = JsonConvert.DeserializeObject<List<ServicesViewModel>>(serviveResult);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Home Controller-ServicesMenu");
             }

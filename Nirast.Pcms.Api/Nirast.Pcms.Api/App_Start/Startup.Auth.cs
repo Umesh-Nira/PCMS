@@ -1,11 +1,11 @@
-﻿using System;
-using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using Owin;
-using Nirast.Pcms.Api.Providers;
 using Nirast.Pcms.Api.Models;
+using Nirast.Pcms.Api.Providers;
+using Owin;
+using System;
 
 namespace Nirast.Pcms.Api
 {

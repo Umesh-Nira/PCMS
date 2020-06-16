@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
 using Nirast.Pcms.Api.Sdk.Repositories;
-using static Nirast.Pcms.Api.Sdk.Entities.Enums;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.Repositories
 {
@@ -87,7 +84,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                     param1.Add("@UserId", officeStaff.UserId);
                     param1.Add("@QualificationId", officeStaff.QualificationId);
                     int registrationResult = await SqlMapper.ExecuteScalarAsync<int>(_dbConnection, saveOfficeStaffDetails, param1, transaction, commandType: CommandType.StoredProcedure);
-                 
+
                     transaction.Commit();
                     return await Task.FromResult(userId);
                 }

@@ -140,8 +140,7 @@
 <script type="text/javascript">
 
     function setOfficeStaffId(userId, status) {
-        debugger;
-        $('#hdnCTId').val(userId);
+       $('#hdnCTId').val(userId);
         $('#hdnSTId').val(status);
 
     }
@@ -157,7 +156,6 @@
     }
 
     function showBookingDetails(bookingId) {
-        debugger;
         showProgress();
         $.ajax({
             url: "../UserBookingDetails/",
@@ -175,7 +173,6 @@
                 hideProgress();
                 console.log(feed.responseText);
                 logError(feed.statusText + ' - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _PublicUserNotification.cshtml');
-                //alert('Some error has occurred. Please try again after some time.');
             }
         });
     }

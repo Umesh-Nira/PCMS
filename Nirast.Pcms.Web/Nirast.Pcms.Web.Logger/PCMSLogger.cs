@@ -1,10 +1,6 @@
 ﻿using Serilog;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Web.Logger
 {
@@ -33,7 +29,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Info(string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Information(message);
         }
 
@@ -55,7 +51,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Info(Exception exception, string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Information(exception, message);
         }
 
@@ -67,7 +63,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Info(Exception exception, string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Information(exception, message, propertyValues);
         }
 
@@ -77,7 +73,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Debug(string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Debug(message);
         }
 
@@ -88,7 +84,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Debug(string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Debug(message, propertyValues);
         }
 
@@ -99,7 +95,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Debug(Exception exception, string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Debug(exception, message);
         }
 
@@ -111,7 +107,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Debug(Exception exception, string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Debug(exception, message, propertyValues);
         }
 
@@ -121,7 +117,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Error(string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Error(message);
         }
 
@@ -132,7 +128,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Error(string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Error(message, propertyValues);
         }
 
@@ -143,7 +139,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Error(Exception exception, string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Error(exception, message);
         }
 
@@ -155,7 +151,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Error(Exception exception, string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Error(exception, message, propertyValues);
         }
 
@@ -165,7 +161,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Fatal(string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Fatal(message);
         }
 
@@ -176,7 +172,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Fatal(string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Fatal(message, propertyValues);
         }
 
@@ -187,7 +183,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Fatal(Exception exception, string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Fatal(exception, message);
         }
 
@@ -199,7 +195,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Fatal(Exception exception, string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Fatal(exception, message, propertyValues);
         }
 
@@ -209,7 +205,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Warning(string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Warning(message);
         }
 
@@ -220,7 +216,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Warning(string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Warning(message, propertyValues);
         }
 
@@ -231,7 +227,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="message">The message.</param>
         public void Warning(Exception exception, string message)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Warning(exception, message);
         }
 
@@ -243,7 +239,7 @@ namespace Nirast.Pcms.Web.Logger
         /// <param name="propertyValues">The property values.</param>
         public void Warning(Exception exception, string message, params object[] propertyValues)
         {
-            if(ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
+            if (ConfigurationManager.AppSettings["WriteLogs"].ToString() == "True")
                 _logger.Warning(exception, message, propertyValues);
         }
         #endregion

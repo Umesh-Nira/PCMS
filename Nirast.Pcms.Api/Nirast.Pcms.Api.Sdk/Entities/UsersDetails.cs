@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -219,8 +216,8 @@ namespace Nirast.Pcms.Api.Sdk.Entities
     {
         public int CardId { get; set; }
         public string NameOnCard { get; set; }
-        public string UserCard_CardNumber { get; set; } 
-		public int ExpiryMonth { get; set; }
+        public string UserCard_CardNumber { get; set; }
+        public int ExpiryMonth { get; set; }
         public int ExpiryYear { get; set; }
 
         public int CardTypeId { get; set; }

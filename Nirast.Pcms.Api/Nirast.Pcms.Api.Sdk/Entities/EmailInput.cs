@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Mail;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
-   public class EmailInput
+    public class EmailInput
     {
         public string Name
         {

@@ -6,17 +6,15 @@ using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Web;
-using System.Web.UI;
 using System.Web.Mvc;
-using System.Linq;
+using System.Web.UI;
 using static Nirast.Pcms.Web.Models.Enums;
-using System.Web.Script.Serialization;
-using System.Net.Mail;
-using System.Globalization;
 
 namespace Nirast.Pcms.Web.Controllers
 {
@@ -262,8 +260,8 @@ namespace Nirast.Pcms.Web.Controllers
 
                     var stateResult = service.GetAPI(stateApi);
                     listState = JsonConvert.DeserializeObject<List<StateViewModel>>(stateResult);
-                var _listState= new SelectList(listState, "StateId", "Name", defaultState);
-                ViewData["States"] = _listState;
+                    var _listState = new SelectList(listState, "StateId", "Name", defaultState);
+                    ViewData["States"] = _listState;
                     string apiCity = "Admin/GetCity?flag=StateId&value=" + companyProfile.StateId;
                     var resultCity = service.GetAPI(apiCity);
                     cityList = JsonConvert.DeserializeObject<List<Cities>>(resultCity);
@@ -271,8 +269,8 @@ namespace Nirast.Pcms.Web.Controllers
                 }
                 var _listCountry = new SelectList(listCountry, "CountryId", "Name", defaultCountry);
                 ViewData["CountryList"] = _listCountry;
-              
-                
+
+
             }
             catch (Exception ex)
             {
@@ -287,7 +285,6 @@ namespace Nirast.Pcms.Web.Controllers
         {
             List<CountryViewModel> listCountry = new List<CountryViewModel>();
             List<StateViewModel> listState = new List<StateViewModel>();
-            //CompanyProfile companyProfile = new CompanyProfile();
             try
             {
                 string api = string.Empty;
@@ -357,10 +354,6 @@ namespace Nirast.Pcms.Web.Controllers
                 var companyContent = JsonConvert.SerializeObject(companyProfile);
                 HttpStatusCode result = service.PostAPI(companyContent, api);
                 TempData["Userupdate"] = "Company details saved successfully.";
-                //api = "Admin/GetCompanyProfiles/0";
-                //var companyResult = service.GetAPI(api);
-                //List<CompanyProfile> listCompanyProfile = JsonConvert.DeserializeObject<List<CompanyProfile>>(companyResult);
-                //companyProfile = listCompanyProfile.First();
             }
             catch (Exception ex)
             {
@@ -600,8 +593,6 @@ namespace Nirast.Pcms.Web.Controllers
                 var result = service.PostAPIWithData(advancedSearchInputModel, api);
                 apiResults = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Models.PaymentHistory>>(result.Result);
 
-
-                //UserSessionManager.SetSearchedCareTaker(this, apiResults);
             }
             return PartialView("_PaymentListPartial", apiResults);
             //  return View(apiResults);
@@ -1497,7 +1488,6 @@ namespace Nirast.Pcms.Web.Controllers
                 }
 
                 intModel.FileName = DocNames;
-                // TempData["doc"] = pdfDocName;
                 TempData["doc"] = spireDocName;
             }
             catch (Exception ex)
@@ -1712,18 +1702,6 @@ namespace Nirast.Pcms.Web.Controllers
                 TempData["doc"] = spireDocName;
                 hasFile = true;
 
-
-
-                //BinaryReader b = new BinaryReader(termsnCondition.InputStream);
-                //byte[] binData = b.ReadBytes(termsnCondition.ContentLength);
-
-                //string result = System.Text.Encoding.UTF8.GetString(binData);
-                //if (!Directory.Exists(path))
-                //{
-                //    DirectoryInfo di = Directory.CreateDirectory(path);
-                //}
-                //System.IO.File.WriteAllText(path + "TermsAndConditions.txt", result);
-                //hasFile = true;
             }
             if (privacyPolicy != null)
             {
@@ -1748,19 +1726,6 @@ namespace Nirast.Pcms.Web.Controllers
                 DocNames = AddPageNumber(spireDocName);
                 TempData["doc"] = spireDocName;
                 hasFile = true;
-
-
-
-
-
-
-
-                //BinaryReader b = new BinaryReader(privacyPolicy.InputStream);
-                //byte[] binData = b.ReadBytes(privacyPolicy.ContentLength);
-
-                //string result = System.Text.Encoding.UTF8.GetString(binData);
-                //System.IO.File.WriteAllText(path + "PrivacyAndPolicy.txt", result);
-                //hasFile = true;
             }
             if (consentForm != null)
             {
@@ -1890,74 +1855,8 @@ namespace Nirast.Pcms.Web.Controllers
             }
             iTextSharp.text.Document doc = new iTextSharp.text.Document();
             MemoryStream memoryStream = new MemoryStream();
-            //Log.Logger = new LoggerConfiguration()
-            //.WriteTo.File("log.txt")
-            //.CreateLogger();
             try
             {
-                //string fromEmail = ConfigurationManager.AppSettings["FromEmail"].ToString();
-                //string fromEmailPassword = ConfigurationManager.AppSettings["FromEmailPassword"].ToString();
-                //string mailHost = ConfigurationManager.AppSettings["MailHost"].ToString();
-                //string mailPort = ConfigurationManager.AppSettings["MailPort"].ToString();
-                //System.IO.File.WriteAllText(Server.MapPath("~/WriteLines.txt"), "First");
-                //using (System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage(fromEmail, toMail))
-                //{
-                //    PdfWriter writer = PdfWriter.GetInstance(doc, memoryStream);
-                //    //PdfWriter.GetInstance(doc, new FileStream(Server.MapPath("~/" + caretakerName + ".pdf"), FileMode.OpenOrCreate));
-                //    try
-                //    {
-                //        //PdfWriter.GetInstance(doc, new FileStream("D:/" + caretakerName + ".pdf", FileMode.OpenOrCreate));
-                //        doc.Open();
-                //        iTextSharp.text.Image gif = iTextSharp.text.Image.GetInstance(Server.MapPath("~/images/emailLogo.jpg"));
-                //        doc.Add(gif);
-                //        iTextSharp.text.Paragraph para = new iTextSharp.text.Paragraph(policyContent);
-                //        para.Alignment = Element.ALIGN_JUSTIFIED;
-                //        doc.Add(para);
-                //        //var arr = Convert.ToByte(sModel);
-                //        string base64Image = Regex.Replace(signatureString, "^data:image\\//[a-zA-Z]+;base64,", string.Empty);
-                //        var dataBytes = Convert.FromBase64String(signatureString);
-                //        doc.Add(new iTextSharp.text.Paragraph(""));
-                //        doc.Add(new iTextSharp.text.Paragraph(caretakerName));
-                //        gif = iTextSharp.text.Image.GetInstance(dataBytes);
-                //        gif.ScaleAbsoluteWidth(300);
-                //        gif.ScaleAbsoluteHeight(75);
-                //        doc.Add(gif);
-                //        doc.Add(new iTextSharp.text.Paragraph("Date: " + DateTime.Now.ToShortDateString()));
-                //        writer.CloseStream = false;
-                //        doc.Close();
-                //        memoryStream.Position = 0;
-                //    }
-                //    catch (Exception ex)
-                //    {
-                //        Logger.Error(ex, "Error occurred in Admin Controller-CreatePDF");
-                //        System.IO.File.WriteAllText(Server.MapPath("~/PDFError.txt"), ex.Message);
-                //        //Log.Error(ex.InnerException.ToString()); ;
-                //    }
-                //    mail.Subject = "Agreed Policy Statement";
-                //    mail.Body = "Hi " + caretakerName + ",<BR />" +
-                //        "Thank you for choosing to work with.<BR />We are attaching the copy of the company policy that you have signed with us for your Reference." +
-                //        "<BR /><BR /> We will shortly contact you with further details.<BR />" +
-                //        "<BR /> Thanks &amp; Regards,<BR />" +
-                //        "<BR />Team Tranquilcare";
-                //    mail.IsBodyHtml = true;
-                //    //mail.Attachments.Add(new Attachment(memoryStream, "CompanyPolicy.pdf"));
-                //    Attachment data = new Attachment(pdfToSend, MediaTypeNames.Application.Octet);
-                //    mail.Attachments.Add(data);
-                //    SmtpClient smtp = new SmtpClient()
-                //    {
-                //        Host = "smtp.gmail.com",
-                //        EnableSsl = true,
-                //        Port = 587,
-                //        UseDefaultCredentials = true,
-                //        Credentials = new NetworkCredential(fromEmail, fromEmailPassword)
-                //    };
-
-                //    smtp.Port = 587;
-                //    //memoryStream.Close();
-                //    smtp.Send(mail);
-                //    ViewBag.Message = "Sent";
-                //}
-
                 EmailInput emailinputs = new EmailInput
                 {
                     Body = "Hi " + caretakerName + ",<BR />" +
@@ -2360,24 +2259,6 @@ namespace Nirast.Pcms.Web.Controllers
                 var _listCountry = new SelectList(listCountry, "CountryId", "Name", defaultCountry);
                 ViewData["CountryList"] = _listCountry;
 
-                //List<StateViewModel> stateList = new List<StateViewModel>();
-                //var stateapi = "/Admin/GetStatesByCountryId/"+defaultCountry;
-                //var stateResult = service.GetAPI(stateapi);
-                //stateList = JsonConvert.DeserializeObject<List<StateViewModel>>(stateResult);
-                //stateList.Insert(0, new StateViewModel { StateId = 0, Name = "--Select--" });
-
-                //var _stateList = new SelectList(stateList, "StateId", "Name", 0);
-                //ViewData["StateList"] = new SelectList(stateList, "StateId", "Name", 0);
-                //ViewBag.State = new SelectList(stateList, "StateId", "Name", 1);
-
-                //string apiCity = "Admin/GetCity?flag=*&value=''";
-                //var resultCity = service.GetAPI(apiCity);
-                //List<Cities> cityList = JsonConvert.DeserializeObject<List<Cities>>(resultCity);
-                //cityList.Add(new Cities { CityId = 0, CityName = "--Select--" });
-                //ViewBag.City = new SelectList(cityList, "CityId", "CityName", 0);
-                //ViewData["CityList"] = new SelectList(cityList, "CityId", "CityName", 0);
-
-
                 api = "Admin/GetDesignation/0";
                 List<DesignationViewModel> designationList = new List<DesignationViewModel>();
                 var result = service.GetAPI(api);
@@ -2753,10 +2634,6 @@ namespace Nirast.Pcms.Web.Controllers
                 {
                     TempData["Userupdate"] = "Office Staff details updated Successfully";
                 }
-                //else if (result == HttpStatusCode.Unauthorized)
-                //{
-                //    TempData["Userupdate"] = "You are not authorized to perform this action.";
-                //}
                 else
                 {
                     TempData["OfficeStaffFailure"] = "Updation Failed";
@@ -3575,7 +3452,7 @@ namespace Nirast.Pcms.Web.Controllers
                 var searchInputModel = JsonConvert.SerializeObject(invoiceHistorySearch);
                 var result = service.PostAPIWithData(searchInputModel, bookingHistoryapi);
                 InvoiceHistoryList = JsonConvert.DeserializeObject<List<UserInvoiceParams>>(result.Result);
-              
+
                 return PartialView("_SearchPublicUserInvoiceHistory", InvoiceHistoryList);
             }
 
@@ -3590,7 +3467,7 @@ namespace Nirast.Pcms.Web.Controllers
         public ActionResult UserBookingDetails(int? bookingId)
         {
 
-            
+
             UserBookingInvoiceReport bookingDetail = new UserBookingInvoiceReport();
             string api = "Admin/GetBookingHistoryDetail/" + bookingId;
             var serviceResult = service.GetAPI(api);
@@ -6805,9 +6682,9 @@ namespace Nirast.Pcms.Web.Controllers
 
         }
 
-        public JsonResult CancelBookingStatus(int userId, int status,string reason)
+        public JsonResult CancelBookingStatus(int userId, int status, string reason)
         {
-            string SiteURL =( Request.Url.Scheme + "://" + Request.Url.Authority + "/");
+            string SiteURL = (Request.Url.Scheme + "://" + Request.Url.Authority + "/");
 
             BookingStatusUpdate bookingStatus = new BookingStatusUpdate();
             bookingStatus.userId = userId;

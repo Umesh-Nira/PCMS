@@ -1,10 +1,6 @@
 ﻿using Nirast.Pcms.Api.Sdk.Repositories;
 using Nirast.Pcms.Api.Sdk.UnitOfWork;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.UnitOfWork
 {
@@ -14,11 +10,11 @@ namespace Nirast.Pcms.Api.Data.UnitOfWork
         private readonly IOfficeStaffRepository _staffRepository;
         private readonly IServiceRepository _serviceRepository;
         private readonly IStateRepository _stateRepository;
-        
+
         private readonly IUsersDetailsRepository _usersDetailsRepository;
         private readonly ICareTakerRepository _careTakerRepository;
         private readonly ICityRepository _CityRepository;
-        private readonly ICategoryRepository _CategoryRepository; 
+        private readonly ICategoryRepository _CategoryRepository;
         private readonly IOrientationRepository _OrientationRepository;
         private readonly IDesignationRepository _DesignationRepository;
         private readonly IQuestionareRepository _QuestionareRepository;
@@ -32,10 +28,10 @@ namespace Nirast.Pcms.Api.Data.UnitOfWork
         private readonly IInvoiceRepository _invoiceRepository;
         private readonly ILoggedInUserRepository _loggedInUserRepository;
         private readonly IRoleRepository _roleRepository;
-        public UnitOfWork(ICountryRepository pcmsRepository,IOfficeStaffRepository staffRepository, IUsersDetailsRepository usersDetailsRepository,
-            IServiceRepository serviceRepository, ICareTakerRepository careTakerRepository, IStateRepository stateRepository, ICityRepository CityRepository, ICategoryRepository CategoryRepository,ILoggedInUserRepository loggedInUserRepository,
-            IOrientationRepository OrientationRepository, IDesignationRepository DesignationRepository, IQualificationRepository QualificationRepository, IPatientRepository PatientRepository,IHomeRepository homeRepository,
-            IWorkShiftRepository WorkShiftRepository, ITimeShiftRepository TimeShiftRepository, IHolidayRepository HolidayRepository, IClientRepository clientRepository,IInvoiceRepository invoiceRepository,IQuestionareRepository questionareRepository,IRoleRepository roleRepository)
+        public UnitOfWork(ICountryRepository pcmsRepository, IOfficeStaffRepository staffRepository, IUsersDetailsRepository usersDetailsRepository,
+            IServiceRepository serviceRepository, ICareTakerRepository careTakerRepository, IStateRepository stateRepository, ICityRepository CityRepository, ICategoryRepository CategoryRepository, ILoggedInUserRepository loggedInUserRepository,
+            IOrientationRepository OrientationRepository, IDesignationRepository DesignationRepository, IQualificationRepository QualificationRepository, IPatientRepository PatientRepository, IHomeRepository homeRepository,
+            IWorkShiftRepository WorkShiftRepository, ITimeShiftRepository TimeShiftRepository, IHolidayRepository HolidayRepository, IClientRepository clientRepository, IInvoiceRepository invoiceRepository, IQuestionareRepository questionareRepository, IRoleRepository roleRepository)
         {
             _countryRepository = pcmsRepository;
             _staffRepository = staffRepository;

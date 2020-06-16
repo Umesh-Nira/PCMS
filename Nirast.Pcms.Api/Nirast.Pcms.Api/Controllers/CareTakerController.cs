@@ -172,7 +172,7 @@ namespace Nirast.Pcms.Api.Controllers
         {
             try
             {
-                var mappedCaretakerRates = await _pcmsService.GetCaretakerPayRiseRates( caretakerId);
+                var mappedCaretakerRates = await _pcmsService.GetCaretakerPayRiseRates(caretakerId);
                 string result = JsonConvert.SerializeObject(mappedCaretakerRates);
                 if (result != null)
                 {
@@ -389,12 +389,12 @@ namespace Nirast.Pcms.Api.Controllers
         // GET: api/CareTakerRegistration/5
         [Route("api/CareTaker/GetCareTakerListByCategoryAndClientID/{CategoryId}")]
         //[BasicAuthentication("Administrator")]
-        public async Task<HttpResponseMessage> GetCareTakerListByCategoryAndClientId(int categoryId,int clientId)
+        public async Task<HttpResponseMessage> GetCareTakerListByCategoryAndClientId(int categoryId, int clientId)
         {
             //List<CareTakers> lstCaretakers = new List<CareTakers>();
             try
             {
-                var lstCaretakers = await _pcmsService.RetrieveCareTakerListByCategoryAndClientId(categoryId,clientId);
+                var lstCaretakers = await _pcmsService.RetrieveCareTakerListByCategoryAndClientId(categoryId, clientId);
                 string result = JsonConvert.SerializeObject(lstCaretakers);
                 if (result != null)
                 {
@@ -420,12 +420,12 @@ namespace Nirast.Pcms.Api.Controllers
         // GET: api/CareTakerRegistration/5
         [Route("api/CareTaker/GetCareTakerListByCategoryAndDateTime/{CategoryId}")]
         //[BasicAuthentication("Administrator")]
-        public async Task<HttpResponseMessage> GetCareTakerListByCategoryAndDateTime(int categoryId,string startDateTime,int hours,int clientId)
+        public async Task<HttpResponseMessage> GetCareTakerListByCategoryAndDateTime(int categoryId, string startDateTime, int hours, int clientId)
         {
             //List<CareTakers> lstCaretakers = new List<CareTakers>();
             try
             {
-                var lstCaretakers = await _pcmsService.RetrieveCareTakerListByCategoryAndDate(categoryId,startDateTime,hours,clientId);
+                var lstCaretakers = await _pcmsService.RetrieveCareTakerListByCategoryAndDate(categoryId, startDateTime, hours, clientId);
                 string result = JsonConvert.SerializeObject(lstCaretakers);
                 if (result != null)
                 {
@@ -450,13 +450,13 @@ namespace Nirast.Pcms.Api.Controllers
         // GET: api/CareTakerRegistration/5
         [Route("api/CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/{CategoryId}")]
         //[BasicAuthentication("Administrator")]
-        public async Task<HttpResponseMessage> GetAvailableCareTakerListByCategoryAndDateTime(int categoryId, string startDateTime, int hours, int clientId,int Workshift)
+        public async Task<HttpResponseMessage> GetAvailableCareTakerListByCategoryAndDateTime(int categoryId, string startDateTime, int hours, int clientId, int Workshift)
         {
             //List<CareTakers> lstCaretakers = new List<CareTakers>();
             try
             {
-                _logger.Error("API receive start " + DateTime.Now.ToString() + "RetrieveAvailableCareTakerListByCategoryAndDate -"+ categoryId+" - "+ startDateTime + " - " + hours + " - " + clientId + " - " + Workshift);
-                var lstCaretakers = await _pcmsService.RetrieveAvailableCareTakerListByCategoryAndDate(categoryId, startDateTime,  hours, clientId, Workshift);
+                _logger.Error("API receive start " + DateTime.Now.ToString() + "RetrieveAvailableCareTakerListByCategoryAndDate -" + categoryId + " - " + startDateTime + " - " + hours + " - " + clientId + " - " + Workshift);
+                var lstCaretakers = await _pcmsService.RetrieveAvailableCareTakerListByCategoryAndDate(categoryId, startDateTime, hours, clientId, Workshift);
                 string result = JsonConvert.SerializeObject(lstCaretakers);
                 if (result != null)
                 {
@@ -481,14 +481,14 @@ namespace Nirast.Pcms.Api.Controllers
             //List<CareTakers> lstCaretakers = new List<CareTakers>();
             try
             {
-                _logger.Error("API receive start " + DateTime.Now.ToString() + "RetrieveAvailableCareTakerListByCategoryAndDate -" + categoryId + " - " + startDateTime + " - " + hours + " - "   + Workshift);
-                var lstCaretakers = await _pcmsService.RetrieveAvailableCareTakerListForPublicUser(categoryId, startDateTime, hours , Workshift);
+                _logger.Error("API receive start " + DateTime.Now.ToString() + "RetrieveAvailableCareTakerListByCategoryAndDate -" + categoryId + " - " + startDateTime + " - " + hours + " - " + Workshift);
+                var lstCaretakers = await _pcmsService.RetrieveAvailableCareTakerListForPublicUser(categoryId, startDateTime, hours, Workshift);
                 string result = JsonConvert.SerializeObject(lstCaretakers);
                 if (result != null)
                 {
                     var response = Request.CreateResponse(HttpStatusCode.OK);
                     response.Content = new StringContent(result, System.Text.Encoding.UTF8, "application/json");
-                    _logger.Error("API receive end " + DateTime.Now.ToString() + "RetrieveAvailableCareTakerListByCategoryAndDate -" + categoryId + " - " + startDateTime + " - " + hours + " - "  + " - " + Workshift);
+                    _logger.Error("API receive end " + DateTime.Now.ToString() + "RetrieveAvailableCareTakerListByCategoryAndDate -" + categoryId + " - " + startDateTime + " - " + hours + " - " + " - " + Workshift);
                     return response;
                 }
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.NotFound, "No Caregiver found");
@@ -807,6 +807,6 @@ namespace Nirast.Pcms.Api.Controllers
             }
         }
 
-  
+
     }
 }

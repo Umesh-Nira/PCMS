@@ -100,10 +100,8 @@
 
             function ButtonClick() {
 
-                //var clientId = $("#ddlClient").val();
                 var clientId = ($('#ddlClient').val() == null || $('#ddlClient').val() == 'null' || $('#ddlClient').val() == ''|| $('#ddlClient').val() == NaN) ? 0 : parseInt($('#ddlClient').val());
                 localStorage.setItem("clientId", clientId);
-                //location.href = '/Client/ScheduledCalenderView?clientId=' + clientId;
                 location.href = '/Client/ScheduledCalenderView';
             }
 

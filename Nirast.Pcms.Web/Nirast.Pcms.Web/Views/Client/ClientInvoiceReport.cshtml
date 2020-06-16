@@ -149,8 +149,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Clients. Function: "/Client/LoadClient". Page: ClientInvoiceReport.cshtml');
-                        //alert('Some network error has occurres. Please try again after some time.');
-                    }
+                   }
                 });
 
                 $.ajax({
@@ -169,7 +168,6 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Work Shift. Function: "/Client/LoadWorkShift". Page: ClientInvoiceReport.cshtml');
-                        //alert('Some network error has occurres. Please try again after some time.');
                     }
                 });
 
@@ -188,8 +186,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Caretaker Types. Function: "/Client/LoadCategory". Page: ClientInvoiceReport.cshtml');
-                        //alert('Some network error has occurres. Please try again after some time.');
-                    }
+                   }
                 });
 
                 function setYear() {
@@ -368,11 +365,7 @@
                         src = src + "&todate=" + todate
                         src = src + "&isOrientation=" + isorientation
                         src = src + "&category=" + category
-                        //setTimeout(function () {
-
-                        //    hideProgress();
-
-                        //}, 6000);
+                       
 
                         $("#policyContent").html('<iframe  src="' + src + '"style="width: 100%; height: 900px" onload="hideProgress()" ></iframe>');
                     });

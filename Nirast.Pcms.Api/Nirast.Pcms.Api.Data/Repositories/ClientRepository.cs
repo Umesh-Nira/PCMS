@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using Newtonsoft.Json;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
@@ -8,12 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.IO;
 using System.Linq;
-using System.Net.Mail;
-using System.Text;
 using System.Threading.Tasks;
-using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
 namespace Nirast.Pcms.Api.Data.Repositories
 {
@@ -128,16 +123,12 @@ namespace Nirast.Pcms.Api.Data.Repositories
                     if (clientId > 0)
                     {
                         DataTable dtCategoryRates = ConvertToCareTakerTypeType(client.CategoryRates);
-
-                        //DataTable dtClientCaretakers = ConvertToClientCaretakerType(client.ClientCaretakers);
-
                         DataTable dtClientShiftList = ConvertToClientShiftIdType(client.ClientShiftList);
                         param = new DynamicParameters();
                         var spSaveClientMultipleDetails = "spSaveClientMultipleDetails";
                         param.Add("@ClientId", clientId);
                         param.Add("@Payrisedate", client.EffectiveFrom);
                         param.Add("@ClientCategoryRates", dtCategoryRates, DbType.Object);
-                        //param.Add("@ClientCaretakers", dtClientCaretakers, DbType.Object);
                         param.Add("@ClientShifts", dtClientShiftList, DbType.Object);
                         int resultClientDetails = SqlMapper.QueryAsync<int>(_dbConnection, spSaveClientMultipleDetails, param, transaction, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
                     }
@@ -408,7 +399,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.OpenConnection();
                 param.Add("@UserTypeId", typeId);
                 var result = await SqlMapper.QueryAsync<LoginLog>(_dbConnection, Details, param, commandType: CommandType.StoredProcedure);
-                //var result = await SqlMapper.QueryFirstOrDefaultAsync<List<LoginLog>>(_dbConnection, sp, param, commandType: CommandType.StoredProcedure);
                 return result;
             }
             catch (Exception ex)
@@ -484,19 +474,16 @@ namespace Nirast.Pcms.Api.Data.Repositories
                         result.SecondaryPhoneNo2 = addressModel[1].Phone2;
                     }
 
-                    //var caretakerdetails = multi.Read<CareTakerRegistrationModel>().ToList();
                     var categoryrate = multi.Read<ClientCategoryRate>().ToList();
                     var clientcaretaker = multi.Read<ClientCaretakers>().ToList();
                     var clientCaretakerMaps = multi.Read<ClientCaretakerMap>().ToList();
                     var clientTimeShift = multi.Read<ClientShiftDetails>().ToList();
-                    //var registerdCaretakers = multi.Read<CareTakerRegistrationModel>().ToList();
 
                     result.ClientCaretakerMaps = clientCaretakerMaps;
                     result.ClientCaretakers = clientcaretaker;
                     result.CategoryRates = categoryrate;
                     result.ClientCaretakers = clientcaretaker;
                     result.ClientShiftList = clientTimeShift;
-                    //result.RegistredCaretakers = registerdCaretakers;
 
                 }
 
@@ -660,27 +647,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //int result = 0;
-                //var query = "SpInsertUpdateClientCaretakers";
-                //var param = new DynamicParameters();
-
-                //DataColumn dtColMapClient = new DataColumn("ClientId", typeof(Int32))
-                //{
-                //    DefaultValue = clientcaretaker.ClientId
-                //};
-                //DataColumn dtColMapCaretaker = new DataColumn("CaretakerId", typeof(Int32))
-                //{
-                //    DefaultValue = clientcaretaker.CaretakerId
-                //};
-                //DataTable dtMapRates = ConvertToDataTable(clientcaretaker.MapRates);
-                //dtMapRates.Columns.Remove("WorkShiftName");
-                //dtMapRates.Columns.Add(dtColMapClient);
-                //dtMapRates.Columns.Add(dtColMapCaretaker);
-                //param.Add("@ClientId", clientcaretaker.ClientId);
-                //param.Add("@CaretakerId", clientcaretaker.CaretakerId);
-                //param.Add("@MappedRate", dtMapRates, DbType.Object);
-
-                //result = await SqlMapper.QueryFirstOrDefaultAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
                 return 0;
             }
             catch (Exception ex)
@@ -817,7 +783,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 var query = "SpInsertScheduleRejectedCaretakers";
                 var param = new DynamicParameters();
                 param.Add("@CareTakerId", careTaker.CareTakerId);
-                //param.Add("@Datetime", careTaker.DateTime);
                 param.Add("@Description", careTaker.Description);
                 param.Add("@ClientId", careTaker.ClientId);
                 param.Add("@Workshift", careTaker.Workshift);
@@ -1189,28 +1154,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             }
         }
 
-        //public async Task<IEnumerable<ClientCategoryPayRiseRate>> GetCategoryClientPayRiseRates(int clientId)
-        //{
-        //    try
-        //    {
-        //        _connectionFactory.OpenConnection();
-        //        var param = new DynamicParameters();
-        //        param.Add("@ClientId", clientId);
-
-        //        var query = "SpGetMappedClientCaretakerPayRiseRates";
-        //        var workShiftRates = await SqlMapper.QueryAsync<ClientCategoryPayRiseRate>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
-        //        return workShiftRates;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.Error(ex, "Failed to retrieve Invoice History List details");
-        //        return null;
-        //    }
-        //    finally
-        //    {
-        //        _connectionFactory.CloseConnection();
-        //    }
-        //}
         public async Task<ScheduledData> GetSchdeuleDetaildById(int scheduleId)
         {
 

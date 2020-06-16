@@ -5,7 +5,6 @@ using Nirast.Pcms.Web.Logger;
 using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Nirast.Pcms.Web.Reports
 {
@@ -52,7 +51,7 @@ namespace Nirast.Pcms.Web.Reports
 
                     }
                     int year = 0; int month = 0; DateTime fromdate = DateTime.MinValue;
-                    year = (Request.QueryString["year"] != "null")? Convert.ToInt32(Request.QueryString["year"]) : 0;
+                    year = (Request.QueryString["year"] != "null") ? Convert.ToInt32(Request.QueryString["year"]) : 0;
                     month = (Request.QueryString["month"] != "null") ? Convert.ToInt32(Request.QueryString["month"]) : 0;
                     fromdate = (Request.QueryString["fromdate"] != "null") ? Convert.ToDateTime(Request.QueryString["fromdate"]) : DateTime.MinValue;
 
@@ -75,7 +74,7 @@ namespace Nirast.Pcms.Web.Reports
                     ReportDataSource datasource = new ReportDataSource("BookingList", bookingReport);
                     rptCaretakerBookingReport.LocalReport.DataSources.Clear();
                     rptCaretakerBookingReport.LocalReport.DataSources.Add(datasource);
-                   
+
                     string monthText = "--Select Month--";
                     ReportParameterCollection reportParameters = new ReportParameterCollection();
                     reportParameters.Add(new ReportParameter("Year", year.ToString()));

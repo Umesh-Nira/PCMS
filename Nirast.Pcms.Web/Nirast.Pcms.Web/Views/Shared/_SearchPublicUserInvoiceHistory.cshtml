@@ -86,13 +86,10 @@
         "pagingType": "full_numbers"
     });
     function viewSchedule(InvoicePath) {
-        debugger;
         $("#policyContent").html('<iframe src="' + InvoicePath + '" style="width: 100%; height: 700px" onload="hideProgress()"></iframe>');
         $('#modal-invoice').modal('toggle');
     }
     function viewSchedule(fileId, email, clientName, InvoicePath) {
-        debugger;
-        
         $("#policyContent").html('<iframe src="' + InvoicePath + '" style="width: 100%; height: 700px" onload="hideProgress()"></iframe>');
         $('#modal-invoice').modal('toggle');
         document.getElementById('EmailTxt').value = email;
@@ -102,7 +99,6 @@
     }
 
     function SendEmail() {
-        debugger;
         var email = document.getElementById('EmailTxt').value;
         var re = /^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         if (email == "") {
@@ -112,8 +108,7 @@
             alert("You have entered an invalid email address!")
             return (false)
         }
-        //var fileId = document.getElementById('FileId').value;
-        var fileId = document.getElementById('hdnSearchInputId').value;
+         var fileId = document.getElementById('hdnSearchInputId').value;
 
         var username = document.getElementById('PublicUserNameforEmail').value;
         $.ajax({
@@ -125,8 +120,7 @@
                     window.alert("Invoice sent to " + email + " Successfully");
                 else
                     window.alert("Invoice sent to " + email + " Failed");
-                //window.location.reload();
-            },
+             },
             error: function (data) {
                 window.alert("Invoice sent to " + email + " Failed");
                 logError(data.statusText + ' - Error occurred while sending Email. Function:SendEmail(). Page: _InvoiceHistoryPartial.cshtml');

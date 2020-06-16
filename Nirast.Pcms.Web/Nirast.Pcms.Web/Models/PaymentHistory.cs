@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -15,7 +12,7 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set BookingDate 
         /// </summary>
-        public DateTime BookingDate  { get; set; }
+        public DateTime BookingDate { get; set; }
 
         /// <summary>
         /// Get or Set Caretaker Name
@@ -25,8 +22,8 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set care taker user id
         /// </summary>
-        public string CaretakerType{ get; set; }
-        
+        public string CaretakerType { get; set; }
+
         /// <summary>
         /// Get or Set service id
         /// </summary>
@@ -35,7 +32,7 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set Paid Amount
         /// </summary>
-        public float  PaidAmount { get; set; }
+        public float PaidAmount { get; set; }
 
 
         /// <summary>

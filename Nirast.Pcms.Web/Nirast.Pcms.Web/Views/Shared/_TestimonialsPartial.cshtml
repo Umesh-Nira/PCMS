@@ -76,11 +76,9 @@
 </div>
 <script>
     function GetID(testimonialId) {
-        debugger;
-        $('#hiddenTestimonial').val(testimonialId)
+       $('#hiddenTestimonial').val(testimonialId)
     }
     function deleteTestimonial() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeleteTestimonial",
@@ -91,13 +89,11 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deletingcountry. Function: deleteUser(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }
 
     function editTestimonialDetails(testimonialId) {
-        debugger;
         $.ajax({
             url: '/Admin/GetTestimonialsById',
             type: "GET",
@@ -123,15 +119,6 @@
     $('#Testimonials').DataTable({
         "pagingType": "full_numbers",
         "autoWidth": false,
-        //columnDefs: [
-        //    { width: '20%', targets: 0 },
-        //    { width: '10%', targets: 1 },
-        //    { width: '50%', targets: 2 },
-        //    { width: '10%', targets: 3 },
-        //    { width: '5%', targets: 4 },
-        //    { width: '5%', targets: 5 }
-        //],
-        //fixedColumns: true
     });
 </script>
 

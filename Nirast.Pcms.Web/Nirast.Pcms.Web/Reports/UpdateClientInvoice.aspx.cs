@@ -1,6 +1,5 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
 using Microsoft.Reporting.WebForms;
 using Newtonsoft.Json;
 using Nirast.Pcms.Web.Helpers;
@@ -8,11 +7,8 @@ using Nirast.Pcms.Web.Logger;
 using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -118,7 +114,7 @@ namespace Nirast.Pcms.Web.Reports
                     {
                         invoiceAddress = "";
                     }
-                   
+
                     //if (todate != DateTime.MinValue)
                     //{
                     //    scheduleDetailsList = scheduleDetailsList.Where(a => Convert.ToDateTime(a.Startdate).Date <= todate.Date).Where(a => Convert.ToDateTime(a.Startdate).Date >= fromdate.Date).ToList();
@@ -810,7 +806,7 @@ namespace Nirast.Pcms.Web.Reports
             clientModelObj = JsonConvert.DeserializeObject<ClientModel>(result);
             EmailInput emailinputs = new EmailInput
             {
-                EmailType=Enums.EmailType.Invoice,
+                EmailType = Enums.EmailType.Invoice,
                 Body = GetEmailBody(clientModelObj),
                 Subject = "Invoice",
                 EmailId = emailTxt.Text,

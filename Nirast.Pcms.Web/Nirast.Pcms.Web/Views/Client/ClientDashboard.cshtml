@@ -189,8 +189,7 @@ else
                         $('.tooltiptopicevent').remove();
                     },
                     events: function (start, end, timezone, callback) {
-                        debugger;
-                        var date = new Date($('#calender').fullCalendar('getDate'));
+                         var date = new Date($('#calender').fullCalendar('getDate'));
                         var month = date.getUTCMonth() + 1;
                         var year = date.getUTCFullYear();
                         GetCalenderEvents(id, month, year, callback);
@@ -244,7 +243,7 @@ else
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 })
             }

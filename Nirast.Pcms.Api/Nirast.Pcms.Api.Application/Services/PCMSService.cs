@@ -11,7 +11,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 using static Nirast.Pcms.Api.Sdk.Entities.PublicUserCaretakerBooking;
@@ -156,7 +155,6 @@ namespace Nirast.Pcms.Api.Application.Services
                 string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
                 var sr = new StreamReader(sd);
                 body = sr.ReadToEnd();
-                //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
                 body = string.Format(body, WelcomeMsg, caretaker.FirstName, MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
                 return body;
             }
@@ -168,7 +166,6 @@ namespace Nirast.Pcms.Api.Application.Services
 
         private async Task SendEmailTOAdminAndOfficeAfterCaretakerReg(CareTakerRegistrationModel caretaker)
         {
-           // var officeStaffMailIds = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
             EmailInput inputs = new EmailInput
             {
                 EmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin(),
@@ -225,7 +222,6 @@ namespace Nirast.Pcms.Api.Application.Services
                 string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
                 var sr = new StreamReader(sd);
                 body = sr.ReadToEnd();
-                //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
                 body = string.Format(body, WelcomeMsg, "Admin", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
                 return body;
             }
@@ -235,9 +231,9 @@ namespace Nirast.Pcms.Api.Application.Services
                 return string.Empty;
             }
         }
-        public async Task<int> UpdateUserInvoiceNumber(int userid,int invoicenumber)
+        public async Task<int> UpdateUserInvoiceNumber(int userid, int invoicenumber)
         {
-            return await _unitOfWork.UsersDetailsRepository.UpdateUserInvoiceNumber(userid,invoicenumber);
+            return await _unitOfWork.UsersDetailsRepository.UpdateUserInvoiceNumber(userid, invoicenumber);
         }
 
         public async Task<IEnumerable<PublicUserRegistration>> GetUsersDetailsById(string flag, string value)
@@ -319,77 +315,16 @@ namespace Nirast.Pcms.Api.Application.Services
                 string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
                 var sr = new StreamReader(sd);
                 body = sr.ReadToEnd();
-                //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
                 body = string.Format(body, WelcomeMsg, usersDetails.FirstName, MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
                 return body;
             }
             catch (Exception ex)
             {
-                //_logger.Error(ex, "Error while generating mail body");
                 return string.Empty;
             }
         }
 
-        //private async Task<bool> SendEmailToAdminAndOfficeAfterInsertUser(PublicUserRegistration booking)
-        //{
-        //    EmailInput inputs = new EmailInput();
-        //    List<string> ccAddressList = new List<string>();
-        //    //get maild id for admin typeid=4
-        //    inputs.EmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
 
-        //    //get maild id for office staff typeid=5
-        //    var officeStaffEmails = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
-        //    if (officeStaffEmails.Count > 0)
-        //    {
-        //        ccAddressList.AddRange(officeStaffEmails);
-        //    }
-        //    inputs.EmailType = EmailType.Registration;
-        //    inputs.Subject = "Tranquil Care Registration Status";
-        //    inputs.EmailConfig = _unitOfWork.UsersDetailsRepository.GetDefaultConfiguration().Result;
-        //    inputs.EmailIdConfig = _unitOfWork.UsersDetailsRepository.GetEmailIdConfigByType(EmailType.Registration).Result;
-        //    string WelcomeMsg = "New Public user registered.";
-        //    string MailMsg = "Public User Details.<br/>";
-        //    string Mailcontent = @"<table cellpadding=5 style = 'font-family:Roboto,Tahoma,Arial,Helvetica,sans-serif;font-weight:300;color:#6b6b6b;margin:7px 0px 7px 0px;font-size:1.0em'>
-								//	    <tr>
-								//	        <td style='width: 150px'>First Name</td>
-        //                                   <td style = 'width:10px'>:</td>     
-        //                                   <td> " + booking.FirstName + @" </td>     
-        //                               </tr> 
- 							//		   <tr>
-								//	        <td style='width: 150px'>Last Name</td>
-        //                                   <td style = 'width:10px'>:</td>     
-        //                                   <td> " + booking.LastName + @" </td>     
-        //                               </tr> 
-        //                               <tr>     
-        //                                   <td> EmailAddress </td>        
-        //                                   <td>:</td>          
-        //                                   <td> " + booking.EmailAddress + @" </td>             
-        //                               </tr>   
-        //                               <tr>     
-        //                                   <td> Location </td>        
-        //                                   <td>:</td>          
-        //                                   <td> " + booking.Location + @" </td>             
-        //                               </tr> 
-        //                               <tr>     
-        //                                   <td> Phone </td>        
-        //                                   <td>:</td>          
-        //                                   <td> " + booking.PrimaryPhoneNo + @" </td>             
-        //                               </tr> 
-        //                             </table>";
-        //    string ContactNo = "1-800-892-6066";
-        //    string RegardsBy = "Tranquil Care Inc.";
-        //    string siteUrl = booking.SiteURL;
-        //    string CompanyName_TagLine = "Tranquil Care - Delivering Care Excellence.";
-        //    string CompanyName = "Tranquil Care Inc.";
-        //    string body = "";
-        //    string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
-        //    var sr = new StreamReader(sd);
-        //    body = sr.ReadToEnd();
-        //    //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
-        //    body = string.Format(body, WelcomeMsg, "Admin", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
-        //    inputs.Body = body;
-        //    return await _notificationService.SendEMail(inputs, ccAddressList);
-        //}
 
         public async Task<UserCredential> RetrievePassword(string emailId)
         {
@@ -449,7 +384,7 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.CategoryRepository.RetrieveCategory(flag, value);
         }
-      
+
 
         public async Task<int> DeleteCategory(int categoryId)
         {
@@ -506,7 +441,7 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.CareTakerRepository.SelectRegisteredCaretakers(status);
         }
-       
+
         public async Task<IEnumerable<CareTakerServices>> RetrieveCaregiverServices()
         {
             return await _unitOfWork.CareTakerRepository.RetrieveCaregiverServices();
@@ -529,8 +464,6 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             EmailInput inputs = new EmailInput();
             List<string> ccAddressList = new List<string>();
-            //get maild id for admin
-            //string cc = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
             string cc = "info@tranquilcare.ca";
             ccAddressList.Add(cc);
 
@@ -538,12 +471,7 @@ namespace Nirast.Pcms.Api.Application.Services
             CareTakerRegistrationModel result = await _unitOfWork.CareTakerRepository.RetrieveCaretakerDetails(rejectCareTaker.Userid);
             inputs.EmailId = result.EmailAddress;
 
-            //get maild id for office staff typeid=5
-            //var officeStaffEmails = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
-            //if (officeStaffEmails.ToList().Count > 0)
-            //{
-            //    ccAddressList.AddRange(officeStaffEmails);
-            //}
+
             string serviceNames = string.Empty;
             foreach (var item in result.CareTakerServices)
             {
@@ -612,7 +540,6 @@ namespace Nirast.Pcms.Api.Application.Services
                 string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
                 var sr = new StreamReader(sd);
                 body = sr.ReadToEnd();
-                //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
                 body = string.Format(body, welcomeMsg, "", mailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
                 return body;
             }
@@ -646,12 +573,7 @@ namespace Nirast.Pcms.Api.Application.Services
             CareTakerRegistrationModel result = await _unitOfWork.CareTakerRepository.RetrieveCaretakerDetails(approveCaretaker.CareTakerId);
             inputs.EmailId = result.EmailAddress;
 
-            //get maild id for office staff typeid=5
-            //var officeStaffEmails = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
-            //if (officeStaffEmails.ToList().Count > 0)
-            //{
-            //    ccAddressList.AddRange(officeStaffEmails);
-            //}
+
             string serviceNames = string.Empty;
             foreach (var item in result.CareTakerServices)
             {
@@ -669,10 +591,7 @@ namespace Nirast.Pcms.Api.Application.Services
             return await _notificationService.SendEMail(inputs, ccAddressList);
         }
 
-        //public List<RegistredCaretakersList> SelectNewAppliedCaretakers()
-        //{
-        //    return _unitOfWork.CareTakerRepository.SelectNewAppliedCaretakers();
-        //}
+
 
         public async Task<CareTakerRegistrationModel> RetrieveCaretakerDetails(int caretakerId)
         {
@@ -701,14 +620,11 @@ namespace Nirast.Pcms.Api.Application.Services
 
             string cc = "info@tranquilcare.ca";
             ccAddressList.Add(cc);
-            //string cc = await _unitOfWork.CareTakerRepository.GetEmailIdForUser(booking.CareTakerId);
-            //ccAddressList.Add(cc);
+
 
             //get caretaker details to send
             CareTakerRegistrationModel results = await _unitOfWork.CareTakerRepository.RetrieveCaretakerDetails(booking.CareTakerId);
 
-            //get maild id for office staff typeid=5
-            
             //get maild id for admin
             cc = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
 
@@ -750,7 +666,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList);
@@ -849,12 +764,7 @@ namespace Nirast.Pcms.Api.Application.Services
             //get maild id for admin
             inputs.EmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
 
-            //get maild for office staff typeID=5
-            //var officeStaffMailIds = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
-            //if (officeStaffMailIds.ToList().Count > 0)
-            //{
-            //    ccAddressList.AddRange(officeStaffMailIds);
-            //}
+
             inputs.EmailType = EmailType.Registration;
             inputs.EmailConfig = await _unitOfWork.UsersDetailsRepository.GetDefaultConfiguration();
             inputs.EmailIdConfig = await _unitOfWork.UsersDetailsRepository.GetEmailIdConfigByType(inputs.EmailType);
@@ -892,7 +802,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList);
@@ -931,11 +840,11 @@ namespace Nirast.Pcms.Api.Application.Services
         }
         public async Task<int> AddBookingDetails(PublicUserCaretakerBooking bookingData)
         {
-           
+
             string message = string.Empty;
             int scheduleId = await _unitOfWork.UsersDetailsRepository.AddBookingDetails(bookingData, out message);
             bookingData.SchedulingId = scheduleId;
-             if (0 != scheduleId)
+            if (0 != scheduleId)
             {
                 Task.Factory.StartNew(() => { SendEmailAfterBooking(bookingData); });
             }
@@ -957,12 +866,7 @@ namespace Nirast.Pcms.Api.Application.Services
             //get caretaker details to send
             CareTakerRegistrationModel results = await _unitOfWork.CareTakerRepository.RetrieveCaretakerDetails(bookingData.CareTaker);
 
-            //get maild id for office staff typeid=5
-            //var officeStaffEmails = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
-            //if (officeStaffEmails.Count > 0)
-            //{
-            //    ccAddressList.AddRange(officeStaffEmails);
-            //}
+
 
             //get maild id for admin
             cc = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
@@ -971,8 +875,8 @@ namespace Nirast.Pcms.Api.Application.Services
             inputs.EmailConfig = await _unitOfWork.UsersDetailsRepository.GetDefaultConfiguration();
             inputs.EmailIdConfig = await _unitOfWork.UsersDetailsRepository.GetEmailIdConfigByType(inputs.EmailType);
             inputs.Subject = "Booking Notification";
-            
-           
+
+
             string WelcomeMsg = "Booking Notification";
             string MailMsg = "Following is the booking details.<br/>";
             string Mailcontent = @"<table cellpadding=5 style = 'font-family:Roboto,Tahoma,Arial,Helvetica,sans-serif;font-weight:300;color:#6b6b6b;margin:7px 0px 7px 0px;font-size:1.0em'>
@@ -1005,7 +909,7 @@ namespace Nirast.Pcms.Api.Application.Services
                                        <tr>     
                                            <td> Booking To Date & Time </td>        
                                            <td>:</td>          
-                                           <td> " +  bookingData.End.ToString("dd-MMM-yyyy h: mm tt") + @" </td>             
+                                           <td> " + bookingData.End.ToString("dd-MMM-yyyy h: mm tt") + @" </td>             
                                        </tr> 
                                      </table>";
             string ContactNo = "1-800-892-6066";
@@ -1017,7 +921,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList);
@@ -1108,8 +1011,6 @@ namespace Nirast.Pcms.Api.Application.Services
             List<string> emailIdList = new List<string>();
             List<string> ccAddressList = new List<string>();
             string ccEmail = "scheduling@tranquilcare.ca";
-            //get maild id for admin typeid=4
-            // inputs.EmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
 
             inputs.EmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForUser(scheduledData.CareTaker);
             emailIdList.Add(inputs.EmailId);
@@ -1117,25 +1018,13 @@ namespace Nirast.Pcms.Api.Application.Services
             if (emailStatus == 1)
             {
                 string emailIdClient = await _unitOfWork.clientRepository.GetEmailIdForClient(scheduledData.ClientId);
-                //string emailIdCaregiver = await _unitOfWork.CareTakerRepository.GetEmailIdForUser(scheduledData.CareTaker);
-                //emailIdList.Add(emailIdCaregiver);
                 emailIdList.Add(emailIdClient);
             }
 
-            //get maild id for caretaker
-            //string ccEmail = await _unitOfWork.CareTakerRepository.GetEmailIdForUser(scheduledData.CareTaker);
-            //  ccAddressList.Add(ccEmail);
 
-            //As per new requirement email has not to be sent to the office staffs
 
-            //var officeStaffMailIds = await _unitOfWork.CareTakerRepository.GetEmailIdForOfficeStaff();
-            //if (officeStaffMailIds.Count > 0)
-            //{
-            //    ccAddressList.AddRange(officeStaffMailIds);
-            //}
 
             //get maild id for scheduled client
-            // string ccEmail = await _unitOfWork.clientRepository.GetEmailIdForClient(scheduledData.ClientId);
             if (ccEmail != "")
             {
                 ccAddressList.Add(ccEmail);
@@ -1188,7 +1077,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList, emailIdList);
@@ -1217,9 +1105,9 @@ namespace Nirast.Pcms.Api.Application.Services
         }
         public async Task<IEnumerable<CareTakers>> RetrieveAvailableCareTakerListForPublicUser(int CategoryId, string DateTime, int hours, int Workshift)
         {
-            return await _unitOfWork.CareTakerRepository.RetrieveAvailableCareTakerListForPublicUser(CategoryId, DateTime, hours , Workshift);
+            return await _unitOfWork.CareTakerRepository.RetrieveAvailableCareTakerListForPublicUser(CategoryId, DateTime, hours, Workshift);
         }
-       
+
         public async Task<IEnumerable<CaretakerAvailableReport>> RetrieveAvailableCareTakerListReport(PaymentAdvancedSearch inputs)
         {
             return await _unitOfWork.CareTakerRepository.RetrieveAvailableCareTakerListReport(inputs);
@@ -1301,7 +1189,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, welcomeMsg, "", mailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList);
@@ -1416,20 +1303,19 @@ namespace Nirast.Pcms.Api.Application.Services
             return await _unitOfWork.UsersDetailsRepository.GetUserInvoiceDetails();
         }
 
-        public async Task<int> ChangeBookigStatus(int userId, int status,string siteURL,string reason)
+        public async Task<int> ChangeBookigStatus(int userId, int status, string siteURL, string reason)
         {
-             int result=await _unitOfWork.UsersDetailsRepository.ChangeBookigStatus(userId, status);
+            int result = await _unitOfWork.UsersDetailsRepository.ChangeBookigStatus(userId, status);
             PublicUserNotificationDetails notificationDetails = await _unitOfWork.UsersDetailsRepository.GetUserNotificationDetailsById(userId);
             notificationDetails.SiteURL = siteURL;
             notificationDetails.Reason = reason;
             string userEmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForUser(notificationDetails.PublicUserId);
-            Task.Factory.StartNew(() => { SendEmailToPublicUserAsync(notificationDetails,status, userEmailId); });
+            Task.Factory.StartNew(() => { SendEmailToPublicUserAsync(notificationDetails, status, userEmailId); });
             return result;
         }
-        private async Task<bool> SendEmailToPublicUserAsync(PublicUserNotificationDetails notificationDetails,int status,string userEmailId)
+        private async Task<bool> SendEmailToPublicUserAsync(PublicUserNotificationDetails notificationDetails, int status, string userEmailId)
         {
             List<string> ccAddressList = new List<string>();
-            //string cc = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
             string cc = "info@tranquilcare.ca";
             ccAddressList.Add(cc);
 
@@ -1441,7 +1327,7 @@ namespace Nirast.Pcms.Api.Application.Services
 
             string WelcomeMsg = "";
             string Mailcontent = "";
-            if (status==3)
+            if (status == 3)
             {
                 inputs.Subject = "Booking Rejected";
                 WelcomeMsg = "Booking Rejected";
@@ -1507,12 +1393,12 @@ namespace Nirast.Pcms.Api.Application.Services
                                        </tr> 
                                      </table>";
             }
-           
+
             string MailMsg = "Following is the booking details.<br/>";
-            
+
             string ContactNo = "1-800-892-6066";
             string RegardsBy = "Tranquil Care Inc.";
-            
+
             string CompanyName_TagLine = "Tranquil Care - Delivering Care Excellence.";
             string CompanyName = "Tranquil Care Inc.";
             string body = "";
@@ -1520,11 +1406,10 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
-          
+
             inputs.Body = body;
-           
+
             return await _notificationService.SendEMail(inputs, ccAddressList);
         }
 
@@ -1585,7 +1470,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             return body;
         }
@@ -1711,7 +1595,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, name, MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             return body;
         }
@@ -1829,7 +1712,7 @@ namespace Nirast.Pcms.Api.Application.Services
         }
         public async Task<int> DeleteSchedule(ScheduleDeleteData deleteData)
         {
-           
+
             return await _unitOfWork.UsersDetailsRepository.DeleteSchedule(deleteData);
         }
         public async Task<int> UpdateUserDetails(UsersDetails usersDetails)
@@ -1846,6 +1729,6 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.UsersDetailsRepository.UpdateCaretakerDocuments(doc);
         }
-       
+
     }
 }

@@ -1,13 +1,10 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Repositories
 {
-   public interface IPatientRepository : IGenericRepository<CaretakerBookingModel>
+    public interface IPatientRepository : IGenericRepository<CaretakerBookingModel>
     {
         Task<UserBookingInvoiceReport> GetAdminDashboardBookingHistoryDetail(int BookingId);
         Task<IEnumerable<UserBookingInvoiceReport>> GetBookingHistoryListById(int publicUserId);
@@ -27,6 +24,6 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
         Task<UserBookingInvoiceReport> GetBookingHistoryDetail(int BookingId);
 
         Task<UsersDetails> GetUserDetail(int BookingId);
-    
+
     }
 }

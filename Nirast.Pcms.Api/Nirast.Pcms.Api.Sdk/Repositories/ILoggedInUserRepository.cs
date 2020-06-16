@@ -1,5 +1,4 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Repositories

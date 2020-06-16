@@ -1,24 +1,24 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Nirast.Pcms.Web.Configuration;
+using Nirast.Pcms.Web.Helpers;
+using Nirast.Pcms.Web.Logger;
+using Nirast.Pcms.Web.Models;
+using PayPal;
+using PayPal.Api;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Configuration;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
-using Nirast.Pcms.Web.Models;
-using Nirast.Pcms.Web.Helpers;
-using Newtonsoft.Json;
-using System.IO;
-using System.Configuration;
-using PayPal.Api;
-using Nirast.Pcms.Web.Configuration;
-using System.Net;
-using PayPal;
-using Nirast.Pcms.Web.Logger;
-using static Nirast.Pcms.Web.Models.Enums;
-using Newtonsoft.Json.Linq;
 using System.Web.UI;
+using static Nirast.Pcms.Web.Models.Enums;
 using static Nirast.Pcms.Web.Models.PublicUserCaretakerBooking;
-using System.Reflection;
-using System.ComponentModel;
 
 namespace Nirast.Pcms.Web.Controllers
 {
@@ -161,7 +161,7 @@ namespace Nirast.Pcms.Web.Controllers
             try
             {
 
-                string api = "CareTaker/GetAvailableCareTakerListforPublicUser/" + categoryId + "?startDatetime=" + startDatetime + "&hours=" + totalhours  + "&Workshift=" + Workshift;
+                string api = "CareTaker/GetAvailableCareTakerListforPublicUser/" + categoryId + "?startDatetime=" + startDatetime + "&hours=" + totalhours + "&Workshift=" + Workshift;
                 pCMSLogger.Error("API Call start " + DateTime.Now.ToString() + " - " + api);
                 var CareTakerResult = service.GetAPI(api);
                 pCMSLogger.Error("API Call end " + DateTime.Now.ToString() + " - " + api);
@@ -174,7 +174,7 @@ namespace Nirast.Pcms.Web.Controllers
             }
         }
         public ActionResult SaveCareRecipientDetails(CaretakerBooking caretakerBooking)
-       {
+        {
             int caregiverId = Convert.ToInt32(ConfigurationManager.AppSettings["CaregiverId"]);
             caretakerBooking.CareTakerId = caregiverId;
             try
@@ -291,7 +291,7 @@ namespace Nirast.Pcms.Web.Controllers
                     {
                         TempData["SaveBooking"] = "You are not authorized to perform this action";
                     }
-                    else if(result == HttpStatusCode.Found)
+                    else if (result == HttpStatusCode.Found)
                     {
                         TempData["SaveBooking"] = "Booking already exist for this Caregiver!";
                     }
@@ -299,11 +299,6 @@ namespace Nirast.Pcms.Web.Controllers
                     {
                         TempData["SaveBooking"] = "Booking failed";
                     }
-
-                    //EmailInput emailInput = new EmailInput();
-                    //emailInput.Body = "Hi " + caretakerBooking.FirstName + " " + caretakerBooking.LastName + ", <BR/><BR/>" +
-                    //    "This mail is to inform you that we have recieved your booking request for <b>" + caretakerBooking.CareTakerId;
-
                 }
             }
             catch (Exception ex)
@@ -336,7 +331,7 @@ namespace Nirast.Pcms.Web.Controllers
                 Guid fileName = Guid.NewGuid();
                 if (publicUserDetails.ProfilePicByte != null)
                 {
-                    string FilePath = Server.MapPath("~/PCMS/ProfilePics/PublicUser/")  + fileName.ToString() + ".jpg";
+                    string FilePath = Server.MapPath("~/PCMS/ProfilePics/PublicUser/") + fileName.ToString() + ".jpg";
                     if (!Directory.Exists(Server.MapPath("~/PCMS/ProfilePics/PublicUser/")))
                     {
                         Directory.CreateDirectory(Server.MapPath("~/PCMS/ProfilePics/PublicUser/"));
@@ -396,20 +391,10 @@ namespace Nirast.Pcms.Web.Controllers
                 var advancedSearchInputModel = JsonConvert.SerializeObject(searchInputs);
                 var result = service.PostAPIWithData(advancedSearchInputModel, api);
                 bookingDetailsList = JsonConvert.DeserializeObject<List<UserInvoiceParams>>(result.Result);
-             
+
 
                 if (bookingDetailsList != null)
                 {
-                    //byte[] bytes = scheduleDetailsListFilterd.PdfFile;
-                    ////string filenname = Server.MapPath("~/Temp/") + "tdt.pdf";
-                    //string filenname = Server.MapPath("~PCMS/Invoice/Client") + "Invoice For " + scheduleDetailsListFilterd.ClientName + "_" + scheduleDetailsListFilterd.InvoicePrefix + ".pdf";
-                    //if (!Directory.Exists(Server.MapPath("~/PCMS/Invoice/Client/")))
-                    //{
-                    //    Directory.CreateDirectory(Server.MapPath("~/PCMS/Invoice/Client/"));
-                    //}
-                    //System.IO.File.WriteAllBytes(filenname, bytes);
-                    ////string siteUrl = Request.Url.Scheme + "://" + Request.Url.Authority + "/";
-                    //filenname = siteUrl + "/PCMS/Invoice/Client/" + "Invoice For " + scheduleDetailsListFilterd.ClientName + "_" + scheduleDetailsListFilterd.InvoicePrefix + ".pdf";
                     string filenname = bookingDetailsList[0].InvoicePath;
 
                     EmailInput emailinputs = new EmailInput()
@@ -562,12 +547,7 @@ namespace Nirast.Pcms.Web.Controllers
                 if (Request.Form["update"] != null)
                 {
                     publicUserDetails.GenderId = Convert.ToInt32(Gender.Male);
-                    //string strCountryValue = Request.Form["ddlCountry"].ToString();
-                    //string strStatesValue = Request.Form["ddlStates"].ToString();
-                    //string strCityValue = Request.Form["ddlCity"].ToString();
-                    //publicUserDetails.CountryId = Convert.ToInt32(strCountryValue);
-                    //publicUserDetails.StateId = Convert.ToInt32(strStatesValue);
-                    //publicUserDetails.CityId = Convert.ToInt32(strCityValue);
+                   
                     publicUserDetails.SiteURL = Request.Url.Scheme + "://" + Request.Url.Authority + "/";
 
                     // write profile pic to a folder and save its path in db.
@@ -670,7 +650,6 @@ namespace Nirast.Pcms.Web.Controllers
                 if (Request.Form["UpdateCard"] != null)
                 {
                     string strCardId = Request.Form["ddlCardType"].ToString();
-                    //publicUserDetails.CardTypeId = Convert.ToInt32(strCardId);
                     string api = "PublicUser/UpdateCardDetails";
                     var serviceContent = JsonConvert.SerializeObject(publicUserDetails);
                     HttpStatusCode result = service.PostAPI(serviceContent, api);
@@ -915,7 +894,7 @@ namespace Nirast.Pcms.Web.Controllers
             questions = JsonConvert.DeserializeObject<List<Questionare>>(result);
             ViewBag.Questions = questions;
 
-          
+
             return PartialView("_PublicUserCaretakerBooking");
         }
 
@@ -1351,11 +1330,11 @@ namespace Nirast.Pcms.Web.Controllers
                     publicuserid = (int)Session["loggedInUserId"];
                 }
 
-                
+
                 string api = "Admin/GetBookingHistoryListById/" + publicuserid;
                 var result = service.GetAPI(api);
                 bookingHistoryList = JsonConvert.DeserializeObject<List<UserBookingInvoiceReport>>(result);
-              
+
             }
 
             catch (Exception ex)
@@ -1374,7 +1353,7 @@ namespace Nirast.Pcms.Web.Controllers
                 {
                     publicuserid = (int)Session["loggedInUserId"];
                 }
-               
+
                 string api = "Admin/GetBookingInvoiceListforUserDashBoard/" + publicuserid;
                 var result = service.GetAPI(api);
                 InvoiceHistoryList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<UserInvoiceParams>>(result);
@@ -1434,7 +1413,7 @@ namespace Nirast.Pcms.Web.Controllers
         {
 
             List<UserBooking> userbookingDetails = null;
-           
+
             try
             {
                 if (Session["loggedInUserId"] != null)
@@ -1622,7 +1601,7 @@ namespace Nirast.Pcms.Web.Controllers
             return YearList;
         }
 
-        public ActionResult UpdateBooking(int ServiceId, int caretakerId, string fromDate, string toDate, string toTime, string fromTime,int bookingId)
+        public ActionResult UpdateBooking(int ServiceId, int caretakerId, string fromDate, string toDate, string toTime, string fromTime, int bookingId)
         {
             DateTime reportStart = DateTime.Now;
             DateTime reportend = DateTime.Now;
@@ -1822,13 +1801,13 @@ namespace Nirast.Pcms.Web.Controllers
                 var Clients = service.GetAPI(api);
                 List<UsersDetails> userDetailsList = new List<UsersDetails>();
                 userDetailsList = JsonConvert.DeserializeObject<List<UsersDetails>>(Clients);
-               
+
                 var userDetails = JsonConvert.SerializeObject(userDetailsList);
                 return Json(userDetails, JsonRequestBehavior.AllowGet);
 
 
 
-               
+
             }
             catch (Exception ex)
             {
@@ -1852,12 +1831,12 @@ namespace Nirast.Pcms.Web.Controllers
                 DateTime reportStart = DateTime.Now;
                 DateTime reportend = DateTime.Now;
                 string[] workTimeValues = null;
-               
+
                 if (data.WorkTimeDetails != null)//work time values from drop down. in wrok time dropdown 
                 {
                     workTimeValues = data.WorkTimeDetails.Split('|');
                 }
-                
+
                 //Client_Scheduling start date end date settings starts here
                 if (data.CustomTiming == true)
                 {
@@ -2011,10 +1990,10 @@ namespace Nirast.Pcms.Web.Controllers
 
 
                 PublicUserCaretakerBooking saveData = new PublicUserCaretakerBooking();
-               
+
                 saveData.Id = data.Id;
                 saveData.BookingId = data.BookingId;
-               
+
                 saveData.CareTaker = data.CareTaker;
                 saveData.ClientName = data.ClientName;
                 saveData.CareTakerName = data.CareTakerName;
@@ -2032,7 +2011,7 @@ namespace Nirast.Pcms.Web.Controllers
                     saveData.WorkTime = data.WorkTime;
                 }
 
-                
+
                 saveData.WorkMode = data.WorkMode;
                 saveData.CareTakerType = data.CareTakerType;
                 saveData.PublicUserId = data.PublicUserId;
@@ -2047,7 +2026,7 @@ namespace Nirast.Pcms.Web.Controllers
 
                 Service service = new Service();
                 string api = "User/SaveBookingDetails";
-               
+
                 var serviceContent = JsonConvert.SerializeObject(saveData);
 
                 HttpStatusCode result = service.PostAPI(serviceContent, api);
@@ -2084,17 +2063,17 @@ namespace Nirast.Pcms.Web.Controllers
                 var data = JsonConvert.SerializeObject(calenderEventInput);
                 var result = service.PostAPIWithData(data, api);
                 scheduleDetailsList = JsonConvert.DeserializeObject<List<PublicUserCaretakerBooking>>(result.Result);
-                if (scheduleDetailsList!=null)
+                if (scheduleDetailsList != null)
                 {
                     scheduleDetailsList.ForEach(x =>
                     {
                         x.Start = (DateTime.SpecifyKind(x.Start, DateTimeKind.Utc));
                     });
                 }
-                
-               
-                    return new JsonResult { Data = scheduleDetailsList, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
-          
+
+
+                return new JsonResult { Data = scheduleDetailsList, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+
 
             }
             catch (Exception ex)
@@ -2166,7 +2145,7 @@ namespace Nirast.Pcms.Web.Controllers
                 var Clients = service.GetAPI(api);
                 List<UsersDetails> scheduleDetailsList = new List<UsersDetails>();
                 scheduleDetailsList = JsonConvert.DeserializeObject<List<UsersDetails>>(Clients);
-                var events = scheduleDetailsList.Where(a => a.UserTypeId == 2 && a.UserVerified==true).ToList();
+                var events = scheduleDetailsList.Where(a => a.UserTypeId == 2 && a.UserVerified == true).ToList();
                 var json = JsonConvert.SerializeObject(events);
                 return Json(json, JsonRequestBehavior.AllowGet);
             }
@@ -2253,9 +2232,9 @@ namespace Nirast.Pcms.Web.Controllers
                 users = JsonConvert.DeserializeObject<List<UsersDetails>>(result1);
 
 
-              
 
-                
+
+
                 ViewData["User"] = new SelectList(users, "UserRegnId", "FullName", bookingDetailsList.FirstOrDefault().UserId);
 
                 var listPaySearch = new SelectList(new[]

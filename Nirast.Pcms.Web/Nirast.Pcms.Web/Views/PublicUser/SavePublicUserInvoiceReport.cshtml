@@ -147,8 +147,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Client. Function: "/Client/LoadClient". Page: SaveClientInvoiceReport.cshtml');
-                        //alert('Some network error has occurres. Please try again after some time.');
-                    }
+                   }
                 });
 
                 $.ajax({
@@ -167,7 +166,6 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Work Shift. Function: "/Client/LoadWorkShift". Page: SaveClientInvoiceReport.cshtml');
-                        //alert('Some network error has occurres. Please try again after some time.');
                     }
                 });
 
@@ -186,8 +184,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Caregiver Type. Function: "/Client/LoadCategory". Page: SaveClientInvoiceReport.cshtml');
-                        //alert('Some network error has occurres. Please try again after some time.');
-                    }
+                     }
                 });
 
                
@@ -348,7 +345,6 @@
 
 
                     $('#btnSearch').click(function () {
-                        debugger;
                         var publicUserId = $("#ddlUser").val();
                         var work = $("#ddWorkMode").val();
                         var category = ($("#ddCategory").val() != "" && $("#ddCategory").val() != null && $("#ddCategory").val() != NaN) ? $("#ddCategory").val() : 0;
@@ -409,12 +405,7 @@
                         src = src + "&Mode=" + Mode
                         src = src + "&category=" + category
                         src = src + "&invoiceDate=" + invoiceDate
-                        //setTimeout(function () {
-
-                        //    hideProgress();
-
-                        //}, 6000);
-
+                       
                         $("#policyContent").html('<iframe  src="' + src + '"style="width: 100%; height: 900px" onload="hideProgress()" ></iframe>');
                     });
                 });

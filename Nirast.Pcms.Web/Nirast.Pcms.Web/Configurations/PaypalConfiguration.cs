@@ -1,17 +1,12 @@
-﻿using Newtonsoft.Json;
-using Nirast.Pcms.Web.Helpers;
-using Nirast.Pcms.Web.Models;
-using PayPal.Api;
+﻿using PayPal.Api;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Configuration
 {
     public class PaypalConfiguration
     {
-       
+
         //Constructor  
         public PaypalConfiguration()
         {
@@ -33,12 +28,12 @@ namespace Nirast.Pcms.Web.Configuration
             catch (Exception ex)
             {
                 throw ex;
-            }  
+            }
         }
-        public APIContext GetAPIContext(string clientId,string secretKey)
+        public APIContext GetAPIContext(string clientId, string secretKey)
         {
             // return apicontext object by invoking it with the accesstoken  
-            APIContext apiContext = new APIContext(GetAccessToken(clientId,secretKey));
+            APIContext apiContext = new APIContext(GetAccessToken(clientId, secretKey));
             apiContext.Config = GetConfig();
             return apiContext;
         }

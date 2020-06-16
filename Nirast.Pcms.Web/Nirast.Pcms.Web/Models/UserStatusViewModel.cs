@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -14,7 +11,7 @@ namespace Nirast.Pcms.Web.Models
         public string BookedCaretakerProfileId { get; set; }
 
         public int BookedUserId { get; set; }
-        
+
         public DateTime ServiceBookingDate { get; set; }
 
         public DateTime BookingStatusChangedDate { get; set; }
@@ -32,7 +29,7 @@ namespace Nirast.Pcms.Web.Models
         public string BookedCaretakerName { get; set; }
 
         public string BookedUserName { get; set; }
-        
+
         public string BookedService { get; set; }
 
         public string BookingStatus { get; set; }

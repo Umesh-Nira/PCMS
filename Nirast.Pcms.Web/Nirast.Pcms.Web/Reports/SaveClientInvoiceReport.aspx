@@ -40,7 +40,6 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            debugger;
             if ($('#lblmessage').is(":visible")) {
                 $('#div1').hide();
             } else {

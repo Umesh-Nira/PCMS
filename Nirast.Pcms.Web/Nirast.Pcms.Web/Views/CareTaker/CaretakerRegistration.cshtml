@@ -527,7 +527,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Adding Caregiver Experience. Function: $("#btnSaveOrganisation").click(function ()). Page: CaretakerRegistration.cshtml');
-                        //alert("Some network error has occurred. Please try again after some time.");
+                        
                     }
                 });
             } else {
@@ -595,7 +595,7 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while Adding Caregiver Qualification. Function: $("#btnSaveQualification").click(function ()). Page: CaretakerRegistration.cshtml');
-                            //alert("Some network error has occurred. Please try again after some time.");
+                            
                         }
                     });
                 }
@@ -624,7 +624,7 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while Adding Caregiver Qualification. Function: $("#btnSaveQualification").click(function ()). Page: CaretakerRegistration.cshtml');
-                            //alert("Some network error has occurred. Please try again after some time.");
+                            
                         }
                     });
                 } else if ($('#ddlQualification option:selected').text() == 'Others' && $('#otherquali').val().trim() == '') {
@@ -667,7 +667,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Adding Caregiver Services. Function: $("#btnSaveService").click(function ()). Page: CaretakerRegistration.cshtml');
-                        //alert("Some network error has occurred. Please try again after some time.");
+                        
                     }
                 });
             }
@@ -715,7 +715,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Removing Caregiver Experience. Function: RemoveExperience(companyName). Page: CaretakerRegistration.cshtml');
-                //alert("Some network error has occurred. Please try again after some time.");
+                
             }
         });
     };
@@ -750,7 +750,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Removing Caregiver Qualification. Function: RemoveQualification(qualificationId, caretakerQualificationId). Page: CaretakerRegistration.cshtml');
-                //alert("Some network error has occurred. Please try again after some time.");
+                
             }
         });
     };
@@ -781,7 +781,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Removing Caregiver Services. Function: RemoveService(servId). Page: CaretakerRegistration.cshtml');
-                //alert("Some network error has occurred. Please try again after some time.");
+                
             }
         });
     };

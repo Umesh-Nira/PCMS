@@ -127,14 +127,14 @@ namespace Nirast.Pcms.Web.Models
     public class ChangePassword
     {
         [Required(ErrorMessage = "* Required")]
-        [Display (Name = "Email")]
+        [Display(Name = "Email")]
         public string EmailId { get; set; }
 
         [Required(ErrorMessage = "* Required")]
         [Display(Name = "CurrentPassword")]
         public string CurrentPassword { get; set; }
 
-        
+
         [Required(ErrorMessage = "* Required")]
         [StringLength(25, ErrorMessage = "The {0} must be at least {2} and maximum {1} characters long.", MinimumLength = 8)]
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$", ErrorMessage = "Password must be minimum 8 characters including 1 uppercase , one special character and alphanumeric characters.")]

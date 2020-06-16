@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -16,7 +13,7 @@ namespace Nirast.Pcms.Web.Models
         /// Get or Set the Caretaker Type
         /// </summary>
         public int? CareTaker { get; set; }
-     
+
         /// <summary>
         /// Get or Set from date
         /// </summary>

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace Nirast.Pcms.Api.Sdk.Entities
@@ -24,7 +22,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// <summary>
         /// Get or Set user id
         /// </summary>
-        public int UserId { get; set; }      
+        public int UserId { get; set; }
 
         /// <summary>
         /// Get or Set category id
@@ -53,7 +51,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// <value>
         /// The account status.
         /// </value>
-        public int AccountStatus { get; set; }        
+        public int AccountStatus { get; set; }
 
         /// <summary>
         /// Get or Set key skills
@@ -311,7 +309,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         public int ClientId { get; set; }
         public int CaretakerUserId { get; set; }
 
-        public string   ClientName { get; set; }
+        public string ClientName { get; set; }
         public string CareTakerName { get; set; }
         public string ServiceTypeName { get; set; }
         public DateTime Dates { get; set; }

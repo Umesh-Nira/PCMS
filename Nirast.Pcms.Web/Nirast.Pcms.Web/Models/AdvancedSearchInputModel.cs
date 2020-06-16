@@ -1,7 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -26,7 +24,7 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set from date
         /// </summary>
-        [Required (ErrorMessage = "* Required")]
+        [Required(ErrorMessage = "* Required")]
         [Display(Name = "From Date")]
         public DateTime? FromDate { get; set; }
 
@@ -89,7 +87,7 @@ namespace Nirast.Pcms.Web.Models
         /// Get or Set gender id
         /// </summary>
         public int? Gender { get; set; }
-        
+
         #endregion
     }
 }

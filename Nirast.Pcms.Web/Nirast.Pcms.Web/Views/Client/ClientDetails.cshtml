@@ -1141,7 +1141,6 @@
 
     }
     function EditService(CategoryId, Rate, IsTaxApplicable) {
-        debugger;
         $('#ddlCategory').val(CategoryId);
         $('#txtRate').val(Rate);
 
@@ -1196,7 +1195,6 @@
     });
 
     $('#btnSavePayRise').click(function () {
-        debugger;
         var clientId = $('#clientId').val();
         var caretakerId = $('#caretakerId').val();
         var effdate = $('#effectivePayrollDate').val();
@@ -1233,7 +1231,6 @@
     });
 
     $('#btnMapClientCategoryRate').click(function () {
-        debugger;
         var clientId = $('#clientId').val();
         var effdate = $('#txtDateFrom').val();
 
@@ -1377,7 +1374,6 @@
         $("#EditProfile").hide();
     })
     $(document).ready(function () {
-        debugger;
         var effdate = $('#EffDate').val();
         $('#categoryFromDate').val(effdate);
         $('#lkdeffectiveDate').val(effdate);
@@ -1439,7 +1435,6 @@
         });
 
         $("input[name='RegisterClient']").on("click", function () {
-            debugger;
             if ($('#ddlTimeShift option:selected').text() != '' && $('#ddlTimeShift option:selected').text() != '--Select--') {
                 $('#ddlTimeShift').focus();
                 $('#btnSaveTimeShift').addClass('required-border');
@@ -1525,7 +1520,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while removing Time Shifts. Function: RemoveTimeShift(timeShiftId). Page: ClientDetails.cshtml');
-                //alert("Some network error has occurred. Please try again after some time.");
+                
             }
         });
     };
@@ -1564,13 +1559,12 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while removing Category and Rates for a Client. Function: RemoveCaretaker(caretakerId). Page: ClientDetails.cshtml');
-                //alert("Some network error has occurred. Please try again after some time.");
+                
             }
         });
     };
 
     $('#btnUnMap').click(function () {
-        debugger;
         var clientId = $('#clientId').val();
         var caretakerId = $('#caretakerId').val();
         $.ajax({
@@ -1651,7 +1645,6 @@
             type: "POST",
             data: { ClientId: clientId },
             success: function (data) {
-                debugger;
                 $('#workmodeList3').html('');
                 if (data == "[]") {
                     $('#workmodeList3').html("<tr>" + "<td>No Categories found.</td>" + "</tr>");
@@ -1715,7 +1708,6 @@
     var careTakerId;
     var clientId;
     function PayRisePayrol(clientId, caretakerName, caretakerId) {
-        debugger;
         $('#clientNametitle2').text(' Pay Rise : ' + caretakerName);
         $('#clientId').val(clientId);
         $('#caretakerId').val(caretakerId);
@@ -1874,7 +1866,6 @@
 
     }
     function SavePayRise(data) {
-        debugger;
         $.ajax({
             type: "POST",
             url: '/Client/SavePayRisePayrol',
@@ -1953,7 +1944,6 @@
                     if (data != "") {
                         var strQual = "";
                         $('#addedCaretakerList').html('');
-                        //$('#categoryFromDate').val(moment(date).format("MM/DD/YYYY"));
                         $.each(data, function (i, care) {
                             var taxapplicable = care.IsTaxApplicable == true ? "Yes" : "No";
                             strQual = strQual + "<tr >" +
@@ -1968,13 +1958,12 @@
                         $("select#ddlCareTaker").val('0');
                         $("#txtRate").val('');
                         document.getElementById("taxApplicable").checked = false;
-                        // $("#ChkDiv").hide();
                         $("select#ddlCategory").val("");
                     }
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while adding a Category and Rate  for a Client. Function: $("#btnAddCareTaker").click(function ()). Page: ClientDetails.cshtml');
-                    //alert("Some network error has occurred. Please try again after some time.");
+                    
                 }
             });
 
@@ -2046,7 +2035,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while adding Time Shift for a Client. Function: $("#btnSaveTimeShift").click(function ()). Page: ClientDetails.cshtml');
-                    //alert("Some network error has occurred. Please try again after some time.");
+                    
                 }
             });
 
@@ -2103,14 +2092,12 @@
         });
         $('#txtDateFrom').datepicker({
             onSelect: function (dateText) {
-                debugger;
                 $.ajax({
                     type: "POST",
                     url: '/Client/GetClientInvoicePayRiseRatesonDateChange',
                     data: { Date: dateText, ClientId: $('#ClientId').val() },
                     dataType: "json",
                     success: function (data) {
-                        debugger;
                         var data1 = $.parseJSON(data.Result);
                         if (data == "[]") {
                             $('#workmodeList').html("<tr>" + "<td>No Services found.</td>" + "</tr>");

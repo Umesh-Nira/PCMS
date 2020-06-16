@@ -139,7 +139,7 @@ else
             },
             error: function (data) {
                     logError(data.statusText + ' - Error occurred while searching Client Invoice History. Function: showinvoicedeatils(). Page: InvoiceHistory.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
@@ -158,7 +158,7 @@ else
         },
         error: function (data) {
             logError(data.statusText + ' - Error occurred while loading Client Invoice History. Function: "/Client/LoadClient". Page: InvoiceHistory.cshtml');
-            //alert('Some network error has occurred. Please try again after some time.');
+            
         }
     });
 
@@ -324,7 +324,6 @@ else
 
 
         function viewSchedule(fileId, email,clientName) {
-            debugger;
             var src = '../Reports/ShowClientInvoiceReport.aspx?';
             src = src + "fileId=" + fileId
             $("#policyContent").html('<iframe src="' + src + '" style="width: 100%; height: 700px" onload="hideProgress()"></iframe>');
@@ -337,7 +336,6 @@ else
         }
 
         function SendEmail() {
-            debugger;
             var email = document.getElementById('EmailTxt').value;
             var re = /^\w+([\.-]?\w+)*@@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if (email == "") {

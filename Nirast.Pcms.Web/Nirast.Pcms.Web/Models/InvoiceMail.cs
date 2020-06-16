@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mail;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -10,7 +6,7 @@ namespace Nirast.Pcms.Web.Models
     {
         // <summary>
         /// Get or Set Booking Id
-       
+
         /// </summary>
         public int BookingId { get; set; }
 
@@ -33,7 +29,7 @@ namespace Nirast.Pcms.Web.Models
         public string InvoicePrefix { get; set; }
 
         public int InvoiceNo { get; set; }
-        
+
         public byte[] Attachment { get; set; }
     }
 }

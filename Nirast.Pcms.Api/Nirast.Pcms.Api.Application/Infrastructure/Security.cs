@@ -1,11 +1,9 @@
 ﻿using Nirast.Pcms.Api.Sdk.Infrastructure;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Ap.Application.Infrastructure
 {

@@ -9,7 +9,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
 
         public float WorkingHours { get; set; }
 
-        public float PayingHours{ get; set; }
+        public float PayingHours { get; set; }
 
         public DateTime StartTime { get; set; }
         public float IntervalHours { get; set; }

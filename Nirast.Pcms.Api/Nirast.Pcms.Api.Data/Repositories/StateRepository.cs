@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
 using Nirast.Pcms.Api.Sdk.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.Repositories
 {

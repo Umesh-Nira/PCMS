@@ -1,13 +1,11 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Services
 {
-   public interface IClientService
+    public interface IClientService
     {
         /// <summary>
         /// method to get all client details
@@ -46,9 +44,9 @@ namespace Nirast.Pcms.Api.Sdk.Services
         Task<IEnumerable<WorkShiftRates>> GetMappedCaretakersPayRiseRatesByDate(PayriseData payriseData);
         Task<IEnumerable<ClientCategoryRate>> GetCategoryClientPayRiseRates(int clientId);
         Task<ScheduledData> GetSchedulingLogDetailsById(int logId);
-       
+
         Task<IEnumerable<ClientCategoryRate>> GetClientInvoicePayRiseRatesonDateChange(int clientId, DateTime date);
-       
+
         Task<int> ChangeClientEmailStatus(int id, int emailstatus);
         Task<int> UpdateClientInvoice(InvoiceSearchInpts searchInpts);
 

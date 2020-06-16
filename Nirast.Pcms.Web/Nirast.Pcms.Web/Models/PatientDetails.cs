@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -94,7 +91,7 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set zip code
         /// </summary>
-         [RegularExpression(@"^.{5,}$", ErrorMessage = "Minimum 5 characters required")]
+        [RegularExpression(@"^.{5,}$", ErrorMessage = "Minimum 5 characters required")]
         //[RegularExpression(@"^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$", ErrorMessage = "ZipCode format is not valid")]
         [StringLength(10, ErrorMessage = "Maximum {1} characters exceeded")]
         public string ZipCode { get; set; }
@@ -120,7 +117,7 @@ namespace Nirast.Pcms.Web.Models
         /// Get or Set remarks
         /// </summary>
 
-     
+
         public string Remarks { get; set; }
         /// <summary>
         /// Get or Set created User Id

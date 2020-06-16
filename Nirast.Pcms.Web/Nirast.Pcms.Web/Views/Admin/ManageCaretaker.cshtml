@@ -200,7 +200,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while changing the Caregiver Status. Function: setCaretakerId(caretakerId). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -214,7 +214,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while changing the Caregiver Status. Function: setCaretakerId(caretakerId). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -229,7 +229,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while deleting a Caregiver. Function: deleteUser(). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -297,7 +297,6 @@
         })
 
         function showBookingDetails(bookingId) {
-           // debugger;
             showProgress();
             $.ajax({
                 url: "../Admin/UserLoginDetails/",
@@ -315,7 +314,7 @@
                     hideProgress();
                     console.log(feed.responseText);
                     logError(data.statusText + ' - Error occurred while showing a Caregiver login details . Function: showBookingDetails(bookingId). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -326,12 +325,7 @@
             var emailID = $("#lblemail").text();
             var password = $("#lblpassword").text();
             
-            //if (newPswd.length < 8 || cnfrmPswd.length < 8) {
-            //    alert("Password must be minimum 8 characters long");
-            //    return;
-            //}
-              var reg = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[~`!@@#\$%\^&\*,.])(?=.{8,})');
-           // var reg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$!%*#@@?&])[A-Za-z\d$@@!%*#?&]{8,}$/;
+             var reg = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[~`!@@#\$%\^&\*,.])(?=.{8,})');
              if (reg.test(newPswd) == false) {
                 alert('Password must be minimum 8 characters including 1 uppercase , one special character and alphanumeric characters.');
                 return;
@@ -353,7 +347,7 @@
                     error: function (feed) {
                         console.log(feed.responseText);
                         logError(data.statusText + ' - Error occurred while changing a Caregiver login password. Function: SavePassword(). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                     }
                 });
             }

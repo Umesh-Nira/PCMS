@@ -91,11 +91,9 @@
 </div>
 <script>
     function getID(payriseId) {
-        debugger;
         $('#hiddenPayrollPayrise').val(payriseId)
     }
     function deletePayrollPayrise() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeletePayrollPayrise",
@@ -107,7 +105,6 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deleting payrise. Function: deletePayrollPayrise(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }

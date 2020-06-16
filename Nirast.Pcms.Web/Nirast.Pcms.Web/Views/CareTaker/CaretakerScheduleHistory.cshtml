@@ -175,7 +175,6 @@
             method: 'POST',
             data: { clientId: ID, fromDate: ($('#txtFromDate').val() != '') ? $('#txtFromDate').val() : null, toDate: ($('#txtToDate').val() != '') ? $('#txtToDate').val() : null },
             success: function (feed) {
-                debugger;
                 spinnerVisible = true;
                 hideProgress();
                 $('#Result').html(feed);

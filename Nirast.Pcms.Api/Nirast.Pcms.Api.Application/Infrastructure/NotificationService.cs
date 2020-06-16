@@ -1,15 +1,15 @@
-﻿using Nirast.Pcms.Api.Sdk.Entities;
+﻿using Nirast.Pcms.Api.Data.Helpers;
+using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
 using System;
-using System.Configuration;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Configuration;
+using System.IO;
 using System.Net.Mail;
 using System.Net.Mime;
+using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
-using Nirast.Pcms.Api.Data.Helpers;
-using System.IO;
 
 namespace Nirast.Pcms.Ap.Application.Infrastructure
 {
@@ -22,30 +22,25 @@ namespace Nirast.Pcms.Ap.Application.Infrastructure
             _logger = logger;
         }
 
-        public async  Task<bool> SendEMail(EmailInput data, List<string> ccAdresses= null,List<string>emailIdList=null)
-            {
+        public async Task<bool> SendEMail(EmailInput data, List<string> ccAdresses = null, List<string> emailIdList = null)
+        {
             bool isMessageSent = false;
             try
             {
                 Security security = new Security();
-               string fromEmail = data?.EmailIdConfig?.FromEmail?.ToString();
-               string encryptedFromEmailPassword = data?.EmailIdConfig?.Password?.ToString();
-                //GetEmailConfig(data.EmailType,  out fromEmail, out encryptedFromEmailPassword);
+                string fromEmail = data?.EmailIdConfig?.FromEmail?.ToString();
+                string encryptedFromEmailPassword = data?.EmailIdConfig?.Password?.ToString();
                 _logger.Info(fromEmail + " " + encryptedFromEmailPassword);
                 int emailPort = Convert.ToInt32(data.EmailConfig.MailPort);
-               bool enableSSL = Convert.ToBoolean(data.EmailConfig.SSL);
-             
-                //  bool enableSSL =true;
+                bool enableSSL = Convert.ToBoolean(data.EmailConfig.SSL);
 
-                // bool enableSSL = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"].ToString());
                 string host = data?.EmailConfig?.MailHost?.ToString();
                 string encryptionPassword = ConfigurationManager.AppSettings["EncryptPassword"].ToString();
 
-                //string fromEmailPassword = security.DecryptCipherTextToPlainText(encryptedFromEmailPassword);
                 string fromEmailPassword = StringCipher.Decrypt(encryptedFromEmailPassword, encryptionPassword);
                 string ccEmail = ConfigurationManager.AppSettings["CcEmail"].ToString();
                 string PaymentEmail = ConfigurationManager.AppSettings["PaymentEmail"].ToString();
-                if (null==emailIdList)
+                if (null == emailIdList)
                 {
                     using (MailMessage mail = new MailMessage(fromEmail, data.EmailId))
                     {
@@ -65,15 +60,15 @@ namespace Nirast.Pcms.Ap.Application.Infrastructure
                                     Attachment datas = new Attachment(localPath, MediaTypeNames.Application.Octet);
                                     datas.ContentDisposition.FileName = Path.GetFileName(localPath);
                                     mail.Attachments.Add(datas);
-                                  
-                                    _logger.Info("starts with http" + " " + "local path=" + localPath + " " + "UriAddress=" + uriAddress );
+
+                                    _logger.Info("starts with http" + " " + "local path=" + localPath + " " + "UriAddress=" + uriAddress);
                                 }
                                 else
                                 {
                                     client.DownloadFile(data.Attachments, pdfLocalFileName);
                                     Attachment datas = new Attachment(pdfLocalFileName, MediaTypeNames.Application.Pdf);
                                     mail.Attachments.Add(datas);
-                                    
+
                                 }
                             }
                             else
@@ -81,7 +76,7 @@ namespace Nirast.Pcms.Ap.Application.Infrastructure
                                 Uri uriAddress = new Uri(data.Attachments);
                                 var localPath = uriAddress.LocalPath;
                                 string fileName = Path.GetFileName(localPath);
-                                _logger.Info("Not starts with http"+" "+"local path="+localPath +" "+"UriAddress="+ uriAddress + " " + "filename=" + fileName);
+                                _logger.Info("Not starts with http" + " " + "local path=" + localPath + " " + "UriAddress=" + uriAddress + " " + "filename=" + fileName);
                                 byte[] pdfData = client.DownloadData(data.Attachments);
 
                                 MemoryStream memoryStreamOfFile = new MemoryStream(pdfData);
@@ -121,7 +116,6 @@ namespace Nirast.Pcms.Ap.Application.Infrastructure
                             }
                         }
 
-                        //mail.CC.Add(fromEmail);
                         smtp.Send(mail);
                         isMessageSent = true;
                     }
@@ -201,7 +195,6 @@ namespace Nirast.Pcms.Ap.Application.Infrastructure
                                 }
                             }
 
-                            //mail.CC.Add(fromEmail);
                             smtp.Send(mail);
 
 
@@ -210,7 +203,7 @@ namespace Nirast.Pcms.Ap.Application.Infrastructure
                     }
                 }
             }
-            
+
             catch (Exception ex)
             {
                 isMessageSent = false;

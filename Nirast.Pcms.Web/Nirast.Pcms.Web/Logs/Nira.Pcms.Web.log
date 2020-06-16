@@ -1555,3 +1555,7 @@ System.IO.IOException: The document has no pages.
 [ERR] 2020-06-08 18:14:32.946 Error occurred in Admin Controller-ClientInvoiceReport.cs
 System.NullReferenceException: Object reference not set to an instance of an object.
    at Nirast.Pcms.Web.Reports.ClientInvoiceReport.Page_Load(Object sender, EventArgs e) in E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Web\Nirast.Pcms.Web\Reports\ClientInvoiceReport.aspx.cs:line 111
+[ERR] 2020-06-15 16:40:05.578 API Call start 6/15/2020 4:40:05 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-06-24&hours=0&clientId=10&Workshift=0
+[ERR] 2020-06-15 16:40:06.063 API Call end 6/15/2020 4:40:06 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-06-24&hours=0&clientId=10&Workshift=0
+[ERR] 2020-06-15 16:40:10.156 API Call start 6/15/2020 4:40:10 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-06-24 08:00&hours=12&clientId=10&Workshift=4
+[ERR] 2020-06-15 16:40:10.452 API Call end 6/15/2020 4:40:10 PM - CareTaker/GetAvailableCareTakerListByCategoryAndDateTime/1?startDatetime=2020-06-24 08:00&hours=12&clientId=10&Workshift=4

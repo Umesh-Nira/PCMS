@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -50,7 +47,7 @@ namespace Nirast.Pcms.Web.Models
         /// Get or Set InvoicePath
         /// </summary>
         public string InvoicePath { get; set; }
-     
+
 
         /// <summary>
         /// Get or Set InvoiceNo

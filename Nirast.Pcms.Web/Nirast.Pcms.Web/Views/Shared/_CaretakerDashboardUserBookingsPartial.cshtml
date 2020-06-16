@@ -86,7 +86,6 @@
 
 <script type="text/javascript">
     function showNotificationDetails(bookingId) {
-        debugger;
         showProgress();
         $.ajax({
             url: "../CareTaker/ViewNotificationDetails/",
@@ -104,7 +103,6 @@
                 hideProgress();
                 console.log(feed.responseText);
                 logError(feed.statusText + ' - Error occurred while showing Notification details. Function: showNotificationDetails(bookingId). Page: _CaretakerDashboardNotificationPartial.cshtml');
-                //alert('Some error has occurred. Please try again after some time.');
             }
         });
     }

@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Nirast.Pcms.Api.Sdk.Entities
+﻿namespace Nirast.Pcms.Api.Sdk.Entities
 {
     public class Services
     {
         /// <summary>
         /// Get or Set service id
         /// </summary>
-        public int ServiceId { get;set; }
+        public int ServiceId { get; set; }
 
         /// <summary>
         /// Get or Set service name

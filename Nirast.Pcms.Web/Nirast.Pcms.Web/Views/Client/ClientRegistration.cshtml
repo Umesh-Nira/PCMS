@@ -3,8 +3,7 @@
 
 @{
     ViewBag.Title = "ClientRegistration";
-    //Layout = "~/Views/Shared/_Layout.cshtml";
-    Layout = "~/Views/Shared/_AdminDashboardLayout.cshtml";
+     Layout = "~/Views/Shared/_AdminDashboardLayout.cshtml";
 }
 <script src="~/css/AdminDashboard/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
@@ -40,11 +39,8 @@
     };
 
     $(document).ready(function () {
-        //$('#caretakerList').DataTable({
-        //    "pagingType": "full_numbers"
-        //});
+       
         $(".qty").on("keypress keyup blur", function (event) {
-            //this.value = this.value.replace(/[^0-9\.]/g,'');
             $(this).val($(this).val().replace(/[^0-9\.]/g, ''));
             if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
                 event.preventDefault();
@@ -106,7 +102,6 @@
 
 
         //////////////// Start TimeShift  ///////////////////////////////
-        // $("#ChkDiv").hide();
         $('#btnSaveTimeShift').click(function () {
             if ($('#ddlTimeShift option:selected').text() != '' && $('#ddlTimeShift option:selected').text() != '--Select--') {
                 $.ajax({
@@ -131,7 +126,6 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Saving Time Shift. Function: $("#btnSaveTimeShift").click(function ()). Page: ClientRegistration.cshtml');
-                        //alert("Some network error has occurred. Please try again after some time.");
                     }
                 });
 
@@ -166,7 +160,6 @@
             else {
                 var map = [];
                 $('#caretakerList tr').each(function () {
-                   // debugger;
                     var rate = $('.qty', this).val();
 
                     if (rate != "" && rate != undefined) {
@@ -176,11 +169,7 @@
                         var CategoryId = ($('.categoryID', this).val());
                         var CategoryName = ($('.categoryname', this).text());
                         var Rate = ($('.qty', this).val());
-                        //var IsTaxApplicable ="N";// $('.chcktax',this).prop('checked');
-
-                        //if ($('.chcktax',this).is(':checked') == true) {
-                        //    TaxApplicable="Y";
-                        //}
+                       
 
                         map.push({
 
@@ -188,12 +177,9 @@
                             CaretakerName: CaretakerName,
                             CategoryId: CategoryId,
                             Rate: Rate,
-                            //IsTaxApplicable:IsTaxApplicable,
-                            CategoryName: CategoryName
+                           CategoryName: CategoryName
                         });
-                        //if (map != null) {
-                        //    alert("Caretaker mapped successfully")
-                        //}
+                        
                     }
 
 
@@ -234,7 +220,7 @@ $('#tbmappedCaretakerList').show();
 },
 error: function (data) {
     logError(data.statusText + ' - Error occurred while mapping caretakers for a Client. Function: $("#caretakerList").on("click", "#btnMapCareTaker", function ()). Page: ClientRegistration.cshtml');
-//alert("Some network error has occurred. Please try again after some time.");
+
 }
 
 });
@@ -246,7 +232,6 @@ error: function (data) {
 
 $('#btnAddCareTaker').click(function () {
 if ($('#ddlCategory option:selected').text() != '--Select--' && $('#txtRate').val() != '' && $('#txtRate').val() != '0') {
-    debugger;
     var date = $('#categoryFromDate').val();
     if (date == "")
     {
@@ -282,13 +267,13 @@ $('#tblCaretaker').show();
 $("select#ddlCareTaker").val('0');
 $("#txtRate").val('');
 document.getElementById("taxApplicable").checked = false;
-//$("#ChkDiv").hide();
+
 $("select#ddlCategory").val("");
 }
 },
 error: function (data) {
     logError(data.statusText + ' - Error occurred while adding category and rate for Client. Function: $("#btnAddCareTaker").click(function ()). Page: ClientRegistration.cshtml');
-//alert("Some network error has occurred. Please try again after some time.");
+
 }
 });
 
@@ -308,7 +293,6 @@ $('#tblCaretaker').hide();
 
 
         $("input[name='RegisterClient']").on("click", function () {
-            debugger;
             if ($('#ddlTimeShift option:selected').text() != '' && $('#ddlTimeShift option:selected').text() != '--Select--') {
                 $('#ddlTimeShift').focus();
                 $('#btnSaveTimeShift').addClass('required-border');
@@ -387,9 +371,8 @@ $("#ChkDiv").show();
 
 
 function GetStatesForCurrentAddress(StateId ) {
-debugger;
 var countryId = ($('#ddlCountry2').val() == "" || $('#ddlCountry2').val() == undefined) ? 0 : $('#ddlCountry2').val();
-//$('#CountryId2').val(countryId);
+
 $.ajax({
 url: '/Admin/LoadStatesByCountryId',
 type: "GET",
@@ -412,8 +395,6 @@ $("#ddlStates2").append(
         });
         document.getElementById("ddlStates2").value = StateId;
     }
-    //$('#lblPhoneCodePrimary').text($.parseJSON(data)[0] === undefined ? '+1' : $.parseJSON(data)[0].PhoneCode);
-    //$('#lblPhoneCodeSecondary').text($.parseJSON(data)[0] === undefined ? '+1' : $.parseJSON(data)[0].PhoneCode);
         $.ajax({
         url: '/admin/loadphonecodebycountryid',
         type: "get",
@@ -477,7 +458,7 @@ $('#tblTimeShift').hide();
 },
 error: function (data) {
     logError(data.statusText + ' - Error occurred while removing Time Shift for Client. Function: RemoveTimeShift(timeShiftId). Page: ClientRegistration.cshtml');
-//alert("Some network error has occurred. Please try again after some time.");
+
 }
 });
 };
@@ -515,7 +496,7 @@ $('#mappedCaretakerList').html(strQual);
 },
 error: function (data) {
     logError(data.statusText + ' - Error occurred while removing Caretakers for Client. Function: RemoveCaretaker(caretakerId). Page: ClientRegistration.cshtml');
-//alert("Some network error has occurred. Please try again after some time.");
+
 }
 });
 };
@@ -553,12 +534,12 @@ $('#tblCaretaker').hide();
 }
 $("#txtRate").val('');
 document.getElementById("taxApplicable").checked = false;
-//$("#ChkDiv").hide();
+
 $("select#ddlCategory").val("");
 },
 error: function (data) {
     logError(data.statusText + ' - Error occurred while removing Caretaker and rates for Client. Function: RemoveCategory(caretakerId). Page: ClientRegistration.cshtml');
-//alert("Some network error has occurred. Please try again after some time.");
+
 }
 });
 };

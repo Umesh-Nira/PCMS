@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -56,7 +52,7 @@ namespace Nirast.Pcms.Web.Models
             [Description("Rejected")]
             Rejected = 3,
             [Description("Cancelled")]
-            Cancelled =4,
+            Cancelled = 4,
             [Description("Pending Payment")]
             PendingPayment,
         }
@@ -74,7 +70,7 @@ namespace Nirast.Pcms.Web.Models
             Deleted = 3
         }
 
-        public enum ClientStatus: int
+        public enum ClientStatus : int
         {
             Active = 1,
             InActive = 2
@@ -95,7 +91,7 @@ namespace Nirast.Pcms.Web.Models
         }
         public enum AuditLogType : int
         {
-             Scheduling = 1
+            Scheduling = 1
         }
         public enum AuditLogActionType : int
         {

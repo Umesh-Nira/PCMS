@@ -180,7 +180,6 @@
                 hideProgress();
                 console.log(feed.responseText);
                 logError(feed.statusText + ' - Error occurred while showing booking details for BookingId: ' + bookingId + '. Function: showBookingDetails(bookingId). Page: _AdminBookingNotificationPartial.cshtml');
-                                    //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }
@@ -236,9 +235,7 @@
         });
     });
     function viewSchedule(bookingId,action) {
-        debugger;
-
-        var src = '../Reports/SavePublicUserInvoiceReport.aspx?';
+       var src = '../Reports/SavePublicUserInvoiceReport.aspx?';
         src = src + "bookingId=" + bookingId;
         src = src + "&action=" + action;
         $("#policyContent").html('<iframe src="' + src + '" style="width: 100%; height: 700px" onload="hideProgress()"></iframe>');
@@ -246,8 +243,7 @@
             $('#modal-invoice').modal('toggle');
         }
         else {
-            // window.location.reload();
-             window.location.href = window.location.href;
+            window.location.href = window.location.href;
         }
     }
 </script>

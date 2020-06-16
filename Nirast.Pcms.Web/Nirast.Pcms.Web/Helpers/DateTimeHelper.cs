@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Helpers
 {
@@ -30,15 +28,15 @@ namespace Nirast.Pcms.Web.Helpers
         public List<int> GetYearList()
         {
             var year = new List<int>();
-            for (int i = DateTime.Now.Year; i < DateTime.Now.Year+10; i++)
+            for (int i = DateTime.Now.Year; i < DateTime.Now.Year + 10; i++)
             {
                 year.Add(i);
             }
-           // var year = new Dictionary<int, int>()
-           //{
-           //     { 0,DateTime.Now.Year+10}
-               
-           // };
+            // var year = new Dictionary<int, int>()
+            //{
+            //     { 0,DateTime.Now.Year+10}
+
+            // };
             return year;
         }
     }

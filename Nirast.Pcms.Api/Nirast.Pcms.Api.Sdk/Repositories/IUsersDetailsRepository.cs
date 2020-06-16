@@ -1,8 +1,5 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.PublicUserCaretakerBooking;
 
@@ -12,7 +9,7 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
     {
         Task<int> DeleteSchedule(ScheduleDeleteData deleteData);
         Task<int> AddUserInvoiceDetails(InvoiceSearchInpts invoiceDetails);
-        Task<int> UpdateUserInvoiceNumber(int userid,int invoiceNumber);
+        Task<int> UpdateUserInvoiceNumber(int userid, int invoiceNumber);
         Task<int> InsertUpdateCompanyDetails(CompanyProfile companyProfile);
         Task<CompanyProfile> GetCompanyProfiles(int CompanyId);
         Task<int> AddPublicUser(PublicUserRegistration UsersDetails);

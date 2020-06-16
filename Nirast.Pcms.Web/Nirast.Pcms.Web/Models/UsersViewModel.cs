@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -52,7 +49,7 @@ namespace Nirast.Pcms.Web.Models
     public class UserCreditCarddRegistration : UserRegistrationViewModel
     {
         public string CardHolderName { get; set; }
-        
+
         public string CardNo { get; set; }
 
         public int CardExpiryMonth { get; set; }

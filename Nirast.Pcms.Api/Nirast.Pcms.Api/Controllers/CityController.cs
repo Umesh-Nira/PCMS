@@ -35,7 +35,7 @@ namespace Nirast.Pcms.Api.Controllers
         // GET: api/City/5
         [Route("api/City/GetCity")]
         [AllowAnonymous]
-        public async Task<HttpResponseMessage> GetCity(string flag,string value)
+        public async Task<HttpResponseMessage> GetCity(string flag, string value)
         {
             Cities City = new Cities();
             //List<Cities> lstCity = new List<Cities>();

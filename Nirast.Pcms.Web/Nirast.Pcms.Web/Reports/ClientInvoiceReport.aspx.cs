@@ -1,7 +1,5 @@
-﻿using Ionic.Zip;
-using iTextSharp.text;
+﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
 using Microsoft.Reporting.WebForms;
 using Newtonsoft.Json;
 using Nirast.Pcms.Web.Helpers;
@@ -9,18 +7,10 @@ using Nirast.Pcms.Web.Logger;
 using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Reflection;
-using System.Text.RegularExpressions;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -35,7 +25,7 @@ namespace Nirast.Pcms.Web.Reports
         string monthText;
         PaymentAdvancedSearch searchInputs = new PaymentAdvancedSearch();
         int year;
-        int NextInvoiceNumber,InvoiceNumber;
+        int NextInvoiceNumber, InvoiceNumber;
         List<ScheduledData> scheduleDetailsList = new List<ScheduledData>();
         List<ScheduledData> scheduleDetailsListSeperateInvoice = new List<ScheduledData>();
         string InvoicePrefix;
@@ -77,7 +67,7 @@ namespace Nirast.Pcms.Web.Reports
                     searchInputs.ClientId = clientId;
                     searchInputs.CareTakerId = 0;
                     searchInputs.FromDate = fromdate;
-                    searchInputs.ToDate   = todate;
+                    searchInputs.ToDate = todate;
                     searchInputs.Category = category;
                     if (month == 0)
                     {
@@ -88,16 +78,16 @@ namespace Nirast.Pcms.Web.Reports
                         searchInputs.Year = 0;
                     }
                     searchInputs.Month = 0;
-                    if(year !=0 &&  month !=0)
+                    if (year != 0 && month != 0)
                     {
                         searchInputs.FromDate = new DateTime(year, month, 1);   //new DateTime(year, month, 1);
                         searchInputs.ToDate = new DateTime(year, month, DateTime.DaysInMonth(year, month));
 
                     }
-                    if(year !=0 && month ==0 && fromdate == DateTime.MinValue)
+                    if (year != 0 && month == 0 && fromdate == DateTime.MinValue)
                     {
                         searchInputs.FromDate = new DateTime(year, 1, 1);
-                        searchInputs.ToDate  = new DateTime(year, 12, 31);
+                        searchInputs.ToDate = new DateTime(year, 12, 31);
                     }
 
 
@@ -128,9 +118,9 @@ namespace Nirast.Pcms.Web.Reports
 
 
                     scheduleDetailsList = scheduleDetailsList.Where(x => x.HoildayHours == 0).GroupBy(l => l.SchedulingId)
-                                                         .Select(cl =>  new ScheduledData
+                                                         .Select(cl => new ScheduledData
                                                          {
-                                                             
+
                                                              SchedulingId = cl.First().SchedulingId,
                                                              ClientName = cl.First().ClientName,
                                                              CurrencySymbol = cl.First().CurrencySymbol,
@@ -156,11 +146,11 @@ namespace Nirast.Pcms.Web.Reports
                                                              HoildayAmout = cl.First().HoildayAmout,
                                                              HolidayPayValue = cl.First().HolidayPayValue,
                                                              CountryId = cl.First().CountryId,
-                                                             Hours = cl.Sum(k=>Convert.ToDecimal(k.Hours)).ToString(),
+                                                             Hours = cl.Sum(k => Convert.ToDecimal(k.Hours)).ToString(),
                                                              Total = cl.Sum(k => k.Total),
                                                              HST = cl.Sum(k => k.HST),
-                                                             InvoiceNumber=cl.First().InvoiceNumber,
-                                                             InvoicePrefix= cl.First().InvoicePrefix 
+                                                             InvoiceNumber = cl.First().InvoiceNumber,
+                                                             InvoicePrefix = cl.First().InvoicePrefix
                                                          }).ToList();
 
                     scheduleDetailsList.AddRange(holidaySchedules);
@@ -212,7 +202,7 @@ namespace Nirast.Pcms.Web.Reports
                     {
                         reportParameters.Add(new ReportParameter("FromDate", Convert.ToDateTime(searchInputs.FromDate).ToString("dd MMM yyyy")));
                         reportParameters.Add(new ReportParameter("Todate", Convert.ToDateTime(searchInputs.ToDate).ToString("dd MMM yyyy")));
-                       // reportParameters.Add(new ReportParameter("InvoiceDate", Convert.ToDateTime(DateTime.Now).ToString("dd MMM yyyy")));
+                        // reportParameters.Add(new ReportParameter("InvoiceDate", Convert.ToDateTime(DateTime.Now).ToString("dd MMM yyyy")));
                         ReportViewer1.LocalReport.DisplayName = "ClientInvoice" + "  " + Convert.ToDateTime(searchInputs.FromDate).ToString("dd MMM yyyy") + " to " + Convert.ToDateTime(searchInputs.ToDate).ToString("dd MMM yyyy");
                     }
                     else
@@ -229,7 +219,7 @@ namespace Nirast.Pcms.Web.Reports
                     ReportViewer2.ProcessingMode = ProcessingMode.Local;
                     ReportViewer2.ShowRefreshButton = false;
                     ReportViewer2.LocalReport.ReportPath = Server.MapPath("~/Reports/ClientInvoiceSeperately.rdlc");
-                   // List<ScheduledData> scheduleDetailsListSeperateInvoice = new List<ScheduledData>();
+                    // List<ScheduledData> scheduleDetailsListSeperateInvoice = new List<ScheduledData>();
                     scheduleDetailsListSeperateInvoice = scheduleDetailsList.Where(a => a.IsSeparateInvoice == true).ToList();
 
                     List<ScheduledData> list = scheduleDetailsListSeperateInvoice;
@@ -276,10 +266,10 @@ namespace Nirast.Pcms.Web.Reports
                     reportParameters.Add(new ReportParameter("InvoiceAddress", invoiceAddress.ToString()));
                     if (monthText == "--Select Month--" || monthText == null)
                     {
-             
+
                         reportParameters2.Add(new ReportParameter("FromDate", Convert.ToDateTime(searchInputs.FromDate).ToString("dd MMM yyyy")));
                         reportParameters2.Add(new ReportParameter("Todate", Convert.ToDateTime(searchInputs.ToDate).ToString("dd MMM yyyy")));
-                       
+
                         //ReportViewer2.LocalReport.DisplayName = "ClientInvoice" + "  " + fromdate.ToString("dd MMM yyyy") + " to " + todate.ToString("dd MMM yyyy");
                         ReportViewer2.LocalReport.DisplayName = "ClientInvoice" + "  " + Convert.ToDateTime(searchInputs.FromDate).ToString("dd MMM yyyy") + " to " + Convert.ToDateTime(searchInputs.ToDate).ToString("dd MMM yyyy");
 
@@ -311,7 +301,7 @@ namespace Nirast.Pcms.Web.Reports
                     ReportViewer1.LocalReport.DataSources.Add(datasourceCompanyProfile);
                     ReportViewer2.LocalReport.DataSources.Add(datasourceCompanyProfile);
 
-                    
+
 
                 }
                 catch (Exception ex)
@@ -384,9 +374,9 @@ namespace Nirast.Pcms.Web.Reports
                 companyProfile.Add(listCompanyProfile);
                 ReportDataSource datasourceCompanyProfile = new ReportDataSource("CompanyProfile", companyProfile);
 
-               // ReportViewer1.LocalReport.DataSources.Add(datasourceCompanyProfile);
+                // ReportViewer1.LocalReport.DataSources.Add(datasourceCompanyProfile);
                 ReportViewer2.LocalReport.DataSources.Add(datasourceCompanyProfile);
-                   byte[] bytesSeprate = this.ReportViewer2.LocalReport.Render("PDF", null, out mimeType, out encoding, out extension, out streamIds, out warnings);
+                byte[] bytesSeprate = this.ReportViewer2.LocalReport.Render("PDF", null, out mimeType, out encoding, out extension, out streamIds, out warnings);
 
                 //InvoiceSearchInpts invoicesearchinputs = new InvoiceSearchInpts();
                 //invoicesearchinputs.InvoiceNumber = item[0].InvoiceNumber;

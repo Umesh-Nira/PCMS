@@ -1,8 +1,6 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Repositories
@@ -16,9 +14,9 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
         Task<CareTakerRegistrationModel> RetrieveCaretakerDetails(int caretakerUserId);
         Task<IEnumerable<CareTakers>> RetrieveCareTakerListByCategory(int CategoryId);
         Task<IEnumerable<CareTakers>> RetrieveCareTakerListByService(int ServiceId);
-        Task<IEnumerable<CareTakers>> RetrieveCareTakerListByCategoryAndClientId(int CategoryId,int clientId);
-        Task<IEnumerable<CareTakers>> RetrieveCareTakerListByCategoryAndDate(int CategoryId,string DateTime,int hours,int clientId);
-        Task<IEnumerable<CareTakers>> RetrieveAvailableCareTakerListByCategoryAndDate(int CategoryId,string DateTime, int hours, int clientId, int Workshift);
+        Task<IEnumerable<CareTakers>> RetrieveCareTakerListByCategoryAndClientId(int CategoryId, int clientId);
+        Task<IEnumerable<CareTakers>> RetrieveCareTakerListByCategoryAndDate(int CategoryId, string DateTime, int hours, int clientId);
+        Task<IEnumerable<CareTakers>> RetrieveAvailableCareTakerListByCategoryAndDate(int CategoryId, string DateTime, int hours, int clientId, int Workshift);
         Task<IEnumerable<CaretakerAvailableReport>> RetrieveAvailableCareTakerListReport(PaymentAdvancedSearch inputs);
         Task<string> CaretakerProfileId();
         Task<IEnumerable<CareTakerRegistrationModel>> SelectRegisteredCaretakers(int status);
@@ -40,7 +38,7 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
         Task<List<string>> GetEmailIdForOfficeStaff();
         Task<string> GetEmailIdForUser(int userId);
         Task<UpcomingAppointment> GetAppointmentDetails(UpcomingAppointment upcomingAppointment);
-        Task<IEnumerable<CareTakerServices>> GetCaretakerPayRiseRatesonDateChange(DateTime date,int caretakerId);
+        Task<IEnumerable<CareTakerServices>> GetCaretakerPayRiseRatesonDateChange(DateTime date, int caretakerId);
         Task<IEnumerable<CareTakers>> RetrieveAvailableCareTakerListForPublicUser(int categoryId, string startDateTime, int hours, int Workshift);
     }
 }

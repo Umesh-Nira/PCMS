@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 using static Nirast.Pcms.Web.Models.Enums;
 
 namespace Nirast.Pcms.Web.Models
@@ -34,9 +32,9 @@ namespace Nirast.Pcms.Web.Models
 
         public string City1 { get; set; }
         public string InvoiceAddress { get; set; }
-        
 
-[Required(ErrorMessage = "* Required")]
+
+        [Required(ErrorMessage = "* Required")]
         // [Required(ErrorMessage = "Please select a State")]
 
         public Nullable<int> StateId1 { get; set; }

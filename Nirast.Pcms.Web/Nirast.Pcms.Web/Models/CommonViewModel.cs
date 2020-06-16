@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Globalization;
-using System.Linq;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
@@ -67,7 +66,7 @@ namespace Nirast.Pcms.Web.Models
         }
     }
 
-   
+
     public class LoggedInUser
     {
         public int UserId { get; set; }
@@ -94,19 +93,19 @@ namespace Nirast.Pcms.Web.Models
         public string Code { get; set; }
 
         [Required(ErrorMessage = "* Required")]
-        [StringLength(50,ErrorMessage = "Maximum {1} characters allowed")]
+        [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
         [RegularExpression(@"(?!^ +$)^.+$", ErrorMessage = " Blank Spaces are not allowed")]
         //[RegularExpression(@"^[a-zA-Z ]+$", ErrorMessage = "Only alphabets are allowed")]
         [Display(Name = "Name")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "* Required")]
-        [StringLength(10,ErrorMessage = "Maximum {1} characters allowed")]
+        [StringLength(10, ErrorMessage = "Maximum {1} characters allowed")]
         [RegularExpression(@"(?!^ +$)^.+$", ErrorMessage = " Blank Spaces are not allowed")]
         public string PhoneCode { get; set; }
 
         [Required(ErrorMessage = "* Required")]
-        [StringLength(10,ErrorMessage = "Maximum {1} characters allowed")]
+        [StringLength(10, ErrorMessage = "Maximum {1} characters allowed")]
         [RegularExpression(@"(?!^ +$)^.+$", ErrorMessage = " Blank Spaces are not allowed")]
         public string Currency { get; set; }
 
@@ -174,7 +173,7 @@ namespace Nirast.Pcms.Web.Models
         /// </summary>
         [Required(ErrorMessage = "* Required")]
         public float TaxPercent { get; set; }
-	}
+    }
 
     public class CityViewModel
     {
@@ -250,7 +249,7 @@ namespace Nirast.Pcms.Web.Models
         [Required(ErrorMessage = "* Required")]
         [Display(Name = "Start Time")]
         [RegularExpression(@"^\b((1[0-2]|0?[1-9]):([0-5][0-9]) ([AaPp][Mm]))$", ErrorMessage = "Invalid time")]
-        
+
         public string StartTime { get; set; }
 
         public float IntervalHours { get; set; }

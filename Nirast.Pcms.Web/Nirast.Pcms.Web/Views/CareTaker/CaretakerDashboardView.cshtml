@@ -144,8 +144,7 @@
             var saveDate = new Date();
 
             function GenerateCalender(id) {
-                debugger;
-                $('#calender').fullCalendar('destroy');
+                 $('#calender').fullCalendar('destroy');
                 $('#calender').fullCalendar({
                     contentheight: 'auto',
                     //height: 650,
@@ -236,7 +235,6 @@
                         $('.tooltiptopicevent').remove();
                     },
                     events: function (start, end, timezone, callback) {
-                        debugger;
                         var date = new Date($('#calender').fullCalendar('getDate'));
                         var month = date.getUTCMonth() + 1;
                         var year = date.getUTCFullYear();
@@ -249,7 +247,6 @@
         })
 
         function GetCalenderEvents(id, month, year, callback) {
-            debugger;
             if (eventList != null && eventList.filter(x => x.year == year && x.month == month).length <= 0) {
                 var data = { caretakerId: id, month: month, year: year }
                 showProgress();
@@ -259,7 +256,6 @@
                     data: data,
                     success: function (data) {
 
-                        debugger;
                         events = [];
                         $.each(data, function (i, v) {
                             events.push({
@@ -302,7 +298,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 })
             }

@@ -6,8 +6,6 @@
 <script>
    
     function LoadStatesByCountry() {
-        debugger;
-        
         var selectedCountry = ($('#Country').val() == "" || $('#Country').val() == undefined) ? 0 : $('#Country').val();
         localStorage.setItem("bookingCountry", selectedCountry == 0 ? "": selectedCountry);
         $.ajax({
@@ -33,12 +31,11 @@
             },
             error: function (data) {
                 logError(feed.statusText + ' - Error occurred while loading States for Country:' + selectedCountry + '. Function: LoadStatesByCountry(). Page: Search.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
     function LoadCitiesByStates(selectedState) {
-        // debugger;
         localStorage.setItem("bookingState", selectedState);
         $.ajax({
             url: '/Admin/LoadCitiesbyStateId',
@@ -57,7 +54,7 @@
             },
             error: function (data) {
                 logError(feed.statusText + ' - Error occurred while loading Cities for State:' + selectedState + '. Function: LoadCitiesByStates(selectedState). Page: Search.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
@@ -362,42 +359,7 @@ else
 }
 
 <script language="javascript" type="text/javascript">
-    //$('#ToTime').change(function () {
-    //    var fromDate = $('#FromDate').val();
-    //    var fromTime = $('#FromTime').val();
-    //    var toDate = $('#ToDate').val();
-    //    var toTime = $('#ToTime').val();
-    //    if (checkTime()) {
-    //       // debugger
-    //        if (fromDate.length == 0 || fromTime.length == 0 || toDate.length == 0 || toTime.length == 0) {
-    //        }
-    //        else {
-    //            var data = $('#myForm').serialize();
-    //            showProgress();
-    //            $.ajax({
-    //                url: "../Home/SearchCareTaker",
-    //                method: "post",
-    //                data: data,
-    //                success: function (feed) {
-    //                    $('#Result').html('');
-    //                    $('#Result').html(feed);
-    //                    spinnerVisible = true;
-    //                    hideProgress();
-    //                },
-    //                error: function (feed) {
-    //                    $('#Result').html('<div class="col-md-12 no-records-message statusmessage">No Records Found !!!</div>');
-    //                    spinnerVisible = true;
-    //                    hideProgress();
-    //                }
-    //            });
-    //        }
-    //    }
-    //    $('#sortByRate').val('0');
-    //    $('#sortByExp').val('0');
-    //})
-
-
-
+   
     $("#btnShowmap").click(function () {
 
         $("#policyContent").html('<iframe name="select_frame" src="@Url.Action("ShowMap", "Admin", new { FilePath = "_FilePath" }) "style="width: 98%; height: 600px" ></iframe>');

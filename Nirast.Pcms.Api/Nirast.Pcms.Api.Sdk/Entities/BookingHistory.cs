@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
@@ -45,7 +42,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// </summary>
         public string ServiceName { get; set; }
         public int ServiceId { get; set; }
-        
+
         /// <summary>
         /// Get or Set caretaker rate per hour
         /// </summary>
@@ -90,7 +87,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// </summary>
         public string BookingPurpose { get; set; }
 
-        public string PhoneNo1{ get; set; }
+        public string PhoneNo1 { get; set; }
 
         public string EmailAddress { get; set; }
 
@@ -98,9 +95,9 @@ namespace Nirast.Pcms.Api.Sdk.Entities
 
         public string State { get; set; }
 
-        public string Country{ get; set; }
+        public string Country { get; set; }
 
-        public string ZipCode{ get; set; }
+        public string ZipCode { get; set; }
 
         public float TotalPayingAmount { get; set; }
 
@@ -114,7 +111,6 @@ namespace Nirast.Pcms.Api.Sdk.Entities
     public class CaretakerBookingReport
     {
         public string Caretaker { get; set; }
-        //public string Type { get; set; }
         public string BookingDate { get; set; }
         public string BookedBy { get; set; }
         public string Service { get; set; }
@@ -132,7 +128,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         public int? PublicUserId { get; set; }
         public int? InvoiceNumber { get; set; }
         public int? InvoiceSearchInputId { get; set; }
-        
+
 
         public string Caretaker { get; set; }
         public int? ServiceId { get; set; }

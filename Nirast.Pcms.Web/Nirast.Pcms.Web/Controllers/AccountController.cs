@@ -1,16 +1,16 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using Newtonsoft.Json;
+using Nirast.Pcms.Web.Helpers;
+using Nirast.Pcms.Web.Models;
+using System;
+using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Nirast.Pcms.Web.Models;
-using Newtonsoft.Json;
-using Nirast.Pcms.Web.Helpers;
-using System.Net;
-using System.Configuration;
 using System.Web.UI;
 
 namespace Nirast.Pcms.Web.Controllers
@@ -26,7 +26,7 @@ namespace Nirast.Pcms.Web.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -38,9 +38,9 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -124,7 +124,7 @@ namespace Nirast.Pcms.Web.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -159,8 +159,8 @@ namespace Nirast.Pcms.Web.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
@@ -192,13 +192,13 @@ namespace Nirast.Pcms.Web.Controllers
         [AllowAnonymous]
         public ActionResult ChangePassword()
         {
-            if(Session["loginName"] != null)
+            if (Session["loginName"] != null)
             {
                 ChangePassword changePassword = new ChangePassword()
                 {
                     EmailId = Session["loginName"].ToString()
                 };
-            return View(changePassword);
+                return View(changePassword);
             }
             else
             {
@@ -227,7 +227,7 @@ namespace Nirast.Pcms.Web.Controllers
                     var resultObj = JsonConvert.DeserializeObject<UserCredential>(serviceResult.Result);
                     string encryptionPassword = ConfigurationManager.AppSettings["EncryptPassword"].ToString();
                     string passwordEpt = StringCipher.Decrypt(resultObj.Password, encryptionPassword);
-                    if (string.Compare(changePasswordInputs.CurrentPassword, passwordEpt)!= 0)
+                    if (string.Compare(changePasswordInputs.CurrentPassword, passwordEpt) != 0)
                     {
                         ViewBag.Error = "Your current password does not match with saved password.";
                         return View("ChangePassword", changePasswordInputs);
@@ -278,7 +278,7 @@ namespace Nirast.Pcms.Web.Controllers
                     ViewBag.Error = "Deleted User. Please register as a new User";
                     return View();
                 }
-                else if(Convert.ToInt32(result) == 1)
+                else if (Convert.ToInt32(result) == 1)
                 {
                     model.SiteURL = Request.Url.Scheme + "://" + Request.Url.Authority + "/";
                     ViewBag.Success = "Your password has been sent to your registered Email: " + model.Email;
@@ -291,7 +291,7 @@ namespace Nirast.Pcms.Web.Controllers
                     ViewBag.Error = "Email does not exist.";
                     return View();
                 }
-               
+
             }
 
             // If we got this far, something failed, redisplay form

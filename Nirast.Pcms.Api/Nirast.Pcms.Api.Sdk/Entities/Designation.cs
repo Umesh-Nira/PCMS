@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nirast.Pcms.Api.Sdk.Entities
+﻿namespace Nirast.Pcms.Api.Sdk.Entities
 {
     public class DesignationDetails
     {
@@ -16,7 +10,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// <summary>
         /// Get or Set Designation
         /// </summary>
-       
+
         public string Designation { get; set; }
     }
 }

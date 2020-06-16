@@ -26,8 +26,7 @@
             },
                                 error: function (data) {
                                     logError(data.statusText + ' - Error occurred while updating User Email for UserId: ' + $('#UserRegnId').val() +'. Function: $("#search-submit").click(function ()). Page: UserProfile.cshtml');
-                                    //alert('Some network error has occurred. Please try again after some time.');
-                                }
+                               }
             
         });
     }
@@ -39,7 +38,6 @@
         $("#EditProfile").show();
         $("#ViewProfile").hide();
         $('#profilePicUpdate').removeClass('hidden');
-        // document.getElementById('lblBrowse').style.visibility = 'visible';
         //data contains the details of the user
         // now showing those details in the textbox
     }
@@ -68,8 +66,6 @@
                     reader.onload = function (e) {
                         $('#imgUser')
                             .attr('src', e.target.result);
-                        //.width(150)
-                        //.height(200);
                         $('#ProfilePicByte').val(e.target.result.split(',')[1]);
                     };
 

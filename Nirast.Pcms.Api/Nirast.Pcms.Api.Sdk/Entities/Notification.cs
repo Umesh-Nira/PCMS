@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -12,7 +8,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// <summary>
         /// Get or Set Booking Date
         /// </summary>
-        public string BookingId{ get; set; }
+        public string BookingId { get; set; }
 
         /// <summary>
         /// Get or Set From Date

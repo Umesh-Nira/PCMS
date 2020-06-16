@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -19,16 +15,16 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set phone number
         /// </summary>
-       
+
         [Required(ErrorMessage = "* Required")]
-      
+
         public string Phone { get; set; }
 
 
         /// <summary>
         /// Get or Set email
         /// </summary>
-       
+
         [Required(ErrorMessage = "* Required")]
         [RegularExpression("^[a-zA-Z][a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "Invalid email address")]
         public string Email { get; set; }
@@ -36,9 +32,9 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         /// Get or Set description
         /// </summary>
-         
+
         [Required(ErrorMessage = "* Required")]
-        
+
         public string Description { get; set; }
 
         public string SiteURL { get; set; }

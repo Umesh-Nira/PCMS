@@ -75,11 +75,9 @@
 </div>
 <script>
     function getID(roleId) {
-        debugger;
         $('#hiddenRoles').val(roleId)
     }
     function deleteRoles() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeleteRoles",
@@ -91,7 +89,6 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deletingcountry. Function: deleteUser(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }

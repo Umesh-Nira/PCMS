@@ -177,7 +177,6 @@
             $('#hdnCTId').val(userId);
         }
         function deleteUser() {
-            debugger;
             $.ajax({
                 type: 'POST',
                 url: "../Admin/ChangeStatus",
@@ -187,12 +186,11 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while deleting a Public User. Function: deleteUser(). Page: ManagePublicUser.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
         function verifyEmail(userId) {
-            debugger;
             $.ajax({
                 type: 'POST',
                 url: "../PublicUser/VerifyEmail",
@@ -202,7 +200,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while changing the Caregiver Status. Function: setCaretakerId(caretakerId). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -217,7 +215,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while deleting a Public User. Function: deleteUser(). Page: ManagePublicUser.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -231,7 +229,7 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while changing a Public User Status. Function: changeStatus(userId, status). Page: ManagePublicUser.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -244,7 +242,6 @@
 
 
         function showBookingDetails(bookingId) {
-            // debugger;
             showProgress();
             $.ajax({
                 url: "../Admin/UserLoginDetails/",
@@ -262,7 +259,7 @@
                     hideProgress();
                     console.log(feed.responseText);
                     logError(feed.statusText + ' - Error occurred while showing a Public User Login details. Function: showBookingDetails(bookingId). Page: ManagePublicUser.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -300,13 +297,11 @@
                     error: function (feed) {
                         console.log(feed.responseText);
                         logError(feed.statusText + ' - Error occurred while saving a Public User Login password. Function: SavePassword(). Page: ManagePublicUser.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 });
             }
-            //else {
-            //    alert("'New Password' and 'Confirm Password' doesn't match.");
-            //}
+           
         }
     </script>
 </body>

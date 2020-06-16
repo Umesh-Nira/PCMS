@@ -30,3 +30,10 @@ E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.P
 E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.csproj.CopyComplete
 E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.dll
 E:\Projects\PCMS0406\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.pdb
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\bin\Debug\Nirast.Pcms.Api.Sdk.dll
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\bin\Debug\Nirast.Pcms.Api.Sdk.pdb
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.csprojAssemblyReference.cache
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.csproj.CoreCompileInputs.cache
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.csproj.CopyComplete
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.dll
+E:\Projects\PCMSGit\PCMS\Nirast.Pcms.Api\Nirast.Pcms.Api.Sdk\obj\Debug\Nirast.Pcms.Api.Sdk.pdb

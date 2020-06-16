@@ -61,7 +61,7 @@
             },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while populating the States for CountryId: ' + countryId + '. Function: LoadCountryStates(). Page: HolidaySettings.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
         });
     }
@@ -245,7 +245,7 @@
                 spinnerVisible = true;
                 hideProgress();
                 logError(data.statusText + ' - Error occurred while populating the Holidays. Function: showHoliday(). Page: HolidaySettings.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
             }
         });
     }
@@ -264,7 +264,7 @@
                 spinnerVisible = true;
                 hideProgress();
                 logError(data.statusText + ' - Error occurred while overriding the Holidays. Function: overrideHoliday(). Page: HolidaySettings.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                 reload();
             }
         });

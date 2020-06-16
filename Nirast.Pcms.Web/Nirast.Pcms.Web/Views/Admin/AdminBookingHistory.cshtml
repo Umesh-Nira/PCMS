@@ -158,7 +158,7 @@
                 spinnerVisible = true;
                 hideProgress();
                 logError(feed.statusText + ' - Error occurred while searching booking history. Function: submitSearch(). Page: AdminBookingHistory.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
@@ -181,7 +181,7 @@
                     spinnerVisible = true;
                     hideProgress();
                     logError(feed.statusText + ' - Error occurred while searching booking history. Function: $(document).ready(function () . Page: AdminBookingHistory.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
             var caretaker = [];
@@ -199,7 +199,7 @@
                 },
                 error: function (feed) {
                     logError(feed.statusText + ' - Error occurred while Loading Caregiver. Function: $(document).ready(function () . Page: AdminBookingHistory.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
 

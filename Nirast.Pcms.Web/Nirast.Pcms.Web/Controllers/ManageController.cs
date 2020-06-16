@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
+using Nirast.Pcms.Web.Logger;
+using Nirast.Pcms.Web.Models;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.UI;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using Nirast.Pcms.Web.Logger;
-using Nirast.Pcms.Web.Models;
 
 namespace Nirast.Pcms.Web.Controllers
 {
@@ -36,9 +36,9 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -80,7 +80,7 @@ namespace Nirast.Pcms.Web.Controllers
                 };
                 return View(model);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-Index");
                 return null;
@@ -96,7 +96,7 @@ namespace Nirast.Pcms.Web.Controllers
             ManageMessageId? message;
             try
             {
-                
+
                 var result = await UserManager.RemoveLoginAsync(User.Identity.GetUserId(), new UserLoginInfo(loginProvider, providerKey));
                 if (result.Succeeded)
                 {
@@ -113,7 +113,7 @@ namespace Nirast.Pcms.Web.Controllers
                 }
                 return RedirectToAction("ManageLogins", new { Message = message });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-RemoveLogin");
                 message = ManageMessageId.Error;
@@ -129,7 +129,7 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 return View();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-AddPhoneNumber");
                 return null;
@@ -160,7 +160,7 @@ namespace Nirast.Pcms.Web.Controllers
                     await UserManager.SmsService.SendAsync(message);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-AddPhoneNumber");
             }
@@ -182,7 +182,7 @@ namespace Nirast.Pcms.Web.Controllers
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-EnableTwoFactorAuthentication");
             }
@@ -204,7 +204,7 @@ namespace Nirast.Pcms.Web.Controllers
                     await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-DisableTwoFactorAuthentication");
             }
@@ -225,7 +225,7 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-VerifyPhoneNumber");
                 return View("Error");
-            }            
+            }
         }
 
         //
@@ -254,7 +254,7 @@ namespace Nirast.Pcms.Web.Controllers
                 ModelState.AddModelError("", "Failed to verify phone");
                 return View(model);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-VerifyPhoneNumber");
                 return null;
@@ -286,7 +286,7 @@ namespace Nirast.Pcms.Web.Controllers
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-RemovePhoneNumber");
                 return RedirectToAction("Index", new { Message = ManageMessageId.Error });
             }
-            
+
         }
 
         //
@@ -297,7 +297,7 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 return View();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-ChangePassword");
                 return null;
@@ -329,7 +329,7 @@ namespace Nirast.Pcms.Web.Controllers
                 AddErrors(result);
                 return View(model);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-ChangePassword");
                 return null;
@@ -344,7 +344,7 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 return View();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-SetPassword");
                 return null;
@@ -377,7 +377,7 @@ namespace Nirast.Pcms.Web.Controllers
                 // If we got this far, something failed, redisplay form
                 return View(model);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-SetPassword");
                 return null;
@@ -408,7 +408,7 @@ namespace Nirast.Pcms.Web.Controllers
                     OtherLogins = otherLogins
                 });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-ManageLogins");
                 return null;
@@ -439,7 +439,7 @@ namespace Nirast.Pcms.Web.Controllers
                 var result = await UserManager.AddLoginAsync(User.Identity.GetUserId(), loginInfo.Login);
                 return result.Succeeded ? RedirectToAction("ManageLogins") : RedirectToAction("ManageLogins", new { Message = ManageMessageId.Error });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pCMSLogger.Error(ex, "Error occurred in Manage Controller-ManageLogins");
                 return RedirectToAction("ManageLogins", new { Message = ManageMessageId.Error });
@@ -457,7 +457,7 @@ namespace Nirast.Pcms.Web.Controllers
             base.Dispose(disposing);
         }
 
-#region Helpers
+        #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
 
@@ -508,6 +508,6 @@ namespace Nirast.Pcms.Web.Controllers
             Error
         }
 
-#endregion
+        #endregion
     }
 }

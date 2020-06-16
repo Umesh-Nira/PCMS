@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -24,7 +20,7 @@ namespace Nirast.Pcms.Web.Models
         /// <summary>
         ///  Gets or sets street name
         /// </summary>
-       
+
         [Required(ErrorMessage = "* Required")]
         [StringLength(200, ErrorMessage = "Maximum {1} characters allowed")]
         [RegularExpression(@"(?!^ +$)^.+$", ErrorMessage = " Blank Spaces are not allowed")]

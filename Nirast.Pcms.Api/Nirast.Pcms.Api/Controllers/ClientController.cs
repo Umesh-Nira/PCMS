@@ -326,7 +326,7 @@ namespace Nirast.Pcms.Api.Controllers
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
         }
-         [HttpGet]
+        [HttpGet]
         [Route("api/Client/GetLoginLogDetailsByTypeId/{typeId}")]
         public async Task<HttpResponseMessage> GetLoginLogDetailsByTypeId(int typeId)
         {
@@ -783,7 +783,6 @@ namespace Nirast.Pcms.Api.Controllers
         [Route("api/Client/GetSchedulingLogDetailsById/{logId}")]
         public async Task<HttpResponseMessage> GetSchedulingLogDetailsById(int logId)
         {
-            // ScheduledData s = new ScheduledData();
             try
             {
                 var clientDetails = await _clientService.GetSchedulingLogDetailsById(logId);
@@ -804,7 +803,7 @@ namespace Nirast.Pcms.Api.Controllers
         }
 
 
-       
+
 
         [HttpPost]
         [Route("api/Client/GetClientInvoicePayRiseRatesonDateChange")]
@@ -812,8 +811,7 @@ namespace Nirast.Pcms.Api.Controllers
         {
             try
             {
-               // var mappedCaretakerRates = 
-                var invoicePayRiseRates = await _clientService.GetClientInvoicePayRiseRatesonDateChange(invoicePayRiseData.ClientId,invoicePayRiseData.Date);
+                var invoicePayRiseRates = await _clientService.GetClientInvoicePayRiseRatesonDateChange(invoicePayRiseData.ClientId, invoicePayRiseData.Date);
                 string result = JsonConvert.SerializeObject(invoicePayRiseRates);
                 if (result != null)
                 {

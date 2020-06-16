@@ -79,11 +79,9 @@
 </div>
 <script>
     function getID(payriseId) {
-        debugger;
         $('#hiddenInvoicePayrise').val(payriseId)
     }
     function deleteInvoicePayrise() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeleteInvoicePayrise",
@@ -95,7 +93,6 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deleting payrise. Function: deleteInvoicePayrise(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }

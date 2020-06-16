@@ -98,8 +98,6 @@
 <script type="text/javascript">
     $(function () {
         $(document).ready(function () {
-            debugger;
-
             var caretaker = [];
             //$.ajax({
             //    url: "../Admin/LoadCareTaker",
@@ -116,7 +114,7 @@
             //    },
             //    error: function (data) {
             //        logError(data.statusText + ' - Error occurred while populating the Caretakers. Function: $(document).ready(function ()). Page: CaretakerWiseBooking.cshtml');
-            //        //alert('Some network error has occurred. Please try again after some time.');
+            //        
             //    }
             //});
             $('#ManageBookingPayriseTable').DataTable({
@@ -128,7 +126,6 @@
                 changeYear: true,
             });
             $('#searchBookingPayrise').click(function () {
-                debugger;
                 showProgress();
                 // debugger
                 var data = $('#bookingPayrise').serialize();
@@ -144,7 +141,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while searching Client Invoice History. Function: showinvoicedeatils(). Page: InvoiceHistory.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 });
             });

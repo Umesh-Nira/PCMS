@@ -21,8 +21,7 @@
                 localStorage.removeItem('CaretakerEditMode')
             }
             function NewCaretakerNavigation() {
-                debugger;
-                if (localStorage.getItem('CaretakerEditMode') == 'Edit') {
+               if (localStorage.getItem('CaretakerEditMode') == 'Edit') {
                     $('#View').show();
                     $('#editPage').show();
                     $('#Edit').hide();
@@ -54,7 +53,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Updating  User EmailID. Function: UpdateEmail(). Page: ApproveNewCaretaker.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
 
                 });
@@ -122,14 +121,12 @@
                 });
                   $('#txtDateFrom').datepicker({
                     onSelect: function (dateText) {
-                        debugger;
                         $.ajax({
                             type: "POST",
                             url: '/CareTaker/GetCaretakerPayRiseRatesonDateChange',
                             data: { Date: dateText, CaretakerId: $('#UserId').val() },
                             dataType: "json",
                             success: function (data) {
-                                debugger;
                                  var data1 = $.parseJSON(data.Result);
                                 if (data == "[]") {
                                     $('#workmodeList').html("<tr>" + "<td>No Services found.</td>" + "</tr>");
@@ -239,7 +236,6 @@
             }
 
             function showDocument(content, filename) {
-                debugger;
                 if ($('#ConsentForm').val() != '') {
                     var a = document.createElement("a");
                     document.body.appendChild(a);
@@ -260,7 +256,6 @@
                 }
     }
             function AddPayRise(caretakerName, CaretakerId, ServiceId) {
-                debugger;
                         $('#clientNametitle').text(' PayRise :  ' + caretakerName);
                         $('#caretakerName').val(caretakerName);
                         $('#CaretakerId').val(CaretakerId);
@@ -270,7 +265,6 @@
                             type: "POST",
                          data: { CareTakerId: CaretakerId},
                          success: function (data) {
-                             debugger;
                              var data1 = $.parseJSON(data);
                              var timedata=data1[1].EffectiveFrom;
                              var date = moment(timedata).format("MM/DD/YYYY");
@@ -336,7 +330,6 @@
             $('#lkdeffectiveDate').val(effdate);
 
             $('#btnSavePayRise').click(function () {
-                debugger;
                 var mapRates = [];
                 var mapRateCount = 0;
                 $('#workmodeList2 tr').each(function () {
@@ -378,7 +371,6 @@
                 $("form").validate().settings.ignore = "";
                 $('#Edit').hide();
                 $('#editPage').click(function () {
-                    debugger;
                     localStorage.setItem('CaretakerEditMode', 'Edit');
                     $('#editPage').hide();
                     $('#View').hide();
@@ -406,7 +398,6 @@
                 });
 
                 $('#TermsPopup').on('show.bs.modal', function (e) {
-                    debugger;
                    var docPath = $('#ConsentDocPath').val();
                    if (docPath != '') {
                         $("#policyContent").html('<iframe type="application/pdf" style="width: 100%; height: 600px" src=' + docPath + '></iframe>');
@@ -428,7 +419,6 @@
                 });
 
                 $("input[name='UpdateCaregiver']").on("click", function () {
-                   debugger;
                     $('#FirstName').val($('#FirstName').val().trim());
                     if ($('#FirstName').val() == "") {
                         alert("First name should not be empty.");
@@ -602,7 +592,7 @@
                             },
                             error: function (data) {
                                 logError(data.statusText + ' - Error occurred while Adding Caregiver Experience. Function: $("#btnSaveOrganisation").click(). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                             }
                         });
 
@@ -647,7 +637,7 @@
                                 },
                                 error: function (data) {
                                     logError(data.statusText + ' - Error occurred while Adding Caregiver Qaulification. Function: $("#btnSaveQualification").click(). Page: ApproveNewCaretaker.cshtml');
-                                    //alert('Some network error has occurred. Please try again after some time.');
+                                    
                                 }
                             });
                         }
@@ -674,7 +664,7 @@
                                 },
                                 error: function (data) {
                                     logError(data.statusText + ' - Error occurred while Adding Caregiver Qaulification. Function: $("#btnSaveQualification").click(). Page: ApproveNewCaretaker.cshtml');
-                                    //alert('Some network error has occurred. Please try again after some time.');
+                                    
                                 }
                             });
                         }
@@ -693,8 +683,7 @@
                 //////////////// Start Dynamic Service types //////////////////////////////
 
                 $('#btnSaveService').click(function () {
-                    debugger;
-                    if ($('#ddlService option:selected').text() != '' && $('#ddlService option:selected').text() != '--Select--' && $('#effectiveDate').val() != '') {
+                     if ($('#ddlService option:selected').text() != '' && $('#ddlService option:selected').text() != '--Select--' && $('#effectiveDate').val() != '') {
                         $.ajax({
                             url: "/CareTaker/AddServiceDetails",
                             type: "POST",
@@ -723,7 +712,7 @@
                             },
                             error: function (data) {
                                 logError(data.statusText + ' - Error occurred while Adding Caregiver Service. Function: $("#btnSaveService").click(). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                             }
                         });
                     }
@@ -789,7 +778,7 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while Approving a new Caregiver. Function: $("#btnApprove").click(). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                         }
                     });
 
@@ -812,7 +801,7 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while Rejecting a new Caregiver. Function: $("#btnReject").click(). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                         }
                     });
                 });
@@ -850,7 +839,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Removing a Caregiver Experience. Function: RemoveExperience(companyName). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                     }
                 });
             };
@@ -882,7 +871,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Removing a Caregiver Qualification. Function: RemoveQualification(qualificationId, caretakerQualificationId). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                     }
                 });
             };
@@ -924,7 +913,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while Removing a Caregiver Qualification. Function: RemoveService(servId). Page: ApproveNewCaretaker.cshtml');
-                                //alert('Some network error has occurred. Please try again after some time.');
+                                
                     }
                 });
             };
@@ -941,7 +930,7 @@
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while downloading Caregiver Documents. Function: DownloadFile(caretakerDocumentId, documentContent). Page: ApproveNewCaretaker.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 });
             }

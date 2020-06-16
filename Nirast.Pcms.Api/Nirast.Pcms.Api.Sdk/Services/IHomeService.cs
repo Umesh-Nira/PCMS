@@ -1,14 +1,11 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Services
 {
 
-  public  interface IHomeService
+    public interface IHomeService
     {
         #region public methods
 
@@ -19,7 +16,7 @@ namespace Nirast.Pcms.Api.Sdk.Services
         /// <returns></returns>
         Task<IEnumerable<SearchedCareTakers>> RetrievecareTakerDetails(AdvancedSearchInputModel inputs);
 
-        Task<IEnumerable<CareTakerRegistrationModel>>KeywordCareTakerSearchDetail(string keyword);
+        Task<IEnumerable<CareTakerRegistrationModel>> KeywordCareTakerSearchDetail(string keyword);
 
         /// <summary>
         /// To get approved rate

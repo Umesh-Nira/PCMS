@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
     public class InvoiceViewModel
     {
-       public DateTime InvoiceDate { get; set; }
+        public DateTime InvoiceDate { get; set; }
         public string InvoiceDateString { get; set; }
 
         public string CaretakerName { get; set; }

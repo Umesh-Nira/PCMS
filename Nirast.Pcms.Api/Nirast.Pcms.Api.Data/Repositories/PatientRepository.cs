@@ -6,11 +6,8 @@ using Nirast.Pcms.Api.Sdk.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
 namespace Nirast.Pcms.Api.Data.Repositories
 {
@@ -36,7 +33,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
         {
             try
             {
-                //BookingHistoryDetail historyDetail = new BookingHistoryDetail();
                 var query = "SpSelectBookingHistoryDetail";
                 var param = new DynamicParameters();
                 param.Add("@BookingId", BookingId);
@@ -58,7 +54,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
         {
             try
             {
-                //BookingHistoryDetail historyDetail = new BookingHistoryDetail();
                 var query = "SpSelectBookingHistoryDetailAdminDashboard";
                 var param = new DynamicParameters();
                 param.Add("@BookingId", BookingId);
@@ -76,12 +71,11 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.CloseConnection();
             }
         }
-        
+
         public async Task<UsersDetails> GetUserDetail(int BookingId)
         {
             try
             {
-                //UsersDetails historyDetail = new UsersDetails();
                 var query = "SpSelectUserLoginDetails";
                 var param = new DynamicParameters();
                 param.Add("@userid", BookingId);
@@ -105,7 +99,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<BookingHistory> historyDetail = new List<BookingHistory>();
                 var query = "SpSelectPublicUserBookings";
                 var param = new DynamicParameters();
                 param.Add("@Caretaker", bookingHistorySearch.Caretaker);
@@ -135,7 +128,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<BookingHistory> historyDetail = new List<BookingHistory>();
                 var query = "SpSelectPublicUserBookingsById";
                 var param = new DynamicParameters();
                 param.Add("@PublicUserId", publicUserId);
@@ -159,7 +151,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<BookingHistory> historyDetail = new List<BookingHistory>();
                 var query = "SpSelectPublicUserInvoiceDetails";
                 var param = new DynamicParameters();
                 param.Add("@InvoiceSearchInputId", bookingHistorySearch.InvoiceSearchInputId);
@@ -170,9 +161,9 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@ToDate", bookingHistorySearch.ToDate);
                 param.Add("@Year", bookingHistorySearch.Year);
                 param.Add("@Month", bookingHistorySearch.Month);
-              
-              
-               
+
+
+
                 var historyDetail = await SqlMapper.QueryAsync<UserInvoiceParams>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
 
                 return historyDetail;
@@ -192,7 +183,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<BookingHistory> historyDetail = new List<BookingHistory>();
                 var query = "SpSelectPublicUserInvoiceDetailsForUserDashBoard";
                 var param = new DynamicParameters();
                 param.Add("@UserId", publicUserId);
@@ -215,7 +205,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<BookingHistory> historyDetail = new List<BookingHistory>();
                 var query = "SpSelectPublicUserBookingsForInvoiceGeneration";
                 var param = new DynamicParameters();
                 param.Add("@Caretaker", bookingHistorySearch.Caretaker);
@@ -246,7 +235,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<PaymentReportDetails> historyDetail = new List<PaymentReportDetails>();
                 var query = "SpSelectCaretakerBookings";
                 var param = new DynamicParameters();
                 param.Add("@Caretaker", bookingHistorySearch.CareTaker);
@@ -299,7 +287,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-                //List<CaretakerBookingReport> historyDetail = new List<CaretakerBookingReport>();
                 var query = "SpSearchCaretakerBookingHistory";
                 var param = new DynamicParameters();
                 param.Add("@ServiceId", caretakerBookingReport.ServiceId);

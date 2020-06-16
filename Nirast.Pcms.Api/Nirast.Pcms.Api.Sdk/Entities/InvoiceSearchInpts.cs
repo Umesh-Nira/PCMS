@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
-  public  class InvoiceSearchInpts
+    public class InvoiceSearchInpts
     {
         public int InvoiceSearchInputId { get; set; }
         public int InvoiceNumber { get; set; }

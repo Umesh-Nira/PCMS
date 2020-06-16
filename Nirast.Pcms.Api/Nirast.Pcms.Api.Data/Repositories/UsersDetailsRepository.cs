@@ -1,17 +1,12 @@
 ﻿using Dapper;
-using Nirast.Pcms.Api.Data.Helpers;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
 using Nirast.Pcms.Api.Sdk.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 using static Nirast.Pcms.Api.Sdk.Entities.PublicUserCaretakerBooking;
@@ -36,7 +31,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             _dbConnection = connectionFactory.GetConnection();
             _notificationService = notificationService;
         }
-      
+
         public async Task<int> InsertUpdateCompanyDetails(CompanyProfile companyProfile)
         {
             IDbTransaction transaction = null;
@@ -225,7 +220,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 {
                     var sp = "SpInsertUpdateUserDetails";
                     var param = new DynamicParameters();
-                    //var saveCardDetails = "SpInsertUpdateUserCardDetails";
                     param.Add("@Id", usersDetails.UserRegnId);
                     param.Add("@FirstName", usersDetails.FirstName);
                     param.Add("@LastName", usersDetails.LastName);
@@ -295,7 +289,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.CloseConnection();
             }
         }
-        public Task<int> UpdateUserInvoiceNumber(int userid,int invoiceNumber)
+        public Task<int> UpdateUserInvoiceNumber(int userid, int invoiceNumber)
         {
 
             try
@@ -304,7 +298,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 int result;
                 var query = "SpUpdateUserInvoiceNumber";
                 var param = new DynamicParameters();
-               
+
                 param.Add("@InvoiceNumber", invoiceNumber);
                 result = SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
                 return Task.FromResult(result);
@@ -607,7 +601,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.CloseConnection();
             }
         }
-        
+
         public async Task<IEnumerable<UserBooking>> GetCaretakerBookingDetails(CalenderEventInput calenderEventInput)
         {
             try
@@ -631,7 +625,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.CloseConnection();
             }
         }
-        
+
 
 
 
@@ -756,7 +750,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                     int result;
                     var query = "SpInsertUpdatePublicUserInvoiceSettings";
                     var param = new DynamicParameters();
-                  
+
                     param.Add("@InvoicePrefix", InvoiceDetails.InvoicePrefix);
                     param.Add("@InvoiceNumber", InvoiceDetails.InvoiceNumber);
 
@@ -1195,9 +1189,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 {
                     var sp = "spInsertUpdateTestimonials";
                     var param = new DynamicParameters();
-                    //SqlParameter imageParameter = new SqlParameter("@imgdata", SqlDbType.Image);
-                    //imageParameter.Value = DBNull.Value;
-                    //cmd.Parameters.Add(imageParameter);
                     param.Add("@TestimonialId", testimonial.TestimonialId);
                     param.Add("@ClientName", testimonial.ClientName);
                     param.Add("@Designation", testimonial.Designation);
@@ -1248,7 +1239,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             }
         }
 
-        public  Task<int> DeleteTestimonial(int testimonialId)
+        public Task<int> DeleteTestimonial(int testimonialId)
         {
             try
             {
@@ -1287,7 +1278,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                     param.Add("@MailHost", emailConfiguration.MailHost);
                     param.Add("@MailPort", emailConfiguration.MailPort);
                     param.Add("@SSL", emailConfiguration.SSL);
-                 
+
                     param.Add("@ConfigId_OUT", DbType.Int32, direction: ParameterDirection.Output);
                     var result = SqlMapper.ExecuteAsync(_dbConnection, sp, param, transaction, commandType: CommandType.StoredProcedure).Result;
 
@@ -1303,7 +1294,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 {
                     transaction.Rollback();
                 }
-               
+
 
                 return Task.FromResult(0);
             }
@@ -1320,7 +1311,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             try
             {
                 _connectionFactory.OpenConnection();
-               
+
                 var result = await SqlMapper.QueryAsync<EmailConfiguration>(_dbConnection, sp, commandType: CommandType.StoredProcedure);
                 return result;
             }
@@ -1342,7 +1333,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             {
                 _connectionFactory.OpenConnection();
                 param.Add("@ConfigId", configId);
-                var result = await SqlMapper.QueryFirstOrDefaultAsync<int>(_dbConnection, sp,param, commandType: CommandType.StoredProcedure);
+                var result = await SqlMapper.QueryFirstOrDefaultAsync<int>(_dbConnection, sp, param, commandType: CommandType.StoredProcedure);
                 return result;
             }
             catch (Exception ex)
@@ -1376,7 +1367,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             catch (Exception ex)
             {
                 _logger.Error(ex, "DB error occured while deleting config details");
-              
+
                 return Task.FromResult(0);
             }
             finally
@@ -1877,7 +1868,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             }
         }
         public Task<int> AddBookingDetails(PublicUserCaretakerBooking data, out string message)
-        
+
         {
             IDbTransaction transaction = null;
             message = "Success";
@@ -1903,7 +1894,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                     result = SqlMapper.ExecuteAsync(_dbConnection, sp, param, transaction, commandType: CommandType.StoredProcedure).Result;
                     var bookingId = param.Get<int>("@ScheduledID_OUT");
 
-                   
+
 
                     if (data.PublicUserSchedulingDate != null)
                     {

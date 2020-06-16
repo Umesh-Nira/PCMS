@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.Repositories
@@ -47,8 +46,8 @@ namespace Nirast.Pcms.Api.Data.Repositories
                     var query = "SpInsertUpdateCategory";
                     var param = new DynamicParameters();
                     param.Add("@CategoryId", category.CategoryId);
-					param.Add("@Color", category.Color);
-					param.Add("@Name", category.Name);
+                    param.Add("@Color", category.Color);
+                    param.Add("@Name", category.Name);
                     result = SqlMapper.QueryAsync<int>(_dbConnection, query, param, transaction, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
 
                     transaction.Commit();

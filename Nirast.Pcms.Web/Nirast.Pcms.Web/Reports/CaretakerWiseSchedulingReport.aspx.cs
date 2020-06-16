@@ -6,8 +6,6 @@ using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Nirast.Pcms.Web.Reports
@@ -78,7 +76,7 @@ namespace Nirast.Pcms.Web.Reports
 
                     if (searchInputs.FromDate != DateTime.MinValue)
                     {
-                       //scheduleDetailsList = scheduleDetailsList.Where(a => Convert.ToDateTime(a.Startdate).Date <= todate.Date).Where(a => Convert.ToDateTime(a.Startdate).Date >= fromdate.Date).ToList();
+                        //scheduleDetailsList = scheduleDetailsList.Where(a => Convert.ToDateTime(a.Startdate).Date <= todate.Date).Where(a => Convert.ToDateTime(a.Startdate).Date >= fromdate.Date).ToList();
                         scheduleDetailsList = scheduleDetailsList.Where(a => Convert.ToDateTime(a.Startdate).Date <= Convert.ToDateTime(searchInputs.ToDate).Date).Where(a => Convert.ToDateTime(a.Startdate).Date >= Convert.ToDateTime(searchInputs.FromDate).Date).ToList();
 
                     }

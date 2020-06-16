@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -23,13 +19,13 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// <summary>
         /// Get or Set from date
         /// </summary>
-     
+
         public DateTime? FromDate { get; set; }
 
         /// <summary>
         /// Get or Set to date
         /// </summary>
-       
+
         public DateTime? ToDate { get; set; }
         public DateTime? InvoiceDate { get; set; }
 

@@ -5,8 +5,6 @@ using Nirast.Pcms.Api.Sdk.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
@@ -29,7 +27,7 @@ namespace Nirast.Pcms.Api.Application.Services
         public async Task<int> AddOfficeStaff(OfficeStaffRegistration officeStaff)
         {
             int UserId = officeStaff.UserId;
-            int userId= await _unitOfWork.OfficeStaffReposoitory.AddOfficeStaff(officeStaff);
+            int userId = await _unitOfWork.OfficeStaffReposoitory.AddOfficeStaff(officeStaff);
             if (UserId == 0 && userId != 0)
             {
                 await Task.Factory.StartNew(() => { SendEmailAfterofficeStaffReg(officeStaff); });
@@ -41,10 +39,10 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             EmailInput inputs = new EmailInput();
             List<string> ccAddressList = new List<string>();
-           
+
             inputs.EmailId = await _unitOfWork.CareTakerRepository.GetEmailIdForAdmin();
 
-            var result = await _unitOfWork.DesignationRepository.RetrieveDesignationById(booking.DesignationId??0);
+            var result = await _unitOfWork.DesignationRepository.RetrieveDesignationById(booking.DesignationId ?? 0);
 
             inputs.Subject = "Tranquil Care Registration Status";
             inputs.EmailType = EmailType.Registration;
@@ -73,7 +71,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList);

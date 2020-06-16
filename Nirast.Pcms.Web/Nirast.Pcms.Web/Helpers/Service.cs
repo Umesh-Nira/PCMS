@@ -1,16 +1,13 @@
-﻿using Newtonsoft.Json;
-using Nirast.Pcms.Web.Models;
+﻿using Nirast.Pcms.Web.Logger;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
-using System.Web;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using Nirast.Pcms.Web.Logger;
+using System.Web;
 
 namespace Nirast.Pcms.Web.Helpers
 {
@@ -21,7 +18,7 @@ namespace Nirast.Pcms.Web.Helpers
 
         public Service()
         {
-            
+
         }
 
         public Service(PCMSLogger pCMSLogger)

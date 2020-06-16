@@ -227,12 +227,10 @@
         });
     });
     function setClientId(clientId) {
-        debugger;
         $('#hdnClientId').val(clientId);
     }
     function deleteClient() {
-        debugger;
-            $.ajax({
+             $.ajax({
                 type: 'POST',
                 url: "/Client/DeleteClient",
                 data: { clientId: $('#hdnClientId').val(), status: '3' },
@@ -241,12 +239,10 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while deleting a Caregiver. Function: deleteUser(). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
-                }
+               }
             });
         }
     function changeStatus(clientId) {
-        debugger;
         $.ajax({
             url: '/Client/LoadCaretakersByClientID',
             type: "GET",
@@ -269,7 +265,6 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while changing Client status. Function: changeStatus(clientId). Page: ClientSearch.cshtml');
-                //alert("Some network error has occurred. Please try again after some time.");
             }
         });
     }
@@ -278,14 +273,12 @@
             $('#inactiveAlert').modal('show');
             return false;
         } else {
-            //location.href = '/Client/ScheduledCalenderView?clientId=' + clientId;
-            localStorage.setItem("clientId", clientId);
+           localStorage.setItem("clientId", clientId);
             location.href = '/Client/ScheduledCalenderView';
         }
     }
     function showUserDetails(userId) {
-        debugger;
-        if (userId > 0) {
+       if (userId > 0) {
             showProgress();
             $.ajax({
                 url: "../Admin/UserLoginDetails/",
@@ -303,8 +296,7 @@
                     hideProgress();
                     console.log(feed.responseText);
                     logError(data.statusText + ' - Error occurred while showing a Client login details . Function: showUserDetails(bookingId). Page: ClientSearch.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
-                }
+               }
             });
         }
         else {
@@ -316,14 +308,8 @@
         var newPswd = $("#newpswd").val();
         var cnfrmPswd = $("#cnfrmpswd").val();
         var emailID = $("#lblemail").text();
-        // var password = $("#lblpassword").text();
+        
 
-        //if (newPswd.length < 8 || cnfrmPswd.length < 8) {
-        //    alert("Password must be minimum 8 characters long");
-        //    return;
-        //}
-
-        //var reg = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$!%*#@@?&])[A-Za-z\d$@@!%*#?&]{8,}$/;
         var reg = new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[~`!@@#\$%\^&\*,.])(?=.{8,})');
         if (reg.test(newPswd) == false) {
             alert('Password must be minimum 8 characters including 1 uppercase , one special character and alphanumeric characters.');
@@ -347,8 +333,7 @@
                 error: function (feed) {
                     console.log(feed.responseText);
                     logError(data.statusText + ' - Error occurred while changing a Caretaker login password. Function: SavePassword(). Page: ManageCaretaker.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
-                }
+               }
             });
         }
     }

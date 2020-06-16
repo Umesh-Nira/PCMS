@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
-	public class PublicUserCaretakerBooking
-	{
+    public class PublicUserCaretakerBooking
+    {
 
         public int Id { get; set; }
         public int BookingId { get; set; }
@@ -34,7 +31,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
 
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-        //public Nullable<System.DateTime> End { get; set; }
+
         public string Description { get; set; }
 
         public int CareTaker { get; set; }

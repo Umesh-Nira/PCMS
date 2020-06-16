@@ -87,7 +87,6 @@
         $('#hiddenCountryID').val(countryId)
     }
     function deleteCountry() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeleteCountry",
@@ -98,7 +97,6 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deletingcountry. Function: deleteUser(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
             }
         });
     }

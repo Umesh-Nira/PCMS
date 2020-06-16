@@ -130,7 +130,6 @@
             </div>
             <script>
                 $(document).ready(function () {
-                    debugger;
                     var tempinvoiceDate = new Date($("#InvoiceDate").val());
                            var invoiceDate = new Date(tempinvoiceDate).toDateString("MM/dd/yyyy");
 
@@ -140,8 +139,7 @@
                      $('#txtInvoiceNumber').val(invoiceNumber);
 
                     $("#ddlSearchRange").change(function () {
-                       // debugger
-
+                       
                         var currentTime = new Date();
                         var year = currentTime.getFullYear();
                         if ($(this).val() == "1") { // It doesn't work over here.
@@ -326,7 +324,6 @@
 
 
                     $('#btnSearch').click(function () {
-                        debugger;
                         var searchText = $("#ddlUser").val();
                        
                         var year = $("#ddlYearly").val();
@@ -384,11 +381,7 @@
                             src = src + "&serviceId=" + serviceId
                             src = src + "&invoiceDate=" + invoiceDate
                         }
-                        //setTimeout(function () {
-
-                        //    hideProgress();
-
-                        //}, 6000);
+                       
 
                         $("#policyContent").html('<iframe  src="' + src + '"style="width: 100%; height: 900px" onload="hideProgress()" ></iframe>');
                     });

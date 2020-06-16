@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
     /// <summary>
     /// CaretakerBookingModel
     /// </summary>
-    public class CaretakerBookingModel: CareRecipientModel
+    public class CaretakerBookingModel : CareRecipientModel
     {
         public int BookingId { get; set; }
         public int CareTakerId { get; set; }
@@ -118,7 +115,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// <summary>
         /// Get or Set remarks
         /// </summary>
-        public string Purpose  { get; set; }
+        public string Purpose { get; set; }
 
         public string SiteURL { get; set; }
 
@@ -138,5 +135,5 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         public string Answer4 { get; set; }
         public string Answer5 { get; set; }
         public string Answer6 { get; set; }
-    }  
+    }
 }

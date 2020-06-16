@@ -125,10 +125,7 @@
     }
 
     function submitSearch() {
-        debugger;
-        //showProgress();
-        //var data = $('#myForm').serialize();
-        var caretaker = $("#Caretaker").val();
+       var caretaker = $("#Caretaker").val();
         var fromdate = $("#FromDate").val();
         var todate = $("#ToDate").val();
         var src = '../Reports/CaregiverScheduleRejected.aspx?';
@@ -145,36 +142,7 @@
 
          $("#policyContent").html('<iframe  src="' + src + '"style="width: 100%; height: 700px" onload="hideProgress()"></iframe>');
         
-        //$.ajax({
-        //    url: "../Client/ScheduleRejectedCaretaker",
-        //    method: 'POST',
-        //    data: { Caretaker: ($('#Caretaker').val() == '') ? null : $('#Caretaker').val(), FromDate: ($('#FromDate').val() == '') ? null : $('#FromDate').val(), ToDate: ($('#ToDate').val() == '') ? null : $('#ToDate').val() } ,
-        //    success: function (feed) {
-        //        $('#ResultList').html(feed);
-        //        spinnerVisible = true;
-        //        hideProgress();
-        //        $('#clientSearchList').DataTable({
-        //            "pagingType": "full_numbers",
-        //            "pageLength": 25,
-        //            "aoColumns": [
-        //                { "iDataSort": 6 },
-        //                null,
-        //                null,
-        //                null,
-        //                null,
-        //                null,
-        //                { "bVisible": false }
-        //            ],
-        //            "order": [[0, 'desc']]
-        //        });
-        //    },
-        //    error: function (feed) {
-        //        spinnerVisible = true;
-        //        hideProgress();
-        //        logError(feed.statusText + ' - Error occurred while loading saving schedule rejected details of Caregiver. Function: submitSearch(). Page: ScheduleRejectedCaretaker.cshtml');
-        //        //alert("An error has occurred. " + feed);
-        //    }
-        //});
+        
     }
     function checkDate() {
         var fromDate = $('#FromDate').val();
@@ -192,7 +160,6 @@
         return true;
     }
     $(document).ready(function () {
-        //submitSearch();
         convertUtcDateToLocalDate();
         
 
@@ -242,7 +209,6 @@
                 },
                 error: function (feed) {
                     logError(feed.statusText + ' - Error occurred while loading Caregiver. Function: "../Client/LoadCareTaker". Page: ScheduleRejectedCaretaker.cshtml');
-                    //alert("An error has occurred. " + feed);
                 }
             });
 

@@ -1,8 +1,6 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 using static Nirast.Pcms.Api.Sdk.Entities.PublicUserCaretakerBooking;
@@ -14,7 +12,7 @@ namespace Nirast.Pcms.Api.Sdk.Services
         Task<int> ChangeBookigStatus(int userId, int status, string siteURL, string reason);
         Task<int> DeleteSchedule(ScheduleDeleteData deleteData);
         Task<int> AddUserInvoiceDetails(InvoiceSearchInpts invoiceDetails);
-        Task<int> UpdateUserInvoiceNumber(int userid,int invoicenumber);
+        Task<int> UpdateUserInvoiceNumber(int userid, int invoicenumber);
         Task<IEnumerable<CareTakerServices>> RetrieveCaregiverServices();
         Task<int> AddCountry(Countries country);
         Task<int> InsertUpdateCompanyDetails(CompanyProfile companyProfile);
@@ -143,7 +141,7 @@ namespace Nirast.Pcms.Api.Sdk.Services
         Task<IEnumerable<PublicUserPaymentHistory>> GetPublicUserPaymentHistory(int publicUserId);
         Task<IEnumerable<AdminBookingNotification>> GetPublicUserNotification(int publicUserId);
         Task<PublicUserNotificationDetails> GetUserNotificationDetailsById(int bookingId);
-       
+
         Task<IEnumerable<CaretakerScheduleList>> GetCaretakerScheduleList(CaretakerScheduleListSearch caretakerScheduleListSearch);
         Task<int> SendContactForm(ContactModel contactModel);
         Task<UsersDetails> GetAdminProfile(int id);
@@ -165,10 +163,10 @@ namespace Nirast.Pcms.Api.Sdk.Services
         Task<int> DeleteConfigDetails(int configId);
         Task<int> AddEmailTypeConfiguration(EmailTypeConfiguration emailTypeConfiguration);
         Task<int> DeleteEmailTypeConfig(int configId);
-		Task<IEnumerable<EmailConfiguration>> GetConfigList();
+        Task<IEnumerable<EmailConfiguration>> GetConfigList();
         Task<EmailTypeConfiguration> GetEmailIdConfigByType(EmailType emailType);
         Task<EmailConfiguration> GetDefaultConfiguration();
-        Task<IEnumerable<CareTakerServices>> GetCaretakerPayRiseRatesonDateChange(DateTime date,int caretakerId);
+        Task<IEnumerable<CareTakerServices>> GetCaretakerPayRiseRatesonDateChange(DateTime date, int caretakerId);
         Task<IEnumerable<BookingPayriseModel>> GetBookingPayriseList(BookingPayriseModel bookingPayrise);
         Task<IEnumerable<InvoicePayriseModel>> GetInvoicePayriseList(InvoicePayriseModel invoicePayrise);
         Task<IEnumerable<PayrollPayriseModel>> GetPayrollPayriseList(PayrollPayriseModel payrollPayrise);

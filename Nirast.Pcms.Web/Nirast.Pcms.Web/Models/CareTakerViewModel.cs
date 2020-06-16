@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 using System.Web;
 using static Nirast.Pcms.Web.Models.Enums;
 
@@ -98,7 +97,7 @@ namespace Nirast.Pcms.Web.Models
         /// <value>
         /// The country.
         /// </value>
-          [Required(ErrorMessage = "* Required")]
+        [Required(ErrorMessage = "* Required")]
         public string Country { get; set; }
 
         /// <summary>
@@ -136,8 +135,8 @@ namespace Nirast.Pcms.Web.Models
         /// The city.
         /// </value>
         /// 
-     
-        public string City{ get; set; }
+
+        public string City { get; set; }
 
         /// <summary>
         /// Gets or sets the city identifier.
@@ -157,7 +156,7 @@ namespace Nirast.Pcms.Web.Models
         /// </value>
         [DataType(DataType.PhoneNumber)]
         [StringLength(500, ErrorMessage = "Maximum {1} characters allowed")]
-       
+
         public string PrimaryPhoneNo { get; set; }
 
 
@@ -169,7 +168,7 @@ namespace Nirast.Pcms.Web.Models
         /// </value>
         [DataType(DataType.PhoneNumber)]
         [StringLength(500, ErrorMessage = "Maximum {1} characters allowed")]
-      
+
         public string SecondaryPhoneNo { get; set; }
 
         /// <summary>
@@ -190,7 +189,7 @@ namespace Nirast.Pcms.Web.Models
         /// The about me.
         /// </value>
         [StringLength(500, ErrorMessage = "Maximum {1} characters allowed")]
-       
+
         public string AboutMe { get; set; }
 
         /// <summary>
@@ -216,7 +215,7 @@ namespace Nirast.Pcms.Web.Models
         public List<CareTakerClients> CareTakerClients = new List<CareTakerClients>();
         public List<DocumentsList> CareTakerDocuments = new List<DocumentsList>();
 
-        public byte[] ConsentForm  { get; set; }
+        public byte[] ConsentForm { get; set; }
         public string ConcentFormData { get; set; }
 
         [DataType(DataType.Upload)]
@@ -251,7 +250,7 @@ namespace Nirast.Pcms.Web.Models
         [Required(ErrorMessage = "* Required")]
         [Display(Name = "CareTakerFirstName")]
         [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
-      
+
         public string FirstName { get; set; }
 
         /// <summary>
@@ -263,7 +262,7 @@ namespace Nirast.Pcms.Web.Models
         [Required(ErrorMessage = "* Required")]
         [Display(Name = "CareTakerLastName")]
         [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
-       
+
         //[RegularExpression(@"^[a-zA-Z](.*[a-za-zA-Z])?$", ErrorMessage = " Alphanumeric values with first character as an alphabet is only allowed")]
         public string LastName { get; set; }
 
@@ -274,7 +273,7 @@ namespace Nirast.Pcms.Web.Models
         /// The location.
         /// </value>
         [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
-     
+
         public string SSID { get; set; }
 
         /// <summary>
@@ -284,7 +283,7 @@ namespace Nirast.Pcms.Web.Models
         /// The location.
         /// </value>
         [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
-      
+
         public string Location { get; set; }
 
         /// <summary>
@@ -296,7 +295,7 @@ namespace Nirast.Pcms.Web.Models
         [Required(ErrorMessage = "* Required")]
         [Display(Name = "HouseNumber")]
         [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
-     
+
         public string HouseName { get; set; }
 
         /// <summary>
@@ -316,7 +315,7 @@ namespace Nirast.Pcms.Web.Models
         /// The name of the category.
         /// </value>
         /// 
-        public string CategoryName { get; set; }        
+        public string CategoryName { get; set; }
 
         /// <summary>
         /// Gets or sets the zip code.
@@ -366,7 +365,7 @@ namespace Nirast.Pcms.Web.Models
         /// <value>
         ///   <c>true</c> if [user verified]; otherwise, <c>false</c>.
         /// </value>
-        public bool UserVerified{ get; set; }
+        public bool UserVerified { get; set; }
 
         /// <summary>
         /// Gets or sets the user status.
@@ -533,7 +532,7 @@ namespace Nirast.Pcms.Web.Models
         public string Fullname { get; set; }
 
         public int ServiceId { get; set; }
-        
+
         public string ServiceName { get; set; }
         public string Location { get; set; }
         public string State { get; set; }

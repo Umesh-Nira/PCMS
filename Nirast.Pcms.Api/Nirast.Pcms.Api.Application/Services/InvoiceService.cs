@@ -1,14 +1,11 @@
-﻿using Nirast.Pcms.Ap.Application.Infrastructure;
-using Nirast.Pcms.Api.Sdk.Entities;
+﻿using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Services;
 using Nirast.Pcms.Api.Sdk.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net.Mail;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
@@ -35,7 +32,6 @@ namespace Nirast.Pcms.Api.Application.Services
             UserPaymentInvoiceModel userModel = await _unitOfWork.invoiceRepository.AddPaymentTransactionDetails(paymentTransactionModel);
             if (paymentTransactionModel.Status == true)
             {
-                //Task.Factory.StartNew(() => { SendEmailToUser(paymentTransactionModel.SiteURL,paymentTransactionModel.TransactionNumber, userModel); });
                 if (userModel != null)
                 {
                     return 1;
@@ -48,10 +44,10 @@ namespace Nirast.Pcms.Api.Application.Services
             }
         }
 
-        private int SendEmailToUser(string siteURL,string txnId, UserPaymentInvoiceModel userModel)
+        private int SendEmailToUser(string siteURL, string txnId, UserPaymentInvoiceModel userModel)
         {
             _logger.Info("SendEmailToUser");
-            EmailInput input = new EmailInput();            
+            EmailInput input = new EmailInput();
             input.EmailId = userModel.EmailId;
             input.UserName = userModel.UserName;
             input.Subject = "Transaction Status";
@@ -127,8 +123,7 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
-            body = string.Format(body, WelcomeMsg, userPayment.FirstName+" "+userPayment.LastName, MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
+            body = string.Format(body, WelcomeMsg, userPayment.FirstName + " " + userPayment.LastName, MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             return body;
         }
         /// <summary>
@@ -138,7 +133,7 @@ namespace Nirast.Pcms.Api.Application.Services
         /// <returns></returns>
         public async Task<IEnumerable<PaymentHistory>> GetPaymentDetails()
         {
-          
+
             return await _unitOfWork.invoiceRepository.GetPaymentDetails();
         }
         /// <summary>
@@ -153,13 +148,13 @@ namespace Nirast.Pcms.Api.Application.Services
         }
         public async Task<IEnumerable<InvoiceReportData>> SearchClientInvoiceReport(PaymentAdvancedSearch inputs)
         {
-            return await _unitOfWork.invoiceRepository.SearchClientInvoiceReport(inputs);           
+            return await _unitOfWork.invoiceRepository.SearchClientInvoiceReport(inputs);
         }
         public async Task<IEnumerable<InvoiceReportData>> SearchClientInvoiceReportSummary(PaymentAdvancedSearch inputs)
         {
             return await _unitOfWork.invoiceRepository.SearchClientInvoiceReportSummary(inputs);
         }
-        
+
 
         public async Task<IEnumerable<ScheduledData>> GetClientScheduledDetails(PaymentAdvancedSearch inputs)
         {
@@ -173,7 +168,7 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.invoiceRepository.GetUserInvoiceGenerationDetails(inputs);
         }
-        
+
         public async Task<IEnumerable<ScheduledData>> SearchClientScheduleReoprt(PaymentAdvancedSearch inputs)
         {
             return await _unitOfWork.invoiceRepository.SearchClientScheduleReoprt(inputs);
@@ -208,24 +203,16 @@ namespace Nirast.Pcms.Api.Application.Services
         }
         public async Task<int> GenerateInvoice(InvoiceMail invoiceMail)
         {
-            int invoiceNo =  await _unitOfWork.invoiceRepository.GenerateInvoice(invoiceMail);
+            int invoiceNo = await _unitOfWork.invoiceRepository.GenerateInvoice(invoiceMail);
 
-            //if (invoiceNo > 0)
-            //{
-            //    Task.Factory.StartNew(() => { SendPaymentInvoiceToUser(invoiceMail , invoiceNo); });
-               
-            //}
+
             return invoiceNo;
         }
         public async Task<int> AddPaymentInvoiceDetails(InvoiceSearchInpts invoiceMail)
         {
             int invoiceNo = await _unitOfWork.invoiceRepository.AddPaymentInvoiceDetails(invoiceMail);
 
-            //if (invoiceNo > 0)
-            //{
-            //    Task.Factory.StartNew(() => { SendPaymentInvoiceToUser(invoiceMail , invoiceNo); });
 
-            //}
             return invoiceNo;
         }
         public Task SendPaymentInvoiceToUser(InvoiceMail invoiceMail)
@@ -249,14 +236,12 @@ namespace Nirast.Pcms.Api.Application.Services
                 Subject = "Tranquil care - Payment link",
                 EmailType = EmailType.Invoice,
                 Body = GetPaymentLinkEmailBody(invoiceDetails, invoiceMail.SiteUrl),
-                Attachment= new Attachment(new MemoryStream(invoiceMail.Attachment), name+".pdf"),
+                Attachment = new Attachment(new MemoryStream(invoiceMail.Attachment), name + ".pdf"),
                 EmailConfig = await _unitOfWork.UsersDetailsRepository.GetDefaultConfiguration(),
                 EmailIdConfig = await _unitOfWork.UsersDetailsRepository.GetEmailIdConfigByType(EmailType.Invoice)
             };
 
-          //  input.EmailConfig = _unitOfWork.UsersDetailsRepository.GetDefaultConfiguration().Result;
-          //  input.EmailIdConfig = _unitOfWork.UsersDetailsRepository.GetEmailIdConfigByType(EmailType.Invoice).Result;
-            await _notificationService.SendEMail(input);           
+            await _notificationService.SendEMail(input);
         }
         private string GetPaymentLinkEmailBody(UserPaymentInvoiceModel invoiceDetails, string siteUrl)
         {
@@ -293,11 +278,10 @@ namespace Nirast.Pcms.Api.Application.Services
                 string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
                 var sr = new StreamReader(sd);
                 body = sr.ReadToEnd();
-                //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
                 body = string.Format(body, WelcomeMsg, invoiceDetails.UserName, MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
                 return body;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 int i = 0;
             }

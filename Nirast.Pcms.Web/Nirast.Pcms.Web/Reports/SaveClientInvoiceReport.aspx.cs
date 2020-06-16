@@ -1,7 +1,5 @@
-﻿using Ionic.Zip;
-using iTextSharp.text;
+﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
 using Microsoft.Reporting.WebForms;
 using Newtonsoft.Json;
 using Nirast.Pcms.Web.Helpers;
@@ -9,12 +7,9 @@ using Nirast.Pcms.Web.Logger;
 using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -106,12 +101,12 @@ namespace Nirast.Pcms.Web.Reports
                     var result = service.PostAPIWithData(advancedSearchInputModel, api);
                     scheduleDetailsList = JsonConvert.DeserializeObject<List<ScheduledData>>(result.Result);
 
-                    if (scheduleDetailsList.Count!=0)
+                    if (scheduleDetailsList.Count != 0)
                     {
                         invoiceAddress = scheduleDetailsList[0].InvoiceAddress;
 
-                    }                    
-                    if (null==invoiceAddress)
+                    }
+                    if (null == invoiceAddress)
                     {
                         invoiceAddress = "";
                     }
@@ -137,7 +132,7 @@ namespace Nirast.Pcms.Web.Reports
                         if (searchInputs.FromDate != DateTime.MinValue)
                         {
                             scheduleDetailsList = scheduleDetailsList.Where(a => Convert.ToDateTime(a.Startdate).Date <= Convert.ToDateTime(searchInputs.ToDate).Date).Where(a => Convert.ToDateTime(a.Startdate).Date >= Convert.ToDateTime(searchInputs.FromDate).Date).ToList();
-                            scheduleDetailsList = scheduleDetailsList.Where(x => (x.IsSeparateInvoice || x.CareTakerType == category) ).ToList();
+                            scheduleDetailsList = scheduleDetailsList.Where(x => (x.IsSeparateInvoice || x.CareTakerType == category)).ToList();
                         }
                     }
                     else
@@ -241,7 +236,7 @@ namespace Nirast.Pcms.Web.Reports
                             ReportParameterCollection reportParameters = new ReportParameterCollection();
                             reportParameters.Add(new ReportParameter("Year", year.ToString()));
                             reportParameters.Add(new ReportParameter("InvoiceAddress", invoiceAddress.ToString()));
-                           
+
                             if (monthText == "--Select Month--")
                             {
                                 reportParameters.Add(new ReportParameter("FromDate", Convert.ToDateTime(searchInputs.FromDate).ToString("dd MMM yyyy")));

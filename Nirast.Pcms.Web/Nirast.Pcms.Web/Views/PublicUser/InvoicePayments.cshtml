@@ -396,7 +396,6 @@
         $('.datetimepicker').datepicker({
             changeMonth: true,
             changeYear: true,
-            //'dateFormat': 'dd-MM-yy'
         });
 
         $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
@@ -406,7 +405,6 @@
             }
         });
         $(".allownumericwithdecimal").on("keypress keyup blur", function (event) {
-            //this.value = this.value.replace(/[^0-9\.]/g,'');
             $(this).val($(this).val().replace(/[^0-9\.]/g, ''));
             if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
                 event.preventDefault();
@@ -461,7 +459,6 @@
                 },
                 error: function (ex) {
                     logError(ex.statusText + ' - Error occurred while Invoice Searching. Function: $("#search-submit").click(function ()). Page: InvoicePayments.cshtml');
-                    //alert("Some network error has occurred. Please try again after some time.");
                 }
             });
         });
@@ -482,16 +479,7 @@
         $('.datetimepicker').datepicker();
 
     });
-    //$('#myTab').tabs({
-    //    select: function (event) {
-    //        // You need Firebug or the developer tools on your browser open to see these
-    //        console.log(event);
-    //        // This will get you the index of the tab you selected
-    //        console.log(event.options.selected);
-    //        // And this will get you it's name
-    //        console.log(event.tab.text);
-    //    }
-    //});
+    
 </script>
 <style>
     .register {

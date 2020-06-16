@@ -49,7 +49,7 @@ namespace Nirast.Pcms.Api.Controllers
                 string decryptedPassword = security.Decrypt(resultObj.Password, encryptionPassword);
                 if (userCredential.Password == decryptedPassword)
                 {
-                    if ((loggedInUserDetails.UserStatus != 1 )|| (loggedInUserDetails.IsVerified == false))
+                    if ((loggedInUserDetails.UserStatus != 1) || (loggedInUserDetails.IsVerified == false))
                     {
                         var result = JsonConvert.SerializeObject(loggedInUserDetails);
                         var response = Request.CreateResponse(HttpStatusCode.OK);
@@ -113,7 +113,7 @@ namespace Nirast.Pcms.Api.Controllers
                 _logger.Error(ex, "Failed to get Caregiver details");
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
-        }       
+        }
 
         [HttpPost]
         [Route("api/Home/KeywordCareTakerSearchDetail")]
@@ -139,7 +139,7 @@ namespace Nirast.Pcms.Api.Controllers
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
         }
-               
+
         /// <summary>
         /// Method to get approved rate
         /// </summary>
@@ -221,7 +221,7 @@ namespace Nirast.Pcms.Api.Controllers
         /// </summary>
         /// <param name="UsersDetails"></param>
         /// <returns></returns>
-       
+
         [HttpPost]
         [Route("api/Home/SendContactForm")]
         [AllowAnonymous]

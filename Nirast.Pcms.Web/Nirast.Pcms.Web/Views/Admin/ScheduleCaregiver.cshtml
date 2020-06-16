@@ -273,7 +273,7 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while populating the Residents. Function: $(document).ready(function ()). Page: ScheduledCalenderView.cshtml');
-                            //alert('Some network error has occurred. Please try again after some time.');
+                            
                         }
                     });
                 }
@@ -297,7 +297,7 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while loading Caregiver Type. Function: CaretaketType(). Page: ScheduledCalenderView.cshtml');
-                            //alert('Some network error has occurred. Please try again after some time.');
+                            
                         }
                     });
                 }
@@ -537,8 +537,7 @@
                        contentType: "application/json; charset=utf-8",
                        datatype: JSON,
                        success: function (result) {
-                              debugger;
-                           $.each($.parseJSON(result), function (i, care) {
+                          $.each($.parseJSON(result), function (i, care) {
                                var holidaydate = new Date(care.HolidayDate);
                                holidaydate = new Date(holidaydate.getTime() + (holidaydate.getTimezoneOffset() * 60000));
 
@@ -549,7 +548,7 @@
                        },
                        error: function (data) {
                            logError(data.statusText + ' - Error occurred while loading Holidays. Function: "/Client/GetHolidays". Page: ScheduledCalenderView.cshtml');
-                           //alert('Some network error has occurred. Please try again after some time.');
+                           
                        }
                    });
 
@@ -572,7 +571,7 @@
                        },
                        error: function (data) {
                            logError(data.statusText + ' - Error occurred while loading Time Shifts. Function: "/Client/LoadTimeShift". Page: ScheduledCalenderView.cshtml');
-                           //alert('Some network error has occurred. Please try again after some time.');
+                           
                        }
                    });
 
@@ -727,7 +726,6 @@
                                $('.tooltiptopicevent').remove();
                            },
                            events: function (start, end, timezone, callback) {
-                               debugger;
                                var date = new Date($('#calender').fullCalendar('getDate'));
                                var month = date.getUTCMonth() + 1;
                                var year = date.getUTCFullYear();
@@ -789,7 +787,6 @@
                    }
 
                    function GetCalenderEvents(ID, month, year, callback) {
-                       debugger;
                        if (eventList != null && eventList.filter(x => x.year == year && x.month == month).length <= 0) {
                            var data = { bookingId: ID, month: month, year: year }
                            showProgress();
@@ -990,7 +987,6 @@
                    })
 
                    function AvailableCaretakerDynamicTable() {
-                        debugger;
                        var sHours = " ";
                        var sMinutes = " ";
                        var totalhours = "0";
@@ -1260,8 +1256,7 @@
             }
 
                    function openAddEditForm() {
-                       debugger;
-                       if (selectedEvent.eventID != 0) {
+                        if (selectedEvent.eventID != 0) {
                            var username = $("#BookedUser").val();
 
 
@@ -1524,7 +1519,6 @@
                    })
 
                    function SaveEvent(data) {
-                       debugger;
                        var date = new Date($('#calender').fullCalendar('getDate'));
                        var month = date.getMonth() + 1;
                        var year = date.getFullYear();

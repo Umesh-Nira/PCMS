@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -131,7 +128,7 @@ namespace Nirast.Pcms.Web.Models
     {
         [StringLength(50, ErrorMessage = "Maximum {1} characters allowed")]
         [RegularExpression(@"(?!^ +$)^.+$", ErrorMessage = " Blank Spaces are not allowed")]
-       
+
         public string PublicUserId { get; set; }
         public string Caretaker { get; set; }
         public int? ServiceId { get; set; }

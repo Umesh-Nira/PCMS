@@ -24,8 +24,7 @@
         });
     });
     function checkLogin() {
-       // debugger;
-        if ($('#Email').val() == '' || $('#Password').val() == '') {
+       if ($('#Email').val() == '' || $('#Password').val() == '') {
             $('#failedMessageModal').show();
             $('#failedMessageModal').text("Login name and Password are mandatory.");
             $('#failedMessageModal').removeClass("hidden");
@@ -38,7 +37,6 @@
             type: "POST",
             data: { loginName: $('#Email').val(), loginPassword: $('#Password').val() },
             success: function (data) {
-                debugger;
                 if (data == "") {
                     $('#failedMessageModal').text("Invalid Username/Password.");
                     $('#failedMessageModal').removeClass("hidden");

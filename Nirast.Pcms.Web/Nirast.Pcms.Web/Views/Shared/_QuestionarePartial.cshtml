@@ -72,11 +72,9 @@
 </div>
 <script>
     function GetID(questionId) {
-        debugger;
-        $('#hiddenQuestion').val(questionId)
+       $('#hiddenQuestion').val(questionId)
     }
     function deleteQuestions() {
-        debugger;
         $.ajax({
             type: 'POST',
             url: "../Admin/DeleteQuestions",
@@ -87,7 +85,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while Deletingcountry. Function: deleteUser(). Page: Country.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }

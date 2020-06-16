@@ -104,7 +104,6 @@
 <script>
 
         $(function () {
-            //$('#tblTimeShift').hide();
             var holidays = [];
             $(document).ready(function () {
                 debugger
@@ -132,7 +131,6 @@
                 },
                 error: function (data) {
                     logError(data.statusText + ' - Error occurred while loading Admin dashboard - Holidays. Function: "/Client/GetHolidays". Page: AdminDashboard.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
                 }
             });
 
@@ -167,7 +165,6 @@
                     },
                     error: function (feed) {
                         logError(feed.statusText + ' - Error occurred while loading Admin dashboard - Clients. Function: SearchEvent(data). Page: AdminDashboard.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
                     }
                 })
             }
@@ -177,10 +174,8 @@
                 $('#calender').fullCalendar('destroy');
                 $('#calender').fullCalendar({
                     contentheight: 'auto',
-                    //height: 650,
                     height: 'auto',
                     defaultDate: new Date(),
-                    //timeFormat: 'hh(:mm)a',
                     header: {
                         left: 'prev,next today',
                         center: 'title',

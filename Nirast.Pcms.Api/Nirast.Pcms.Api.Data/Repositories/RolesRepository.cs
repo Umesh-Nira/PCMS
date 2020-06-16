@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.Repositories
@@ -58,7 +57,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 var param = new DynamicParameters();
                 param.Add("@RoleId", roles.RoleId);
                 param.Add("@RoleName", roles.RoleName);
-                int result= SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
+                int result = SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
                 return Task.FromResult(result);
             }
             catch (Exception ex)
@@ -143,7 +142,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@RoleId", getRolePrivilege.RoleId);
                 param.Add("@ModuleId", getRolePrivilege.ModuleID);
                 var result = await SqlMapper.QueryFirstOrDefaultAsync<RoleModulePrivileges>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
-                if(result == null)
+                if (result == null)
                 {
                     result = new RoleModulePrivileges();
                 }

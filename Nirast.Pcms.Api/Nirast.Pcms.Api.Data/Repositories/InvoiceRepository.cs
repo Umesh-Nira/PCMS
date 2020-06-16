@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.Repositories
@@ -184,8 +183,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@CategoryId", (inputs.Category == 0) ? null : inputs.Category);
                 param.Add("@FromDate", inputs.FromDate == DateTime.MinValue ? null : inputs.FromDate);
                 param.Add("@ToDate", inputs.ToDate == DateTime.MinValue ? null : inputs.ToDate);
-                //param.Add("@Year", (inputs.Year == 0) ? null : inputs.Year);
-                //param.Add("@Month", (inputs.Month == 0) ? null : inputs.Month);
                 param.Add("@IsOrientation", inputs.IsOrientation);
 
                 var result = await SqlMapper.QueryAsync<InvoiceReportData>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
@@ -214,8 +211,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@CategoryId", (inputs.Category == 0) ? null : inputs.Category);
                 param.Add("@FromDate", inputs.FromDate == DateTime.MinValue ? null : inputs.FromDate);
                 param.Add("@ToDate", inputs.ToDate == DateTime.MinValue ? null : inputs.ToDate);
-                //param.Add("@Year", (inputs.Year == 0) ? null : inputs.Year);
-                //param.Add("@Month", (inputs.Month == 0) ? null : inputs.Month);
                 param.Add("@IsOrientation", inputs.IsOrientation);
 
                 var result = await SqlMapper.QueryAsync<InvoiceReportData>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
@@ -320,7 +315,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.CloseConnection();
             }
         }
-        
+
 
         public async Task<IEnumerable<ScheduledData>> SearchClientScheduleReoprt(PaymentAdvancedSearch inputs)
         {
@@ -594,7 +589,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
         public async Task<int> AddPaymentInvoiceDetails(InvoiceSearchInpts invoiceMail)
         {
             try
-            { 
+            {
                 _connectionFactory.OpenConnection();
                 var invquery = "SpPaymentInvoiceDetails";
                 var param = new DynamicParameters();
@@ -605,7 +600,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@InvoicePrefix", invoiceMail.InvoicePrefix);
                 param.Add("@InvoiceDate", invoiceMail.InvoiceDate);
                 param.Add("@InvoicePath", invoiceMail.PdfFilePath);
-                
+
                 param.Add("@StartDate", invoiceMail.StartDate);
                 param.Add("@EndDate", invoiceMail.EndDate);
                 param.Add("@Mode", invoiceMail.Mode);

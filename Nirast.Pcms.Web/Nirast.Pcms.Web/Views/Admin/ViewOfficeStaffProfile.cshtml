@@ -81,7 +81,6 @@
     }
 
     function LoadCountryStates() {
-        debugger;
         var country = ($('#CountryId').val() === "" || $('#CountryId').val() === undefined) ? 0 : $('#CountryId').val();
         $.ajax({
             url: '/Admin/LoadStatesByCountryId',
@@ -106,13 +105,12 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while loading states for CountryId: ' + selectedCountry + '. Function: LoadCountryStates(selectedCountry). Page: ViewOfficeStaffProfile.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
 
     function LoadStateCities(selectedState) {
-        debugger;
         $("#Cities").html(''); // clear before appending new list
         $("#Cities").append(
             $('<option></option>').val("").html("--Select--"));
@@ -131,7 +129,7 @@
             error: function (data) {
                
                 logError(data.statusText + ' - Error occurred while loading Cities for StateId: ' + selectedState + '. Function: LoadStateCities(selectedState). Page: ViewOfficeStaffProfile.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }

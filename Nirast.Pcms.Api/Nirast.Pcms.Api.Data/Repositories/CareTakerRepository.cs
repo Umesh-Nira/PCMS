@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using Nirast.Pcms.Api.Data.Helpers;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
@@ -7,12 +6,8 @@ using Nirast.Pcms.Api.Sdk.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Data.Repositories
@@ -69,10 +64,6 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 {
                     var param = new DynamicParameters();
                     var query = "SpInsertUpdateCaretakersPayRise";
-                    //DataColumn dtColMapClient = new DataColumn("ClientId", typeof(Int32))
-                    //{
-                    //    DefaultValue = careTaker.CareTakerId
-                    //};
                     DataColumn dtColPayRiseId = new DataColumn("BookingPayRiseId", typeof(Int32))
                     {
                         DefaultValue = 0
@@ -358,10 +349,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 var result = await SqlMapper.QueryAsync<CareTakers>(_dbConnection, Details, commandType: CommandType.StoredProcedure);
                 return result;
 
-                //_connectionFactory.OpenConnection();                
-                //var param = new DynamicParameters();
-                //var result = _dbConnection.Query<CareTakers>("SpGetCareTakersDdl", null, commandType: CommandType.StoredProcedure).ToList();
-                //return result;
+
             }
             catch (Exception ex)
             {
@@ -719,7 +707,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.OpenConnection();
                 var query = "SpRetrieveAllCaregiverServices";
                 var param = new DynamicParameters();
-              
+
                 var result = await SqlMapper.QueryAsync<CareTakerServices>(_dbConnection, query, param, commandType: CommandType.StoredProcedure);
                 return result;
 

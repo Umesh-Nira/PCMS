@@ -261,7 +261,6 @@
 <script type="text/javascript">
     $(function () {
         if (window.FileReader) {
-            debugger;
             $('#TermsnCondition').on('change', function (e) {
                 var file = e.target.files[0];
                 if (file.name.split('.')[1] != 'pdf') {
@@ -272,7 +271,6 @@
             });
 
             $('#PrivacyPolicy').on('change', function (e) {
-                debugger;
                 var file = e.target.files[0];
                 if (file.name.split('.')[1] != 'txt') {
                     alert("Only pdf files are supported.");

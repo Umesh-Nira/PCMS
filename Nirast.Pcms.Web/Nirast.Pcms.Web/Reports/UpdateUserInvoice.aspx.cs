@@ -7,9 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -28,7 +25,7 @@ namespace Nirast.Pcms.Web.Reports
             ReportViewer1.ProcessingMode = ProcessingMode.Local;
             ReportViewer1.ShowRefreshButton = false;
             ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Reports/PublicUserInvoice.rdlc");
-           
+
             List<UserBookingInvoiceReport> bookingDetailsfilteredList = new List<UserBookingInvoiceReport>();
             List<UserBookingInvoiceReport> invoiceDetailsList = new List<UserBookingInvoiceReport>();
 
@@ -37,7 +34,7 @@ namespace Nirast.Pcms.Web.Reports
             string monthText = "";
             string InvoicePrefix = "";
             int publicuserId = 0;
-            
+
 
             try
             {
@@ -256,7 +253,7 @@ namespace Nirast.Pcms.Web.Reports
                 Body = GetEmailBody(bookingDetailsList[0].UserName),
                 Subject = "Invoice ",
                 EmailId = emailTxt.Text,
-              
+
                 Attachments = Server.MapPath("~/PCMS/Invoice/PublicUser/") + "Invoice_" + bookingDetailsList[0].UserName + "_" + InvoiceNumber + ".pdf"
             };
             api = "Admin/SendEmailNotification";
@@ -288,7 +285,7 @@ namespace Nirast.Pcms.Web.Reports
                 string url = "https://tranquilcare.ca/Account/Login";
                 string WelcomeMsg = "PublicUser Invoice.";
                 string MailMsg = "Invoice Details.<br/>";
-              
+
                 string Mailcontent = @" <center>Thank you for choosing to work with us.</center><br/><center> We are attaching the copy of the invoice.</center><br/>
                                                     <div></div>
                                                  <div style = 'font-family:Roboto,Tahoma,Arial,Helvetica,sans-serif; text-align: center;'>

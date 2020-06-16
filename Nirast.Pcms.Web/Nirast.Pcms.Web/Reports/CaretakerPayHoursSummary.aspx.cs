@@ -5,10 +5,6 @@ using Nirast.Pcms.Web.Logger;
 using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Nirast.Pcms.Web.Reports
 {
@@ -31,11 +27,11 @@ namespace Nirast.Pcms.Web.Reports
                     List<InvoiceReportData> invoiceDetailsList = new List<InvoiceReportData>();
                     DateTime fromdate = DateTime.MinValue, todate = DateTime.MinValue;
                     int caretaker = 0, year = 0, month = 0, workmode = 0, category = 0, client = 0;
-                    string monthText="", clientText = "", caretakerText = "--Select--", categoryText = "" ;
+                    string monthText = "", clientText = "", caretakerText = "--Select--", categoryText = "";
                     bool isOrientation = Convert.ToBoolean(Request.QueryString["isorientation"]);
 
                     clientText = (Request.QueryString["clientText"]);
-                    caretakerText = (Request.QueryString["caretakerText"]) !=""? (Request.QueryString["caretakerText"]): "--Select--";
+                    caretakerText = (Request.QueryString["caretakerText"]) != "" ? (Request.QueryString["caretakerText"]) : "--Select--";
                     categoryText = (Request.QueryString["categoryText"]);
 
 

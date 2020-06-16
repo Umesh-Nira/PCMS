@@ -1,8 +1,5 @@
 ﻿using Nirast.Pcms.Web.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace Nirast.Pcms.Web.Helpers
@@ -39,7 +36,7 @@ namespace Nirast.Pcms.Web.Helpers
         /// </summary>
         /// <param name="controller"></param>
         /// <param name="objCareTakerExperienceSave"></param>
-        public static void SetCareTakerDocuments(Controller controller, List<DocumentsList> objCareTakerDocuments,string sessionName)
+        public static void SetCareTakerDocuments(Controller controller, List<DocumentsList> objCareTakerDocuments, string sessionName)
         {
             controller.Session[sessionName] = objCareTakerDocuments;
         }
@@ -62,7 +59,7 @@ namespace Nirast.Pcms.Web.Helpers
         /// </summary>
         /// <param name="controller"></param>
         /// <returns></returns>
-        public static List<DocumentsList> GetCareTakerDocuments(Controller controller , string sessionName)
+        public static List<DocumentsList> GetCareTakerDocuments(Controller controller, string sessionName)
         {
             List<DocumentsList> objCareTakerCertificates = (List<DocumentsList>)controller.Session[sessionName];
             if (null == objCareTakerCertificates)
@@ -331,7 +328,7 @@ namespace Nirast.Pcms.Web.Helpers
         {
             List<ClientCategoryRate> objCareTakersList = GetCategoryRateList(controller);
             ClientCategoryRate objCareTakerListSaearch = objCareTakersList.Find(x => x.CategoryId == objCareTakers.CategoryId);
-            if(null== objCareTakerListSaearch)
+            if (null == objCareTakerListSaearch)
             {
                 objCareTakersList.Add(objCareTakers);
             }
@@ -340,7 +337,7 @@ namespace Nirast.Pcms.Web.Helpers
                 objCareTakersList.RemoveAll(x => x.CategoryId == objCareTakers.CategoryId);
                 objCareTakersList.Add(objCareTakers);
             }
-            
+
             SetCategoryRateList(controller, objCareTakersList);
         }
         /// <summary>

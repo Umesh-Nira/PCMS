@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
 using Nirast.Pcms.Api.Sdk.Repositories;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
 namespace Nirast.Pcms.Api.Data.Repositories
 {
     public class HolidayRepository : GenericRepository<Holidays>, IHolidayRepository
@@ -44,8 +44,8 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 param.Add("@Holiday", holiday.HolidayName);
                 param.Add("@HolidayDate", holiday.HolidayDate);
                 param.Add("@CountryId", holiday.CountryId);
-                param.Add("@StateId", holiday.StateId == 0? null:holiday.StateId);
-                var result= SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
+                param.Add("@StateId", holiday.StateId == 0 ? null : holiday.StateId);
+                var result = SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
                 return Task.FromResult(result);
             }
             catch (Exception ex)
@@ -67,9 +67,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
             {
                 _connectionFactory.OpenConnection();
                 var query = "SpOverrideHoliday";
-                
-                //var result = SqlMapper.QueryAsync<int>(_dbConnection, query, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
-                return SqlMapper.QueryAsync<int>(_dbConnection, query,  commandType: CommandType.StoredProcedure).Result.First();;
+                return SqlMapper.QueryAsync<int>(_dbConnection, query, commandType: CommandType.StoredProcedure).Result.First(); ;
             }
             catch (Exception ex)
             {
@@ -88,7 +86,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
         /// </summary>
         /// <param name="">The timeshift.</param>
         /// <returns></returns>
-        public  Task<int> AddIntervalHours(ClientTimeShifts shift)
+        public Task<int> AddIntervalHours(ClientTimeShifts shift)
         {
             try
             {
@@ -97,7 +95,7 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 var query = "SpUpdateIntervalHours";
                 var param = new DynamicParameters();
                 param.Add("@IntervalHours", shift.IntervalHours);
-                result= SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
+                result = SqlMapper.QueryAsync<int>(_dbConnection, query, param, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
                 return Task.FromResult(result);
             }
             catch (Exception ex)
@@ -175,8 +173,8 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.OpenConnection();
                 var query = "SpSelectHolidayPay";
 
-                return await SqlMapper.QueryFirstOrDefaultAsync<float>(_dbConnection, query,  commandType: CommandType.StoredProcedure);
-                 
+                return await SqlMapper.QueryFirstOrDefaultAsync<float>(_dbConnection, query, commandType: CommandType.StoredProcedure);
+
             }
             catch (Exception ex)
             {
@@ -195,8 +193,8 @@ namespace Nirast.Pcms.Api.Data.Repositories
                 _connectionFactory.OpenConnection();
                 var query = "SpSelectIntervalHours";
 
-                return  SqlMapper.QueryAsync<float>(_dbConnection, query,  commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
-                 
+                return SqlMapper.QueryAsync<float>(_dbConnection, query, commandType: CommandType.StoredProcedure).Result.SingleOrDefault();
+
             }
             catch (Exception ex)
             {

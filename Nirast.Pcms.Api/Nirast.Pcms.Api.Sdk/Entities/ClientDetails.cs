@@ -1,11 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Script.Serialization;
-using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -87,7 +82,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         public string TotalExperience { get; set; }
     }
 
-  
+
     public class WorkShiftPayRates
     {
         public int ClientId { get; set; }
@@ -112,12 +107,11 @@ namespace Nirast.Pcms.Api.Sdk.Entities
     {
         public int TypeId { get; set; }
         public string TypeName { get; set; }
-        
+
         public float Rate { get; set; }
         public DateTime EffectiveFrom { get; set; }
-        //public int ClientId { get; set; }
         public int InvoicePayriseId { get; set; }
-        
+
     }
 
     public class PayriseData
@@ -183,7 +177,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
 
         public string InvoicePrefix { get; set; }
         public string InvoiceAddress { get; set; }
-    
+
         public int ClientId { get; set; }
         public string ClientName { get; set; }
         public int CareTakerType { get; set; }
@@ -210,7 +204,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
 
         public bool CustomTiming { get; set; }
         public int ClientEmailStatus { get; set; }
-     
+
         public string FromTime { get; set; }
         public string EndTime { get; set; }
 

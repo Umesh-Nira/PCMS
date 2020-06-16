@@ -268,7 +268,6 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while populating the Residents. Function: $(document).ready(function ()). Page: ScheduledCalenderView.cshtml');
-                            //alert('Some network error has occurred. Please try again after some time.');
                         }
                     });
                 }
@@ -292,7 +291,6 @@
                         },
                         error: function (data) {
                             logError(data.statusText + ' - Error occurred while loading Caregiver Type. Function: CaretaketType(). Page: ScheduledCalenderView.cshtml');
-                            //alert('Some network error has occurred. Please try again after some time.');
                         }
                     });
                 }
@@ -396,7 +394,6 @@
                            },
                            error: function (data) {
                                logError(data.statusText + ' - Error occurred while rejecting a caretaker. Function: RejectCaretaker(data). Page: ScheduledCalenderView.cshtml');
-                               //alert('Some network error has occurres. Please try again after some time.');
                            }
                        })
                    }
@@ -437,8 +434,7 @@
                        $("#txtCaretakerName").val(col2);
                        var CaretakerId = currentRow.find('.detelecaretakerID').val();
                        $('#hdncaretakerId').val(CaretakerId);
-                       //alert($('#hdncaretakerId').val())
-
+                  
                    });
                    $("#tblTimeShift").on('click', '.col-md-7', function () {
 
@@ -542,7 +538,7 @@
                        },
                        error: function (data) {
                            logError(data.statusText + ' - Error occurred while loading Holidays. Function: "/Client/GetHolidays". Page: ScheduledCalenderView.cshtml');
-                           //alert('Some network error has occurred. Please try again after some time.');
+                           
                        }
                    });
 
@@ -562,7 +558,6 @@
                        },
                        error: function (data) {
                            logError(data.statusText + ' - Error occurred while loading Work Shifts. Function: "/Client/LoadWorkShift". Page: ScheduledCalenderView.cshtml');
-                           //alert('Some network error has occurred. Please try again after some time.');
                        }
                    });
 
@@ -583,7 +578,6 @@
                        },
                        error: function (data) {
                            logError(data.statusText + ' - Error occurred while loading Time Shifts. Function: "/Client/LoadTimeShift". Page: ScheduledCalenderView.cshtml');
-                           //alert('Some network error has occurred. Please try again after some time.');
                        }
                    });
 
@@ -644,7 +638,6 @@
                        $('#calender').fullCalendar('destroy');
                        $('#calender').fullCalendar({
                            contentheight: 'auto',
-                           //height: 650,
                            height: 'auto',
                            defaultDate: saveDate,
                            header: {
@@ -737,7 +730,6 @@
                                $('.tooltiptopicevent').remove();
                            },
                            events: function (start, end, timezone, callback) {
-                               debugger;
                                var date = new Date($('#calender').fullCalendar('getDate'));
                                var month = date.getUTCMonth() + 1;
                                var year = date.getUTCFullYear();
@@ -805,7 +797,6 @@
                    }
 
                    function GetCalenderEvents(ID, month, year, callback) {
-                       debugger;
                        if (eventList != null && eventList.filter(x => x.year == year && x.month == month).length <= 0) {
                            var data = { clientId: ID, month: month, year: year }
                            showProgress();
@@ -850,7 +841,7 @@
                                },
                                error: function (data) {
                                    logError(data.statusText + ' - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtml');
-                                   //alert('Some network error has occurred. Please try again after some time.');
+                                   
                                }
                            })
                        }
@@ -1050,8 +1041,7 @@
                                sMinutes = minutes.toString();
                                if (hours < 10) sHours = "0" + sHours;
                                if (minutes < 10) sMinutes = "0" + sMinutes;
-                               //alert(sHours + ":" + sMinutes);
-                           }
+                               }
                            var from = $('#fromTime').val(); var to = $('#toTime').val();
                            if (from != "" & to != "") {
                                var time = $('#fromTime').val();
@@ -1059,7 +1049,6 @@
                                var timeStart = new Date("01/01/2007 " + time).getHours();
                                var timeEnd = new Date("01/01/2007 " + toTime).getHours();
                                var hourDiff = timeEnd - timeStart;
-                               // alert(hourDiff)
                                if (hourDiff < 0) {
                                    hourDiff = 24 - Math.abs(hourDiff)
                                }
@@ -1067,11 +1056,10 @@
                                var appSettingHourValue = '@(System.Configuration.ConfigurationManager.AppSettings["HourLimit"].ToString())'
                                if (hourDiff > 0) {
                                    if (hourDiff > appSettingHourValue) {
-                                       //alert('Schedule time Limit has exceeded ' + appSettingHourValue + ' Hours');
-                                       //return
+                                       
                                    }
                                    else {
-                                       // alert("Limit ok")
+                                       
                                    }
                                }
                                else if (hourDiff == 0) {
@@ -1082,11 +1070,10 @@
                                else {
                                    var limit = -Math.abs(appSettingHourValue);
                                    if (limit < hourDiff) {
-                                       //alert('Schedule time Limit has exceeded ' + appSettingHourValue + ' Hours');
-                                       //return
+                                     
                                    }
                                    else {
-                                       //  alert("Limit ok")
+                                       
                                    }
                                }
 
@@ -1210,7 +1197,7 @@
                                sMinutes = minutes.toString();
                                if (hours < 10) sHours = "0" + sHours;
                                if (minutes < 10) sMinutes = "0" + sMinutes;
-                               //alert(sHours + ":" + sMinutes);
+                              
                            }
                            var from = $('#fromTime').val();
                            if (from != "") {
@@ -1223,21 +1210,17 @@
                                var appSettingHourValue = '@(System.Configuration.ConfigurationManager.AppSettings["HourLimit"].ToString())'
                                if (hourDiff > 0) {
                                    if (hourDiff > appSettingHourValue) {
-                                       //alert('Maximum time Limit is ' + appSettingHourValue + ' Hours');
-                                       //return
+                                       
                                    }
                                    else {
-                                       // alert("Limit ok")
+                                       
                                    }
                                }
                                else {
                                    var limit = -Math.abs(appSettingHourValue);
                                    if (limit < hourDiff) {
-                                       //alert('Maximum time Limit is ' + appSettingHourValue + ' Hours');
-                                       //return
                                    }
                                    else {
-                                       //  alert("Limit ok")
                                    }
                                }
 
@@ -1350,8 +1333,6 @@
                            var crDate = $('#hdStartDate').val();
                            var d = new Date(crDate);
                            var dateDisplay = moment.utc(d).format('DD') + '-' + moment.utc(d).format('MMM') + '-' + moment.utc(d).format('YYYY');
-                           //var reversedArray = dateDisplay.split("/");
-                           //var reversedDate = reversedArray[2] + "/" + reversedArray[1] + "/" + reversedArray[0]
                            $('#clientNameLbl').text(clientname + " - " + dateDisplay);
                            $('#ddWorkTime').val("");
                            $('#chkPassport').prop("checked", false)
@@ -1362,7 +1343,6 @@
                            $('#txtSubject').val("");
                            $('#ddWorkMode').val("");
                            $('#ddWorkMode').change();
-                           //$('#ddWorkTime').val("");
                            $('#txtDescription').val("");
 
 
@@ -1474,13 +1454,12 @@
 
                            if (mins > 0) {
                                if (mins > (appSettingHourValue * 60)) {
-                                   //alert('Schedule time limit has exceeded ' + appSettingHourValue + ' Hours');
                                    if (!confirm(' Schedule time limit has exceeded ' + appSettingHourValue + ' Hours. Do you want to continue scheduling?')) {
                                        return
                                    }
                                }
                                else {
-                                   // alert("Limit ok")
+                                  
                                }
                            }
                            else if (mins < 60) {
@@ -1491,7 +1470,6 @@
                            else {
                                var limit = -Math.abs(appSettingHourValue);
                                if (limit < hourDiff) {
-                                   //alert('Schedule time Limit has exceeded ' + appSettingHourValue + ' Hours');
                                    if (!confirm('Schedule time limit has exceeded ' + appSettingHourValue + ' Hours. Do you want to continue scheduling?'))
                                    {
                                        return
@@ -1499,7 +1477,6 @@
 
                                }
                                else {
-                                 //  alert("Limit ok")
                                }
                            }
                        }
@@ -1546,7 +1523,6 @@
 
                        var data = {
                            Id: $('#hdEventID').val(),
-                          //CareTaker: $('#ddCareTaker').val(),
                            CareTaker: AvailCaretakerId,
                            CareTakerType: $('#ddServiceType').val(),
                            WorkMode: $('#ddWorkMode').val(),
@@ -1558,18 +1534,12 @@
                            EndTime: $('#toTime').val(),
                            ClientId: $('#ddlClient').val(),
                            ClientName: $("#ddlClient option:selected").text(),
-                           //CareTakerName: $("#ddCareTaker option:selected").text(),
                            CareTakerName: $("#txtCaretakerName").val(),
                            WorkModeName: $("#ddWorkMode option:selected").text(),
                            ServiceTypeName: $("#ddServiceType option:selected").text(),
-                          // Subject: $('#txtSubject').val().trim(),
                            Start: $('#hdStartDate').val(),
-                          // End: $('#chkIsFullDay').is(':checked') ? null : $('#txtEnd').val().trim(),
                            Description: $('#txtDescription').val(),
-                           //SendMailCaregiver: $('#chkMailCareGiver').prop('checked'),
-                           //SendMailClient:$('#chkMailClient').prop('checked')
-                          // ThemeColor: $('#ddThemeColor').val(),
-                         //  IsFullDay: $('#chkIsFullDay').is(':checked')
+                          
                        }
 
                        saveDate = $('#hdStartDate').val();

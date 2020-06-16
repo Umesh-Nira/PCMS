@@ -1,10 +1,7 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
 using Nirast.Pcms.Api.Sdk.Services;
 using Nirast.Pcms.Api.Sdk.UnitOfWork;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Application.Services
@@ -26,13 +23,13 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.PatientRepository.GetAdminDashboardBookingHistoryDetail(BookingId);
         }
-        
+
 
         public async Task<IEnumerable<UserBookingInvoiceReport>> GetBookingHistoryList(BookingHistorySearch bookingHistorySearch)
         {
             return await _unitOfWork.PatientRepository.GetBookingHistoryList(bookingHistorySearch);
         }
-        public async Task<IEnumerable<UserBookingInvoiceReport>> GetBookingHistoryListById(int publicUserId )
+        public async Task<IEnumerable<UserBookingInvoiceReport>> GetBookingHistoryListById(int publicUserId)
         {
             return await _unitOfWork.PatientRepository.GetBookingHistoryListById(publicUserId);
         }
@@ -44,7 +41,7 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.PatientRepository.GetBookingInvoiceListforUserDashBoard(publicUserId);
         }
-        
+
         public async Task<IEnumerable<UserBookingInvoiceReport>> GetBookingHistoryListForInvoiceGeneration(BookingHistorySearch bookingHistorySearch)
         {
             return await _unitOfWork.PatientRepository.GetBookingHistoryListForInvoiceGeneration(bookingHistorySearch);
@@ -65,7 +62,7 @@ namespace Nirast.Pcms.Api.Application.Services
             return await _unitOfWork.roleRepository.GetRolePrivilege(getRolePrivilege);
         }
 
-       public async Task<UsersDetails> GetUserDetail(int BookingId)
+        public async Task<UsersDetails> GetUserDetail(int BookingId)
         {
             return await _unitOfWork.PatientRepository.GetUserDetail(BookingId);
         }

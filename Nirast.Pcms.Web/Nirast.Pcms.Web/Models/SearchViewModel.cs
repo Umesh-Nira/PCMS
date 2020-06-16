@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Nirast.Pcms.Web.Models
+﻿namespace Nirast.Pcms.Web.Models
 {
     public class SearchViewModel
     {
@@ -13,6 +8,6 @@ namespace Nirast.Pcms.Web.Models
 
         public string CaretakerLastName { get; set; }
 
-        public int Rate{ get; set; }
+        public int Rate { get; set; }
     }
 }

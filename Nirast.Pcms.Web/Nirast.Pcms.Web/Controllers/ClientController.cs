@@ -522,7 +522,7 @@ namespace Nirast.Pcms.Web.Controllers
                     objClient.ClientShiftList = UserSessionManager.GetClientTimeShift(this);
                     objClient.ClientCaretakers = UserSessionManager.GetCaretakersList(this);
                     objClient.CategoryRates = UserSessionManager.GetCategoryRateList(this);
-                   // objClient.EffectiveFrom = Convert.ToDateTime(Session["Date"].ToString());
+                    // objClient.EffectiveFrom = Convert.ToDateTime(Session["Date"].ToString());
                     //if (objClient.CategoryRates.Count > 0)
                     //{
                     //    objClient.EffectiveFrom = objClient.CategoryRates[0].EffectiveFrom;
@@ -660,7 +660,7 @@ namespace Nirast.Pcms.Web.Controllers
             try
             {
                 string api = string.Empty;
-             
+
                 api = "Client/ChangeClientEmailStatus/" + clientId + "/" + emailstatus;
                 var serviceContent = JsonConvert.SerializeObject(clientId);
                 HttpStatusCode result = service.PostAPI(serviceContent, api);
@@ -742,16 +742,16 @@ namespace Nirast.Pcms.Web.Controllers
 
                 //scheduleDetailsListFilterd = apiResult.Where(a => a.InvoiceSearchInputId == InvoiceSearchInputId).ToList();
                 scheduleDetailsListFilterd = apiResult;
-                
+
 
 
                 api = "Client/GetAllClientDetails";
                 var Clients = service.GetAPI(api);
                 scheduleDetailsList = JsonConvert.DeserializeObject<List<ClientModel>>(Clients);
-               
+
                 activeClient = scheduleDetailsList.Where(a => a.ClientStatus == ClientStatus.Active).ToList();
                 ViewData["Client"] = new SelectList(activeClient, "ClientId", "ClientName", scheduleDetailsListFilterd.FirstOrDefault().ClientId);
-               
+
                 var listPaySearch = new SelectList(new[]
                 {
                 new { ID = "0", Name = "--Select--" },
@@ -1691,7 +1691,7 @@ namespace Nirast.Pcms.Web.Controllers
             {
                 HolidayViewModel holidaySearchModel = new HolidayViewModel();
                 string api = "Admin/GetHolidayDetails";
-               
+
                 var holidaySearch = JsonConvert.SerializeObject(holidaySearchModel);
                 var result = service.PostAPIWithData(holidaySearch, api);
                 var Clients = JsonConvert.DeserializeObject<List<HolidayViewModel>>(result.Result);
@@ -2130,11 +2130,11 @@ namespace Nirast.Pcms.Web.Controllers
                 }
                 api = "Client/GetAllClientDetails";
                 var result = service.GetAPI(api);
-                List < ClientModel >clientdetailslist = JsonConvert.DeserializeObject<List<ClientModel>>(result);
+                List<ClientModel> clientdetailslist = JsonConvert.DeserializeObject<List<ClientModel>>(result);
                 var _listClients = new SelectList(clientdetailslist, "ClientId", "ClientName", 0);
-               
+
                 ViewData["listClients"] = _listClients;
-               
+
             }
             catch (Exception ex)
             {

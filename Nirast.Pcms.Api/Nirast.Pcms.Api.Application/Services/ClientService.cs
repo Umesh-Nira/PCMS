@@ -6,8 +6,6 @@ using Nirast.Pcms.Api.Sdk.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 
@@ -96,7 +94,6 @@ namespace Nirast.Pcms.Api.Application.Services
             inputs.EmailType = EmailType.Scheduling;
             inputs.EmailConfig = _unitOfWork.UsersDetailsRepository.GetDefaultConfiguration().Result;
             inputs.EmailIdConfig = _unitOfWork.UsersDetailsRepository.GetEmailIdConfigByType(EmailType.Scheduling).Result;
-            //inputs.Subject = " Schedule Deleted on " + data.Startdate + " for Client " + data.ClientName;
             inputs.Subject = "Schedule Deleted";
             string WelcomeMsg = "Schedule Deleted.";
             string MailMsg = "Schedule Details:<br/>";
@@ -136,7 +133,6 @@ namespace Nirast.Pcms.Api.Application.Services
             string sd = AppDomain.CurrentDomain.BaseDirectory + "EmailTemplates/EmailCommon.html";
             var sr = new StreamReader(sd);
             body = sr.ReadToEnd();
-            //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
             body = string.Format(body, WelcomeMsg, "", MailMsg, Mailcontent, ContactNo, RegardsBy, siteUrl, CompanyName_TagLine, CompanyName);
             inputs.Body = body;
             return await _notificationService.SendEMail(inputs, ccAddressList);
@@ -220,7 +216,7 @@ namespace Nirast.Pcms.Api.Application.Services
         {
             return await _unitOfWork.clientRepository.GetSchedulingLogDetailsById(logId);
         }
-       
+
 
         public async Task<int> UpdateClientInvoice(InvoiceSearchInpts searchInpts)
         {

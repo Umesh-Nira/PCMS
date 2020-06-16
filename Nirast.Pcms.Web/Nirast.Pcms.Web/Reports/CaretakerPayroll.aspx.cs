@@ -6,8 +6,6 @@ using Nirast.Pcms.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Nirast.Pcms.Web.Reports
@@ -73,7 +71,7 @@ namespace Nirast.Pcms.Web.Reports
                     searchInputs.CareTakerId = caretaker;
                     searchInputs.FromDate = fromdate;
                     searchInputs.ToDate = todate;
-                   
+
 
                     if (month == 0)
                     {
@@ -106,7 +104,7 @@ namespace Nirast.Pcms.Web.Reports
                     var result = service.PostAPIWithData(advancedSearchInputModel, api);
                     scheduleDetailsList = JsonConvert.DeserializeObject<List<InvoiceReportData>>(result.Result);
 
-                    scheduleDetailsList = scheduleDetailsList.GroupBy(l => new { l.CaretakerName,l.WorkShiftName, l.TypeRate})
+                    scheduleDetailsList = scheduleDetailsList.GroupBy(l => new { l.CaretakerName, l.WorkShiftName, l.TypeRate })
                                                         .Select(cl => new InvoiceReportData
                                                         {
 
@@ -130,7 +128,7 @@ namespace Nirast.Pcms.Web.Reports
 
                     //List<InvoiceReportData> scheduleDetailsListFilterd = new List<InvoiceReportData>();
                     //scheduleDetailsListFilterd = scheduleDetailsList.ToList();
-                    
+
                     if (scheduleDetailsList.Count != 0)
                     {
                         ReportViewer1.Visible = true;
@@ -143,7 +141,7 @@ namespace Nirast.Pcms.Web.Reports
 
                     ReportDataSource datasource = new ReportDataSource("InvoicePayHoursSummary", scheduleDetailsList);
                     ReportParameterCollection reportParameters = new ReportParameterCollection();
-                   
+
                     string monthText = "--Select Month--";
                     reportParameters.Add(new ReportParameter("Year", year.ToString()));
                     if (monthText == "--Select Month--" || monthText == null)

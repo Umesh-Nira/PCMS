@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Microsoft.Reporting.WebForms;
+﻿using Microsoft.Reporting.WebForms;
 using Newtonsoft.Json;
 using Nirast.Pcms.Web.Helpers;
-using Nirast.Pcms.Web.Models;
 using Nirast.Pcms.Web.Logger;
+using Nirast.Pcms.Web.Models;
+using System;
+using System.Collections.Generic;
 
 namespace Nirast.Pcms.Web.Reports
 {
@@ -55,7 +51,7 @@ namespace Nirast.Pcms.Web.Reports
 
 
                     Service service = new Service();
-                    
+
                     string api = "Client/GetAllScheduleRejectedCaretaker";
                     var advancedSearchInputModel = JsonConvert.SerializeObject(searchInputs);
                     var result = service.PostAPIWithData(advancedSearchInputModel, api);
@@ -69,9 +65,9 @@ namespace Nirast.Pcms.Web.Reports
                         lblmessage.Visible = true;
 
                     }
-                    
 
-                    
+
+
 
                     ReportDataSource datasource = new ReportDataSource("BookingRejectedList", bookingRejectedReport);
                     scheduleRejectedReport.LocalReport.DataSources.Clear();

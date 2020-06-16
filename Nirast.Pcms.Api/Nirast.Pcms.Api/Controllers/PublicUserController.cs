@@ -1,20 +1,17 @@
 ﻿using Newtonsoft.Json;
+using Nirast.Pcms.Ap.Application.Infrastructure;
 using Nirast.Pcms.Api.Helpers;
 using Nirast.Pcms.Api.Sdk.Entities;
+using Nirast.Pcms.Api.Sdk.Infrastructure;
 using Nirast.Pcms.Api.Sdk.Logger;
 using Nirast.Pcms.Api.Sdk.Services;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Linq;
-using Nirast.Pcms.Api.Sdk.Infrastructure;
-using Nirast.Pcms.Api.Models;
-using Nirast.Pcms.Ap.Application.Infrastructure;
-using System.IO;
-using static Nirast.Pcms.Api.Sdk.Entities.Enums;
 using static Nirast.Pcms.Api.Sdk.Entities.PublicUserCaretakerBooking;
 
 namespace Nirast.Pcms.Api.Controllers
@@ -65,12 +62,12 @@ namespace Nirast.Pcms.Api.Controllers
         [HttpPost]
         [Route("api/User/UpdateUserInvoiceNumber/{userid}/{invoiceNumber}")]
         //[BasicAuthentication("Administrator", "Office Staff")]
-        public async Task<HttpResponseMessage> UpdateUserInvoiceNumber(int userid,int invoicenumber)
+        public async Task<HttpResponseMessage> UpdateUserInvoiceNumber(int userid, int invoicenumber)
         {
             ClientDetails client = new ClientDetails();
             try
             {
-                var clientDetails = await _pcmsService.UpdateUserInvoiceNumber(userid,invoicenumber);
+                var clientDetails = await _pcmsService.UpdateUserInvoiceNumber(userid, invoicenumber);
                 string result = JsonConvert.SerializeObject(clientDetails);
                 if (result != null)
                 {
@@ -168,7 +165,7 @@ namespace Nirast.Pcms.Api.Controllers
                 return ApiResponse.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.InnerException == null ? ex.Message : ex.InnerException.Message);
             }
         }
-       
+
         [HttpPost]
         [Route("api/PublicUser/UpdateUserDetails")]
         //[BasicAuthentication("Public User")]
@@ -236,7 +233,8 @@ namespace Nirast.Pcms.Api.Controllers
                 if (UserDetailId == 1)
                 {
                     response = Request.CreateResponse(HttpStatusCode.OK);
-                } else if(UserDetailId == 2)
+                }
+                else if (UserDetailId == 2)
                 {
                     response = Request.CreateResponse(HttpStatusCode.Ambiguous);
 
@@ -328,17 +326,8 @@ namespace Nirast.Pcms.Api.Controllers
                 inputs.EmailType = Enums.EmailType.Registration;
                 inputs.EmailConfig = await _pcmsService.GetDefaultConfiguration();
                 inputs.EmailIdConfig = await _pcmsService.GetEmailIdConfigByType(inputs.EmailType);
-                //UserPaymentInvoiceModel mailContent = new UserPaymentInvoiceModel()
-                //{
-                //    FirstName = verifyEmail.FirstName,
-                //};
                 inputs.Subject = verifyEmail.Subject;
                 inputs.Body = GetVerificationLinkEmailBody(verifyEmail);
-                
-                //inputs.Body = "Dear  " + verifyEmail.FirstName + ",<br/>";
-                //inputs.Body += "<br/>Please click on the following link to activate your account.<br/>";
-                //inputs.Body += verifyEmail.VerificationLink;
-                //inputs.Body += "<br/><br/>Thanks";
 
                 bool result = await _notifactionService.SendEMail(inputs);
 
@@ -365,7 +354,7 @@ namespace Nirast.Pcms.Api.Controllers
                 var sr = new StreamReader(sd);
                 body = sr.ReadToEnd();
                 //body = string.Format(body, siteUrl, invoiceDetails.UserName, invoiceDetails.BookingDate, invoiceDetails.Amount, invoiceDetails.TaxAmount, invoiceDetails.TotalAmount, invoiceDetails.InvoiceNumber.ToString());
-                body = string.Format(body,verifyEmail.WelcomeMsg,verifyEmail.FirstName,verifyEmail.MailMsg, verifybody, verifyEmail.ContactNo,verifyEmail.RegardsBy,verifyEmail.siteUrl,verifyEmail.CompanyName_TagLine,verifyEmail.CompanyName);
+                body = string.Format(body, verifyEmail.WelcomeMsg, verifyEmail.FirstName, verifyEmail.MailMsg, verifybody, verifyEmail.ContactNo, verifyEmail.RegardsBy, verifyEmail.siteUrl, verifyEmail.CompanyName_TagLine, verifyEmail.CompanyName);
                 return body;
             }
             catch (Exception ex)
@@ -404,7 +393,7 @@ namespace Nirast.Pcms.Api.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("api/User/GetPublicUserBookingDetails/{publicUserId}")]
-     
+
         public async Task<HttpResponseMessage> GetPublicUserBookingDetails(int publicUserId)
         {
             List<UserBooking> userBookingDetails = new List<UserBooking>();
@@ -474,7 +463,7 @@ namespace Nirast.Pcms.Api.Controllers
         }
 
 
-    
+
 
         [HttpGet]
         [Route("api/User/GetCaretakerBookingDetails")]

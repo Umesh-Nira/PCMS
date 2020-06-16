@@ -249,7 +249,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while deleting a office staff. Function: setOfficeStaffId(userId). Page: ManageOfficeStaff.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
@@ -263,7 +263,7 @@
             },
             error: function (data) {
                 logError(data.statusText + ' - Error occurred while changing a office staff status. Function: changeStatus(userId, status) . Page: ManageOfficeStaff.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
@@ -298,7 +298,7 @@
                 hideProgress();
                 console.log(feed.responseText);
                 logError(feed.statusText + ' - Error occurred while showing a office staff login details. Function: showBookingDetails(bookingId). Page: ManageOfficeStaff.cshtml');
-                //alert('Some network error has occurred. Please try again after some time.');
+                
             }
         });
     }
@@ -333,7 +333,7 @@
                 error: function (feed) {
                     console.log(feed.responseText);
                     logError(feed.statusText + ' - Error occurred while changing a office staff login password. Function: SavePassword(). Page: ManageOfficeStaff.cshtml');
-                    //alert('Some network error has occurred. Please try again after some time.');
+                    
                 }
             });
         }
@@ -342,7 +342,6 @@
         }
     }
     function MoreInfo(logId) {
-        debugger;
         if (logId > 0) {
             showProgress();
             $.ajax({

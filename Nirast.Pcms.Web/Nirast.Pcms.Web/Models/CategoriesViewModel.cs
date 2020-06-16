@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Web.Models
 {
@@ -22,12 +20,12 @@ namespace Nirast.Pcms.Web.Models
         [Display(Name = "Name")]
         public string Name { get; set; }
 
-		/// <summary>
-		/// Get or set Color
-		/// </summary>
-		public string Color { get; set; }
-       
-        public Dictionary<string,string> ColorList { get; set; }
+        /// <summary>
+        /// Get or set Color
+        /// </summary>
+        public string Color { get; set; }
+
+        public Dictionary<string, string> ColorList { get; set; }
     }
 
     public class ManageSubcategoryViewModel

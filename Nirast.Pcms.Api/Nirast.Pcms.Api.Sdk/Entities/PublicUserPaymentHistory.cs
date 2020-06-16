@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nirast.Pcms.Api.Sdk.Entities
+﻿namespace Nirast.Pcms.Api.Sdk.Entities
 {
-   public class PublicUserPaymentHistory
+    public class PublicUserPaymentHistory
     {
         /// <summary>
         /// Get or Set Booking Date

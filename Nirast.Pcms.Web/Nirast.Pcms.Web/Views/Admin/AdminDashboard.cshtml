@@ -285,8 +285,7 @@ else
         })
 
         function GetCalenderEvents(ID, month, year, callback) {
-            debugger;
-            if (eventList != null && eventList.filter(x => x.year == year && x.month == month).length <= 0) {
+           if (eventList != null && eventList.filter(x => x.year == year && x.month == month).length <= 0) {
                 var data = { clientId: ID, month: month, year: year }
                 showProgress();
                 $.ajax({
@@ -330,7 +329,7 @@ else
                     },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while loading Client Events. Function: GenerateCalender- events. Page: ScheduledCalenderView.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
                 })
             }

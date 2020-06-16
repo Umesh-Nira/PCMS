@@ -5,7 +5,6 @@
     function acceptTerms() {
         $('input:checkbox').prop('checked', true);
         document.getElementById('btnRegisterUser').disabled = false;
-        //$('#acceptTerms').attr('checked', 'checked');
     }
     function CheckExpiryDate() {
         var currentdate = new Date();
@@ -45,8 +44,6 @@
                     reader.onload = function (e) {
                         $('#imgUser')
                             .attr('src', e.target.result);
-                        //.width(150)
-                        //.height(200);
                         $('#ProfilePicByte').val(e.target.result.split(',')[1]);
                     };
 
@@ -63,13 +60,6 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-            //    $("#ddlStates").html(""); // clear before appending new list
-
-            //$("#ddlStates").append(
-            //    $('<option></option>').val('0').html("--Select--"));
-            //$("#ddlCity").html("");
-            //$("#ddlCity").append(
-            //    $('<option></option>').val('0').html("--Select--"));
             $("input[name='btnRegisterUser']").on("click", function () {
 
                 if (document.getElementById("invalidCardNumber").textContent == "invalid card number") {
@@ -78,8 +68,7 @@
             });
 
             $("form").submit(function (e) {
-               // debugger;
-                var $captcha = $('#recaptcha'),
+               var $captcha = $('#recaptcha'),
                     response = grecaptcha.getResponse();
                 if (response.length === 0) {
                     $('.msg-error').text("* Required");
@@ -88,7 +77,6 @@
                 }
                 if ($('#result span').text() != "Available" && $('#result span').text() != "" ) {
                     alert("Email ID is not available. Choose another Email ID.");
-                    //$('#EmailAddress').focus();
                     e.preventDefault(); //prevent default form submit
                     return false;
                 }
@@ -148,20 +136,12 @@
         GetStates();
         });
 
-        //$("#btnRegisterUser").on("click", ".btn.buttonStyle", function () {
-        //    spinnerVisible = true;
-        //    if ($('#result span').text() != "Available") {
-        //        alert("Login name is not available. Choose another login name.");
-        //        $('#EmailAddress').focus();
-        //        event.preventDefault();
-        //        }
-        //});
+        
         $('#ProfilePic').val($('#imgUser').attr('src').split(',')[1]);
 
 
     $("#btnRegisterUser").on("click", ".btn.buttonStyle", function () {
-       // debugger;
-        spinnerVisible = true;
+       spinnerVisible = true;
 
         if ($('#result span').text() != "Available") {
             alert("Login name is not available. Choose another login name.");
@@ -171,7 +151,6 @@
     });
 
     function validateAllFields() {
-       // debugger;
         var $captcha = $('#recaptcha'),
             response = grecaptcha.getResponse();
 

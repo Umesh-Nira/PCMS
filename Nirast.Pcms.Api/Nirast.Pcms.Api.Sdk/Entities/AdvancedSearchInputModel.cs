@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -64,7 +61,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         /// Get or set the state
         /// </summary>
         public int? State { get; set; }
-        
+
         /// <summary>
         /// Get or Set the city
         /// </summary>

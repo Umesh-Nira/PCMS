@@ -1,26 +1,24 @@
 ﻿using Nirast.Pcms.Api.Sdk.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Repositories
 {
-   public interface IClientRepository: IGenericRepository<ClientDetails>
+    public interface IClientRepository : IGenericRepository<ClientDetails>
     {
         Task<ClientDetails> AddClientDetails(ClientDetails client);
 
         Task<int> AddClientInvoiceDetails(InvoiceSearchInpts invoiceDetails);
-        
 
-            /// <summary>
-            /// method to get all client details
-            /// </summary>
-            /// <returns></returns>
-       Task<IEnumerable<ClientDetails>> GetClientDetails();
-       Task<IEnumerable<ScheduledData>> GetAllScheduleLogDetails();
-       Task<IEnumerable<LoginLog>> GetLoginLogDetailsByTypeId(int typeId);
+
+        /// <summary>
+        /// method to get all client details
+        /// </summary>
+        /// <returns></returns>
+        Task<IEnumerable<ClientDetails>> GetClientDetails();
+        Task<IEnumerable<ScheduledData>> GetAllScheduleLogDetails();
+        Task<IEnumerable<LoginLog>> GetLoginLogDetailsByTypeId(int typeId);
         Task<IEnumerable<RejectedCaretaker>> GetAllScheduleRejectedCaretaker(BookingHistorySearch bookingHistorySearch);
 
         Task<ClientDetails> GetClientDetailsByID(int clientId);
@@ -43,7 +41,7 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
         /// <returns></returns>
         Task<IEnumerable<ClientDetails>> ClientSearch(ClientSearchInputs inputs);
 
-        Task<int> AddScheduledDetails(ScheduledData scheduledData,out string message);
+        Task<int> AddScheduledDetails(ScheduledData scheduledData, out string message);
         Task<IEnumerable<ClientDetails>> GetClientInvoiceDetails();
         Task<int> AddInvoiceDetails(ClientDetails clientInvoiceDetails);
 
@@ -57,7 +55,7 @@ namespace Nirast.Pcms.Api.Sdk.Repositories
         Task<ScheduledData> GetSchdeuleDetaildById(int scheduleId);
         Task<string> GetEmailIdForClient(int userId);
         Task<ScheduledData> GetSchedulingLogDetailsById(int logId);
-       
+
         Task<string> AddScheduledDetailsAuditLog(ScheduledData data, string message);
         Task<IEnumerable<ClientCategoryRate>> GetClientInvoicePayRiseRatesonDateChange(int clientId, DateTime date);
         Task<int> ChangeClientEmailStatus(int id, int emailstatus);

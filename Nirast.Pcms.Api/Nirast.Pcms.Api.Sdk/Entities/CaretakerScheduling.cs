@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nirast.Pcms.Api.Sdk.Entities
 {
@@ -18,7 +14,7 @@ namespace Nirast.Pcms.Api.Sdk.Entities
         public string CaretakerCategory { get; set; }
     }
 
-    public class ScheduleDetailModel: CaretakerScheduling
+    public class ScheduleDetailModel : CaretakerScheduling
     {
         public string CareShift { get; set; }
 

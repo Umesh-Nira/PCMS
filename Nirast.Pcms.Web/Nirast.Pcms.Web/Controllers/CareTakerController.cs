@@ -213,7 +213,7 @@ namespace Nirast.Pcms.Web.Controllers
                         profileId = service.GetAPI(profileId);
                         objCareTakerViewModel.CaretakerProfileId = "CT" + Convert.ToInt32(profileId).ToString("0000");
 
-                        
+
                         api = "CareTaker/SaveCareTaker";
                         objCareTakerViewModel.UserStatus = UserStatus.Active;
                         objCareTakerViewModel.UserTypeId = 1;
@@ -235,8 +235,8 @@ namespace Nirast.Pcms.Web.Controllers
                         {
                             Directory.CreateDirectory(Server.MapPath("~/PCMS/Documents/CareGiver/"));
                         }
-                        
-                        foreach ( var item in lstDocumentDetails)
+
+                        foreach (var item in lstDocumentDetails)
                         {
                             item.DocumentPath = Server.MapPath("~/PCMS/Documents/CareGiver/") + objCareTakerViewModel.CaretakerProfileId + "_" + item.DocumentType + "_" + item.DocumentName;
                             System.IO.File.WriteAllBytes(item.DocumentPath, item.DocumentContent);
@@ -249,7 +249,7 @@ namespace Nirast.Pcms.Web.Controllers
                         objCareTakerViewModel.CertificateFiles = null;
                         objCareTakerViewModel.SINFile = null;
                         objCareTakerViewModel.OtherDocuments = null;
-                        
+
 
                         // write profile pic to a folder and save its path in db.
                         Guid fileName = Guid.NewGuid();
@@ -352,7 +352,7 @@ namespace Nirast.Pcms.Web.Controllers
                             objDocumentDetails.DocumentType = Enum.GetName(typeof(DocumentType), 1);
 
                             string docPath = Server.MapPath("~/PCMS/Documents/CareGiver/") + objDocumentDetails.DocumentName;
-                            
+
                             objDocumentDetails.DocumentPath = docPath;
                             objCertificateList.Add(objDocumentDetails);
                             //newsize = objDocumentDetails.DocumentContent.Length + newsize;
@@ -429,7 +429,7 @@ namespace Nirast.Pcms.Web.Controllers
                             }
                             objDocumentDetails.DocumentTypeId = 2;
                             objDocumentDetails.DocumentType = Enum.GetName(typeof(DocumentType), 2);
-                            string docPath = Server.MapPath("~/PCMS/Documents/CareGiver/") +objDocumentDetails.DocumentName;
+                            string docPath = Server.MapPath("~/PCMS/Documents/CareGiver/") + objDocumentDetails.DocumentName;
                             objDocumentDetails.DocumentPath = docPath;
                             objSinList.Add(objDocumentDetails);
                         }
@@ -1330,7 +1330,7 @@ namespace Nirast.Pcms.Web.Controllers
 
         public ActionResult CalendarView()
         {
-                    
+
             int caretakerId = 0;
             try
             {
@@ -1342,7 +1342,7 @@ namespace Nirast.Pcms.Web.Controllers
                 if (Session["loggedInUserId"] != null)
                 {
                     caretakerId = (int)Session["loggedInUserId"];
-                }             
+                }
             }
             catch (Exception ex)
             {
@@ -1397,7 +1397,7 @@ namespace Nirast.Pcms.Web.Controllers
                 CalenderEventInput calenderEventInput = new CalenderEventInput
                 {
                     ScheduleId = 0,
-                    CaretakerId=caretakerId
+                    CaretakerId = caretakerId
                 };
                 if (year != 0 && month != 0)
                 {
@@ -1642,7 +1642,7 @@ namespace Nirast.Pcms.Web.Controllers
             }
             return View();
         }
-       
+
         public ActionResult ServiceRequest()
         {
             List<BookingHistory> bookingList = new List<BookingHistory>();
@@ -1925,7 +1925,7 @@ namespace Nirast.Pcms.Web.Controllers
             }
             return PartialView("_ScheduleRejectedCaretakerPartial", bookingDetailsfiltered);
         }
-        
+
         public ActionResult SchedulingCalendar()
         {
             return PartialView("_CaretakerCalendarViewPartial");
@@ -2178,18 +2178,18 @@ namespace Nirast.Pcms.Web.Controllers
         [HttpPost]
         public JsonResult GetCaretakerPayRiseRates(int CareTakerId)
         {
-            string api = "Caretaker/GetCaretakerPayRiseRates/" +CareTakerId;
+            string api = "Caretaker/GetCaretakerPayRiseRates/" + CareTakerId;
             var result = service.GetAPI(api);
             return Json(result);
         }
         [HttpPost]
-        public JsonResult GetCaretakerPayRiseRatesonDateChange(DateTime Date,int CaretakerId)
+        public JsonResult GetCaretakerPayRiseRatesonDateChange(DateTime Date, int CaretakerId)
         {
 
             PayriseData bookingPayriseData = new PayriseData()
             {
-               CaretakerId = CaretakerId,
-               Date= Date
+                CaretakerId = CaretakerId,
+                Date = Date
             };
             string api = "Caretaker/GetCaretakerPayRiseRatesonDateChange";
             var getcareTakerPayRise = JsonConvert.SerializeObject(bookingPayriseData);

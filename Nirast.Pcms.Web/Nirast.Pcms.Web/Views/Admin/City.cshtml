@@ -154,7 +154,6 @@
     });
 
     function loadSelectedCities() {
-        debugger;
         var flag = '';
         var val = '';
         if ($("#ddlStates").val() > 0) {
@@ -177,14 +176,13 @@
                 });
             },
                     error: function (data) {
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                         logError(data.statusText + ' - Error occurred while populating the City for Flag: ' + flag + ', Value: ' + val + ' . Function: loadSelectedCities(). Page: City.cshtml');
                     }
         });
     }
 
     function fillStates() {
-        debugger;
         var countryId = ($('#ddlCountry').val() === "" || $('#ddlCountry').val() === undefined) ? 0 : $('#ddlCountry').val();
         if (countryId === 0)
             countryId = -1;
@@ -221,7 +219,7 @@
             },
                     error: function (data) {
                         logError(data.statusText + ' - Error occurred while populating the States for CountryId: ' + countryId + '. Function: loadSelectedCities(). Page: City.cshtml');
-                        //alert('Some network error has occurred. Please try again after some time.');
+                        
                     }
         });
     }
